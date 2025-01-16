@@ -1,0 +1,78 @@
+## Looking for strings? Check the i18n folder.
+
+# showcase
+showcase:
+  enable: true
+  image:
+    x: "images/showcase/showcase.png"
+    _2x: "images/showcase/showcase@2x.png"
+  imageMobile:
+    x: "images/showcase/showcase-mobile.jpg"
+
+  button:
+    icon: "icon-email"
+    URL: "#contact"
+
+  socialLinks:
+    - icon: "linkedin"
+      URL: "https://www.linkedin.com/in/max-r%C3%B6%C3%9Fler/"
+
+    - icon: "instagram"
+      URL: "https://www.instagram.com/zetxek/"
+
+    - icon: "xing"
+      URL: "https://www.xing.com/profile/Max_Roessler10/"
+
+# about
+about:
+  enable: true
+  button:
+    icon: "icon-user"
+    URL: "https://www.linkedin.com/in/max-r%C3%B6%C3%9Fler/"
+  image:
+    x: "images/about/user-picture.jpg"
+    _2x: "images/about/user-picture@2x.jpg"
+
+# education
+education:
+  enable: true
+  items:
+    - university: "Berufsbildungswerk Dresden GmbH"
+      year: "2008-2011"
+      degree: "IT Specialist | Specializing in System Integration"
+
+# experience
+## to hiden a button, set the icon to an empty string
+experience:
+  enable: true
+  button:
+    enable: true
+    icon: "icon-linkedin"
+    ## the url and text are localized, fill them in the i18n file
+    ## keys: experience_button, experience_button_url
+  button2:
+    enable: true
+    icon: "icon-file-pdf"
+    ## the url and text are localized, fill them in the i18n file
+    ## keys: experience_button2, experience_button_url2 
+  button3:
+    enable: true
+    icon: "icon-cloud-arrow-down"
+    ## the url and text are localized, fill them in the i18n file
+    ## keys: experience_button2, experience_button_url2 
+
+# Client & Work
+client_and_work:
+  enable: true
+
+# testimonial
+testimonial:
+  enable: true
+
+# contact
+contact:
+  enable: false 
+
+# newsletter
+newsletter:
+  enable: false
