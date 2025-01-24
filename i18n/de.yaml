@@ -1,0 +1,190 @@
+## Header
+- id: "logo_text1"
+  translation: "Max"
+
+- id: "logo_text2"
+  translation: "Rößler"
+
+- id: "nav_home"
+  translation: "STARTSEITE"
+
+## General
+- id: "skipToMainContent"
+  translation: "Zum Hauptinhalt springen"
+
+- id: "toggle_navigation"
+  translation: "Navigation anzeigen"
+
+## Footer
+- id: "footer_notice"
+  translation: "© Adritian. Freies Hugo-Thema von Adrián Moreno Peña."
+
+- id: "language"
+  translation: "Sprache"
+
+- id: "toggle_theme"
+  translation: "Farbschema auswählen"
+
+- id: "theme_light"
+  translation: "☀️ Hell"
+- id: "theme_dark"
+  translation: "🌑 Dunkel"
+- id: "theme_auto"
+  translation: "✨ Auto"
+
+## Homepage head title
+- id: "head_title"
+  translation: "IT-Kompetenz für Ihren digitalen Erfolg"
+
+- id: "head_description"
+  translation: "ieses Hugo-Theme (Adritian) basiert auf Bootstrap und verfügt über Funktionen, die es für eine persönliche Website, ein Portfolio oder eine andere Art von Single-Page-Anwendungen geeignet machen."
+
+## Homepage showcase
+- id: "showcase_title"
+  translation: "IT-Kompetenz für Ihren digitalen Erfolg"
+
+- id: "showcase_subtitle"
+  translation: "Leidenschaft für IT seit 1997"
+
+- id: "showcase_description"
+  translation: "Meine Begeisterung für Computer begann 1997, als ich im Alter von 10 Jahren meinen ersten PC benutzte: Windows 95 auf einem Pentium I - damals noch High-End! 😄 Seitdem hat mich die Faszination für Technik nicht mehr losgelassen."
+
+- id: "showcase_button"
+  translation: "Kontakt"
+
+  ## not visible but used for accessibility
+- id: "showcase_image_alt"
+  translation: "A picture of Cool Name"
+
+## Homepage about
+- id: "about_title"
+  translation: "Wer bin ich?"
+
+- id: "about_content"
+  translation:  <p class=„lead“>
+      Als IT-Fachmann glaube ich an eine einfühlsame Analyse, um sowohl die Bedürfnisse der Entwickler als auch der Nutzer zu verstehen. Meine ständige Lernbereitschaft wird von der Begeisterung angetrieben, neue Lösungen zu entdecken und die richtigen Verbindungen herzustellen.
+      </p>
+      <p class=„lead“>
+      Offene und direkte Kommunikation ist einer meiner zentralen Werte. Als unabhängiger Berater setze ich mich für eine friedliche zivile Entwicklung ein und arbeite bewusst nicht mit militärischen oder rüstungsindustriellen Kunden zusammen.
+      </p>
+      <p class=„lead“>
+      Ich bringe mein technisches Interesse mit Umweltbewusstsein und naturnaher Gartenarbeit in Einklang. Neben meiner beruflichen Tätigkeit arbeite ich in meiner Freizeit gerne an verschiedenen Heimserver-Projekten und erweitere so kontinuierlich meine IT-Kenntnisse.
+    </p>
+
+- id: "about_button"
+  translation: "Über mich"
+
+  ## not visible but used for accessibility
+- id: "about_image_alt"
+  translation: "Una imagen de Cool Name"
+
+## Homepage education
+- id: "education_title"
+  translation: "Bildung"
+
+## Homepage experience
+- id: "experience_title"
+  translation: "Erfahrung"
+
+- id: "experience_description"
+  translation: "Hier können Sie ein wenig über Ihre Erfahrungen berichten. Jahre der Gesamterfahrung, Spezialisierung, usw."
+
+- id: "experience_button"
+  translation: "LinkedIn" 
+
+- id: "experience_button_url"
+  translation: "https://www.linkedin.com/in/max-r%C3%B6%C3%9Fler/"
+
+- id: "experience_button2"
+  translation: "Lebenslauf herunterladen"
+
+- id: "experience_button2_url"
+  translation: "/img/general/user-smile-fill.svg"
+
+- id: "experience_button3"
+  translation: "Alle anzeigen"
+
+- id: "experience_button3_url"
+  translation: "/de/experience"
+
+## Homepage client & work
+- id: "client_work_title"
+  translation: "Kunden & Arbeit"
+
+## Homepage newsletter
+- id: "newsletter_title"
+  translation: "Newsletter"
+
+- id: "newsletter_button"
+  translation: "Abonnieren"
+
+- id: "newsletter_placeholder"
+  translation: "Deine E-Mail"
+
+- id: "newsletter_success_message"
+  translation: "Danke, dass Sie sich für meinen Newsletter angemeldet haben!"
+
+- id: "newsletter_error_message"
+  translation: "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+
+- id: "newsletter_note"
+  translation: "Wir werden Ihre E-Mail niemals an Dritte weitergeben."
+
+## Homepage testimonials
+- id: "testimonials_title"
+  translation: "Testimonials"
+
+## Homepage contact
+- id: "contact_title"
+  translation: "Kontakt"
+
+- id: "contact_button"
+  translation: "Nachricht senden"
+
+- id: "contact_form_name"
+  translation: "Vollständiger Name"
+
+- id: "contact_form_email"
+  translation: "E-Mail Adresse"
+
+- id: "contact_form_message"
+  translation: "Geben Sie hier Ihre Nachricht ein"
+
+- id: "contact_phone_title"
+  translation: "Rufnummer"
+
+- id: "contact_phone_number"
+  translation: "+49 176 489 959 53"
+
+- id: "contact_email_title"
+  translation: "Email"
+
+- id: "contact_email_email"
+  translation: '<a href="mailto:mail@max-it.tech">mail@max-it.tech</a>'
+
+- id: "contact_address_title"
+  translation: "Adresse"
+
+- id: "contact_address_address"
+  translation: "Radeberger Straße 24b<br />01328 Dresden<br />Germany"
+
+- id: "contact_button"
+  translation: "Nachricht senden"
+
+## Blog
+- id: "read_more"
+  translation: "Mehr lesen"
+
+- id: "published_on"
+  translation: "Veröffentlicht am "
+
+- id: "continue_reading"
+  translation: "Lesen Sie hier weiter"
+
+## 404 Page
+- id: "404_title"  
+  translation: "Seite nicht gefunden"
+- id: "404_description"
+  translation: "Die von Ihnen gesuchte Seite konnte leider nicht gefunden werden."
+- id: "404_button"
+  translation: "Zurück zur Startseite"

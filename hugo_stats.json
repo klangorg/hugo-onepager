@@ -180,7 +180,8 @@
       "theme-icon",
       "translation",
       "visually-hidden",
-      "w-100"
+      "w-100",
+      "„lead“"
     ],
     "ids": [
       "about",

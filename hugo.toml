@@ -89,54 +89,54 @@ theme = "adritian-free-hugo-theme"
         weight = 4
 
 
-  [languages.es]
+  [languages.de]
     disabled = false
-    languageCode = 'es'
+    languageCode = 'de'
     languageDirection = 'ltr'
-    languageName = 'Español'
+    languageName = 'Deutsch'
     title = ''
     weight = 0
-      [[languages.es.menus.header]]
-        name = 'Sobre mi'
+      [[languages.de.menus.header]]
+        name = 'Über mich'
         URL = '/es/#about'
         weight = 2
-      [[languages.es.menus.header]]
+      [[languages.de.menus.header]]
         name = 'Portfolio'
         URL = '/es/#portfolio'
         weight = 3
 
-      #  [[languages.es.menus.header]]
-      #  name = "Experiencia"
+      #  [[languages.de.menus.header]]
+      #  name = "Erfahrung"
       #  URL = "/es/#experience"
       #  weight = 4
 
-      [[languages.es.menus.header]]
+      [[languages.de.menus.header]]
         name = "Blog"
         URL = "/es/blog"
         weight = 5
 
-      [[languages.es.menus.header]]
-        name = "Contacto"
+      [[languages.de.menus.header]]
+        name = "Kontakt"
         URL = "/es/#contact"
         weight = 6
 
-      [[languages.es.menus.footer]]
-        name = "Sobre mi"
+      [[languages.de.menus.footer]]
+        name = "Über mich"
         URL = "/es/#about"
         weight = 2
 
-      [[languages.es.menus.footer]]
+      [[languages.de.menus.footer]]
         name = "Portfolio"
         URL = "/es/#portfolio"
         weight = 3
 
-      [[languages.es.menus.footer]]
-        name = "Contact"
+      [[languages.de.menus.footer]]
+        name = "Kontakt"
         URL = "/es/#contact"
         weight = 4
 
   [languages.fr]
-    disabled = false
+    disabled = true
     languageCode = 'fr'
     languageDirection = 'ltr'
     languageName = 'Français'

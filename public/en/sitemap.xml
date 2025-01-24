@@ -6,13 +6,8 @@
     <lastmod>2024-11-25T21:50:45+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/"
+                hreflang="de"
+                href="http://localhost:1313/de/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -62,13 +57,8 @@
     <loc>http://localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/categories/"
+                hreflang="de"
+                href="http://localhost:1313/de/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -79,13 +69,8 @@
     <loc>http://localhost:1313/tags/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/tags/"
+                hreflang="de"
+                href="http://localhost:1313/de/tags/"
                 />
     <xhtml:link
                 rel="alternate"

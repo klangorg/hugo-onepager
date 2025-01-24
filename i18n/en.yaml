@@ -1,12 +1,12 @@
 ## Meta tags
 - id: "meta_title"
-  translation: "Adritian - a high performance hugo theme by Adrián Moreno"
+  translation: "IT expertise for your digital success"
 - id: "meta_description"
   translation: "This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications."
 - id: "meta_keywords"
-  translation: "hugo, theme, bootstrap, adritian, adrian moreno, personal site, portfolio, single page application"
+  translation: "Max, Rößler, IT Freelancer, Max Rößler, IT expert, IT specialist, IT consultant"
 - id: "meta_author"
-  translation: "Adrián Moreno Peña"
+  translation: "Max Rößler"
 - id: "meta_image"
   translation: "/img/general/og-image.jpg"
 
@@ -46,7 +46,7 @@
 
 ## Homepage head title
 - id: "head_title"
-  translation: "Demo site for Adritian - a high performance hugo theme by Adrián Moreno"
+  translation: "IT expertise for your digital success"
 
 - id: "head_description"
   translation: "This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications."
@@ -103,7 +103,7 @@ This year, I celebrated my 12th anniversary in the IT industry. A lot has change
   translation: "LinkedIn" 
 
 - id: "experience_button_url"
-  translation: "https://www.linkedin.com/in/adrianmoreno/"
+  translation: "https://www.linkedin.com/in/max-r%C3%B6%C3%9Fler/"
 
 - id: "experience_button2"
   translation: "Download resume"
@@ -164,19 +164,19 @@ This year, I celebrated my 12th anniversary in the IT industry. A lot has change
   translation: "Phone Number"
 
 - id: "contact_phone_number"
-  translation: "+555 (11) 123 44 55"
+  translation: "+49 176 489 959 53"
 
 - id: "contact_email_title"
   translation: "Email"
 
 - id: "contact_email_email"
-  translation: '<a href="mailto:mail@example.com">mail@example.com</a>'
+  translation: '<a href="mailto:mail@max-it.tech">mail@max-it.tech</a>'
 
 - id: "contact_address_title"
   translation: "Address"
 
 - id: "contact_address_address"
-  translation: "Exact street/neighborhood (you can omit this)<br />Postcode, City"
+  translation: "Radeberger Straße 24b<br />01328 Dresden<br />Germany"
 
 - id: "contact_button"
   translation: "Send Message"
