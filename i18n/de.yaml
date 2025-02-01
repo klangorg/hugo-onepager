@@ -5,6 +5,9 @@
 - id: "logo_text2"
   translation: "Rößler"
 
+- id: "logo_alt"
+  translation: "Max Rößler"
+
 - id: "nav_home"
   translation: "STARTSEITE"
 
@@ -96,10 +99,10 @@
   translation: "https://www.linkedin.com/in/max-r%C3%B6%C3%9Fler/"
 
 - id: "experience_button2"
-  translation: "Lebenslauf herunterladen"
+  translation: "Lebenslauf"
 
 - id: "experience_button2_url"
-  translation: "/img/general/user-smile-fill.svg"
+  translation: "/files/cv.pdf"
 
 - id: "experience_button3"
   translation: "Alle anzeigen"

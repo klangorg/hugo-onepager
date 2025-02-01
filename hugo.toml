@@ -9,6 +9,9 @@ theme = "adritian-free-hugo-theme"
   images = ['/img/og-img.png']
   sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
 
+  # If you want to display an image logo in the header, you can add it here
+  logo = '/img/logo.svg'
+
   homepageExperienceCount = 6
 
   [params.analytics]
@@ -54,19 +57,21 @@ theme = "adritian-free-hugo-theme"
         name = 'About'
         URL = '#about'
         weight = 2
+
       [[languages.en.menus.header]]
         name = 'Portfolio'
         URL = '#portfolio'
         weight = 3
-      #  [[languages.en.menus.header]]
-      #  name = "Experience"
-      #  URL = "#experience"
-      #  weight = 4
 
       [[languages.en.menus.header]]
-        name = "Blog"
-        URL = "/blog"
-        weight = 5
+      name = "Experience"
+      URL = "#experience"
+      weight = 4
+
+      #[[languages.en.menus.header]]
+      #  name = "Blog"
+      #  URL = "/blog"
+      #  weight = 5
 
       [[languages.en.menus.header]]
         name = "Contact"
@@ -98,41 +103,42 @@ theme = "adritian-free-hugo-theme"
     weight = 0
       [[languages.de.menus.header]]
         name = 'Über mich'
-        URL = '/es/#about'
+        URL = '/de/#about'
         weight = 2
+
       [[languages.de.menus.header]]
         name = 'Portfolio'
-        URL = '/es/#portfolio'
+        URL = '/de/#portfolio'
         weight = 3
 
-      #  [[languages.de.menus.header]]
-      #  name = "Erfahrung"
-      #  URL = "/es/#experience"
-      #  weight = 4
-
       [[languages.de.menus.header]]
-        name = "Blog"
-        URL = "/es/blog"
-        weight = 5
+      name = "Erfahrung"
+      URL = "/de/#experience"
+      weight = 4
+
+      #[[languages.de.menus.header]]
+      #  name = "Blog"
+      #  URL = "/de/blog"
+      #  weight = 5
 
       [[languages.de.menus.header]]
         name = "Kontakt"
-        URL = "/es/#contact"
+        URL = "/de/#contact"
         weight = 6
 
       [[languages.de.menus.footer]]
         name = "Über mich"
-        URL = "/es/#about"
+        URL = "/de/#about"
         weight = 2
 
       [[languages.de.menus.footer]]
         name = "Portfolio"
-        URL = "/es/#portfolio"
+        URL = "/de/#portfolio"
         weight = 3
 
       [[languages.de.menus.footer]]
         name = "Kontakt"
-        URL = "/es/#contact"
+        URL = "/de/#contact"
         weight = 4
 
   [languages.fr]
@@ -152,10 +158,10 @@ theme = "adritian-free-hugo-theme"
         name = 'Portfolio'
         URL = '#portfolio'
         weight = 3
-      #  [[languages.fr.menus.header]]
-      #  name = "Experience"
-      #  URL = "#experience"
-      #  weight = 4
+      [[languages.fr.menus.header]]
+      name = "Experience"
+      URL = "#experience"
+      weight = 4
 
       [[languages.fr.menus.header]]
         name = "Blog"
@@ -182,8 +188,6 @@ theme = "adritian-free-hugo-theme"
         URL = "#contact"
         weight = 4
   
-  
-
 # Plugins
 [params.plugins]
 
@@ -228,3 +232,42 @@ sidebarWidth = "25" # percentage width of the sidebar
 showCategories = true
 showRecentPosts = true
 recentPostCount = 5
+
+[module]
+
+  [module.hugoVersion]
+    extended = true
+    min = "0.92.0"
+
+
+  [[module.mounts]]
+    source = "archetypes"
+    target = "archetypes"
+
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+
+  [[module.mounts]]
+    source = "i18n"
+    target = "i18n"
+
+  [[module.mounts]]
+    source = "layouts" 
+    target = "layouts"
+
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+
+  [[module.mounts]]
+    source = "node_modules/bootstrap/scss"
+    target = "assets/scss/bootstrap"
+
+  [[module.mounts]]
+    source = "node_modules/bootstrap/dist/js"
+    target = "assets/js/bootstrap"
+
+  [[module.mounts]]
+    source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    target = "assets/js/vendor/bootstrap.bundle.min.js"

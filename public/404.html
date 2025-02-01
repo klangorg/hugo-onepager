@@ -13,20 +13,21 @@
 <meta name="generator-mode" content='development'>
 <style data-generator="critical-css">
 </style>
-<link
-  rel="preload"
-  href="/css/bundle.css"
-  as="style"
-  onload="this.onload=null;this.rel='stylesheet'"
+    <link
+      rel="preload"
+      href="/css/bundle.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      
+    />
+    <noscript>
+      <link 
+        rel="stylesheet"
+        href="/css/bundle.css"
+        
+      />
+    </noscript>
   
-/>
-<noscript>
-  <link 
-    rel="stylesheet"
-    href="/css/bundle.css"
-    
-  />
-</noscript>
 <link rel="stylesheet" href="http://localhost:1313/scss/adritian.css" integrity="" crossorigin="anonymous"/>
 
 
@@ -65,8 +66,15 @@
     <nav class="navbar bd-navbar navbar-expand-lg navbar-light p-0">
       <div class="container-fluid">
         <a class="navbar-brand mx-auto" href="/">
-          <span>Max</span>
-          <span>Rößler</span>
+            
+            <img
+            src="http://localhost:1313/img/logo.svg"
+            alt="Max Rößler"
+            class="logo"
+            />
+            
+          <span></span>
+          <span></span>
         </a>
         <button
           class="navbar-toggler collapsed"
@@ -100,8 +108,8 @@
             </li>
             
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="/blog"
-                >BLOG</a
+              <a data-scroll class="nav-link" href="/#experience"
+                >EXPERIENCE</a
               >
             </li>
             
@@ -114,20 +122,21 @@
             
             <li class="nav-item">
             
-<nav id='mobile-header-language-selector' class='language-selector nav-item dropdown dropup nav-link'>
+<div id='mobile-header-language-selector' class='language-selector nav-item dropdown dropup nav-link'>
      
      
        
     
     <button
-      type="button"
       class="btn btn-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center show"
-      aria-expanded="false"
+      id='btn-select-language-mobile-header'
+      type="button"
+      aria-expanded="true"
       aria-controls="languages-dropdown-mobile-header"
       aria-expanded="true"
       data-bs-toggle="dropdown"
       data-bs-display="static"
-      aria-label="Select language"
+      aria-label='Language'
     >
       <span class="label">Language</span>
     </button>
@@ -144,7 +153,7 @@
       
       <li class="dropdown-item choice">
         <a
-          class="dropdown-item translation btn-link nav-link show"
+          class="dropdown-item translation btn-link d-flex align-items-center show"
           title="Deutsch"
           href="http://localhost:1313/de/404.html"
           >Deutsch</a
@@ -152,7 +161,7 @@
       </li>
       
     </ul>
-  </nav>
+  </div>
             </li>
             <li class="nav-item">
             
@@ -284,20 +293,21 @@
           <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-2">
             
             
-<nav id='footer-language-selector' class='language-selector nav-item dropdown dropup '>
+<div id='footer-language-selector' class='language-selector nav-item dropdown dropup '>
      
      
        
     
     <button
-      type="button"
       class="btn btn-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center show"
-      aria-expanded="false"
+      id='btn-select-language-footer'
+      type="button"
+      aria-expanded="true"
       aria-controls="languages-dropdown-footer"
       aria-expanded="true"
       data-bs-toggle="dropdown"
       data-bs-display="static"
-      aria-label="Select language"
+      aria-label='Language'
     >
       <span class="label">Language</span>
     </button>
@@ -314,7 +324,7 @@
       
       <li class="dropdown-item choice">
         <a
-          class="dropdown-item translation btn-link nav-link show"
+          class="dropdown-item translation btn-link d-flex align-items-center show"
           title="Deutsch"
           href="http://localhost:1313/de/404.html"
           >Deutsch</a
@@ -322,7 +332,7 @@
       </li>
       
     </ul>
-  </nav>
+  </div>
             
             
 <div id='footer-color-selector' class='nav-item dropdown dropup '>
@@ -411,7 +421,8 @@
 <script defer src='http://localhost:1313/js/library/smooth-scroll.polyfills.min.js'></script>
 <script defer src='http://localhost:1313/js/sticky-header.js'></script>
 <script defer src='http://localhost:1313/js/smooth-scroll-init.js'></script>
-<script defer src='http://localhost:1313/js/library/bootstrap.bundle.min.js'></script>
+<script defer src="/assets/js/vendor/bootstrap.bundle.min.0833b2e9c3a26c258476c46266e6877fc75218625162e0460be9a3a098a61c6c.js"></script>
+
 
 
 

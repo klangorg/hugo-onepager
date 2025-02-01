@@ -17,11 +17,17 @@ showcase:
     - icon: "linkedin"
       URL: "https://www.linkedin.com/in/max-r%C3%B6%C3%9Fler/"
 
-    - icon: "instagram"
-      URL: "https://www.instagram.com/zetxek/"
+    - icon: "square-xing"
+      URL: "https://www.xing.com/profile/Max_Roessler3"
 
-    - icon: "xing"
-      URL: "https://www.xing.com/profile/Max_Roessler10/"
+    - icon: "email"
+      URL: "mailto:mail@max-it.tech"
+
+    - icon: "square-github"
+      URL: "https://github.com/klangborste"
+
+    - icon: "freelancermap"
+      URL: "https://www.freelancermap.de/profil/it-administrator-system-engineer-it-consultant"
 
 # about
 about:
@@ -40,6 +46,10 @@ education:
     - university: "Berufsbildungswerk Dresden GmbH"
       year: "2008-2011"
       degree: "IT Specialist | Specializing in System Integration"
+
+    - university: "Mittelschule in Beierfeld"
+      year: "1998-2004"
+      degree: "Secondary school certificate"
 
 # experience
 ## to hiden a button, set the icon to an empty string
@@ -63,7 +73,7 @@ experience:
 
 # Client & Work
 client_and_work:
-  enable: true
+  enable: false
 
 # testimonial
 testimonial:
@@ -71,7 +81,7 @@ testimonial:
 
 # contact
 contact:
-  enable: false 
+  enable: true 
 
 # newsletter
 newsletter:

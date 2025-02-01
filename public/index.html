@@ -14,20 +14,21 @@
 <meta name="generator-mode" content='development'>
 <style data-generator="critical-css">
 </style>
-<link
-  rel="preload"
-  href="/css/bundle.css"
-  as="style"
-  onload="this.onload=null;this.rel='stylesheet'"
+    <link
+      rel="preload"
+      href="/css/bundle.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      
+    />
+    <noscript>
+      <link 
+        rel="stylesheet"
+        href="/css/bundle.css"
+        
+      />
+    </noscript>
   
-/>
-<noscript>
-  <link 
-    rel="stylesheet"
-    href="/css/bundle.css"
-    
-  />
-</noscript>
 <link rel="stylesheet" href="http://localhost:1313/scss/adritian.css" integrity="" crossorigin="anonymous"/>
 
 
@@ -66,8 +67,15 @@
     <nav class="navbar bd-navbar navbar-expand-lg navbar-light p-0">
       <div class="container-fluid">
         <a class="navbar-brand mx-auto" href="/">
-          <span>Max</span>
-          <span>Rößler</span>
+            
+            <img
+            src="http://localhost:1313/img/logo.svg"
+            alt="Max Rößler"
+            class="logo"
+            />
+            
+          <span></span>
+          <span></span>
         </a>
         <button
           class="navbar-toggler collapsed"
@@ -101,8 +109,8 @@
             </li>
             
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="/blog"
-                >BLOG</a
+              <a data-scroll class="nav-link" href="/#experience"
+                >EXPERIENCE</a
               >
             </li>
             
@@ -115,20 +123,21 @@
             
             <li class="nav-item">
             
-<nav id='mobile-header-language-selector' class='language-selector nav-item dropdown dropup nav-link'>
+<div id='mobile-header-language-selector' class='language-selector nav-item dropdown dropup nav-link'>
      
      
        
     
     <button
-      type="button"
       class="btn btn-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center show"
-      aria-expanded="false"
+      id='btn-select-language-mobile-header'
+      type="button"
+      aria-expanded="true"
       aria-controls="languages-dropdown-mobile-header"
       aria-expanded="true"
       data-bs-toggle="dropdown"
       data-bs-display="static"
-      aria-label="Select language"
+      aria-label='Language'
     >
       <span class="label">Language</span>
     </button>
@@ -145,7 +154,7 @@
       
       <li class="dropdown-item choice">
         <a
-          class="dropdown-item translation btn-link nav-link show"
+          class="dropdown-item translation btn-link d-flex align-items-center show"
           title="Deutsch"
           href="http://localhost:1313/de/"
           >Deutsch</a
@@ -153,7 +162,7 @@
       </li>
       
     </ul>
-  </nav>
+  </div>
             </li>
             <li class="nav-item">
             
@@ -292,12 +301,20 @@ This year, I celebrated my 12th anniversary in the IT industry. A lot has change
           ><i class="icon-linkedin"></i
         ></a>
         
-        <a href="https://www.instagram.com/zetxek/" target="_blank" rel="noopener noreferrer" aria-label="instagram"
-          ><i class="icon-instagram"></i
+        <a href="https://www.xing.com/profile/Max_Roessler3" target="_blank" rel="noopener noreferrer" aria-label="square-xing"
+          ><i class="icon-square-xing"></i
         ></a>
         
-        <a href="https://www.xing.com/profile/Max_Roessler10/" target="_blank" rel="noopener noreferrer" aria-label="xing"
-          ><i class="icon-xing"></i
+        <a href="mailto:mail@max-it.tech" target="_blank" rel="noopener noreferrer" aria-label="email"
+          ><i class="icon-email"></i
+        ></a>
+        
+        <a href="https://github.com/klangborste" target="_blank" rel="noopener noreferrer" aria-label="square-github"
+          ><i class="icon-square-github"></i
+        ></a>
+        
+        <a href="https://www.freelancermap.de/profil/it-administrator-system-engineer-it-consultant" target="_blank" rel="noopener noreferrer" aria-label="freelancermap"
+          ><i class="icon-freelancermap"></i
         ></a>
         
       </div>
@@ -376,6 +393,16 @@ This year, I celebrated my 12th anniversary in the IT industry. A lot has change
                         </div>
                     </div>
                     
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            <div class="education__date">1998-2004</div>
+                            <div class="education__title">Mittelschule in Beierfeld</div>
+                            <div class="education__degree">
+                                Secondary school certificate
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -399,6 +426,56 @@ This year, I celebrated my 12th anniversary in the IT industry. A lot has change
                 
                 
                 
+                
+                <div class="experience">
+                    <a href="/experience/demicon/">
+                        
+                        <div class="experience__date">07.2021 - 11.2022</div>
+                        <div class="experience__title">Atlassian Consultant</div>
+                        <div class="experience__company">demicon GmbH. <span class="experience__location">
+                            Berlin, Germany (Remote in Dresden)</span></div>
+                    </a>
+                </div>
+                
+                <div class="experience">
+                    <a href="/experience/stagil/">
+                        
+                        <div class="experience__date">10.2018 - 07.2021</div>
+                        <div class="experience__title">Atlassian Consultant</div>
+                        <div class="experience__company">STAGIL GmbH. <span class="experience__location">
+                            Wiesbaden, Germany (Remote in Dresden)</span></div>
+                    </a>
+                </div>
+                
+                <div class="experience">
+                    <a href="/experience/freelancing/">
+                        
+                        <div class="experience__date">11.2022 - now</div>
+                        <div class="experience__title">IT Freelancer</div>
+                        <div class="experience__company">Max Rößler. <span class="experience__location">
+                            Dresden, Germany (Remote)</span></div>
+                    </a>
+                </div>
+                
+                <div class="experience">
+                    <a href="/experience/das/">
+                        
+                        <div class="experience__date">08.2011 - 05.2013</div>
+                        <div class="experience__title">IT-Administrator</div>
+                        <div class="experience__company">DAS Environmental Expert GmbH. <span class="experience__location">
+                            Dresden, Germany</span></div>
+                    </a>
+                </div>
+                
+                <div class="experience">
+                    <a href="/experience/t-systems-mms/">
+                        
+                        <div class="experience__date">05.2013 - 10.2018</div>
+                        <div class="experience__title">System Engineer</div>
+                        <div class="experience__company">T-Systems Multimedia Solutions GmbH. <span class="experience__location">
+                            Dresden, Germany</span></div>
+                    </a>
+                </div>
                 
                 
             </div>
@@ -428,7 +505,7 @@ This year, I celebrated my 12th anniversary in the IT industry. A lot has change
     
     <div class="col-12 col-lg-4">
       <a
-        href='http://localhost:1313/img/general/user-smile-fill.svg'
+        href='http://localhost:1313/files/cv.pdf'
         class="btn btn-frameless  w-100"
         target="_blank"
         rel="noopener noreferrer"
@@ -467,26 +544,6 @@ This year, I celebrated my 12th anniversary in the IT industry. A lot has change
 
 
 
-
-<section id="portfolio" class="section section--border-bottom">
-  <div class="container client-works-container">
-    <h2 class="rad-animation-group rad-fade-down">
-      Clients &amp; Work
-    </h2>
-    <div class="row row--padded rad-animation-group rad-fade-down">
-      <div class="col-12">
-        <div class="clients">
-          
-                    
-          
-        </div>
-      </div>
-    </div>
-    
-              
-    
-  </div>
-</section>
 
 
 	
@@ -1004,6 +1061,60 @@ Disaster Recovery von OpenLDAP, SAMBA und UCS-SAML. Konfiguration und Administra
 
 	
 	
+<section id="contact" class="section section--contact pt-0">
+    <div class="container">
+        <div class="contact">
+            <h2>Contact</h2>
+            <div class="row pt-2">
+                <div class="col-12 col-lg-7">
+                    <form action="" method="">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="full_name" id="full_name"
+                                       placeholder='Full Name'/>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="email" id="email"
+                                       placeholder='Email Address'/>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <textarea name="message" id="message"
+                                          cols="30" rows="3" placeholder='Type Your Message Here'></textarea>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class=""></i>
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-5 contact__info">
+                    
+                    <h3>Phone Number</h3>
+                    <span>&#43;49 176 489 959 53</span>
+                    
+
+                    
+                    <h3>Email</h3>
+                    <span><a href="mailto:mail@max-it.tech">mail@max-it.tech</a></span>
+                    
+                    
+                    
+                    <h3>Address</h3>
+                    <span>Radeberger Straße 24b<br />01328 Dresden<br />Germany</span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 	
 	
@@ -1051,20 +1162,21 @@ Disaster Recovery von OpenLDAP, SAMBA und UCS-SAML. Konfiguration und Administra
           <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-2">
             
             
-<nav id='footer-language-selector' class='language-selector nav-item dropdown dropup '>
+<div id='footer-language-selector' class='language-selector nav-item dropdown dropup '>
      
      
        
     
     <button
-      type="button"
       class="btn btn-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center show"
-      aria-expanded="false"
+      id='btn-select-language-footer'
+      type="button"
+      aria-expanded="true"
       aria-controls="languages-dropdown-footer"
       aria-expanded="true"
       data-bs-toggle="dropdown"
       data-bs-display="static"
-      aria-label="Select language"
+      aria-label='Language'
     >
       <span class="label">Language</span>
     </button>
@@ -1081,7 +1193,7 @@ Disaster Recovery von OpenLDAP, SAMBA und UCS-SAML. Konfiguration und Administra
       
       <li class="dropdown-item choice">
         <a
-          class="dropdown-item translation btn-link nav-link show"
+          class="dropdown-item translation btn-link d-flex align-items-center show"
           title="Deutsch"
           href="http://localhost:1313/de/"
           >Deutsch</a
@@ -1089,7 +1201,7 @@ Disaster Recovery von OpenLDAP, SAMBA und UCS-SAML. Konfiguration und Administra
       </li>
       
     </ul>
-  </nav>
+  </div>
             
             
 <div id='footer-color-selector' class='nav-item dropdown dropup '>
@@ -1178,7 +1290,8 @@ Disaster Recovery von OpenLDAP, SAMBA und UCS-SAML. Konfiguration und Administra
 <script defer src='http://localhost:1313/js/library/smooth-scroll.polyfills.min.js'></script>
 <script defer src='http://localhost:1313/js/sticky-header.js'></script>
 <script defer src='http://localhost:1313/js/smooth-scroll-init.js'></script>
-<script defer src='http://localhost:1313/js/library/bootstrap.bundle.min.js'></script>
+<script defer src="/assets/js/vendor/bootstrap.bundle.min.0833b2e9c3a26c258476c46266e6877fc75218625162e0460be9a3a098a61c6c.js"></script>
+
 
 
 
