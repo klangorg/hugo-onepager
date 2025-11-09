@@ -1,12 +1,6 @@
 {
   "scripts": {
-    "start": "hugo server",
-    "serve": "hugo server --source exampleSite --themesDir ../.. --logLevel debug",
-    "build": "hugo build --source exampleSite --themesDir ../.. --logLevel debug --minify",
-    "test": "npm-run-all build --parallel --continue-on-error --aggregate-output test-*",
-    "test:e2e": "playwright test",
-    "test:e2e:ui": "playwright test --ui",
-    "test:e2e:debug": "playwright test --debug"
+    "start": "hugo server"
   },
   "devDependencies": {
     "@playwright/test": "^1.49.1",

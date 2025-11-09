@@ -280,6 +280,7 @@ iframe[src*="rocket.xana.space"],
 iframe[src*="livechat"] {
     background: transparent !important;
     border: none !important;
+
 }
 
 div[style*="position"][style*="fixed"][style*="bottom"] {
@@ -287,20 +288,39 @@ div[style*="position"][style*="fixed"][style*="bottom"] {
     border: none !important;
 }
 
-/* Dark mode - extra aggressive to override theme */
-[data-bs-theme="dark"] div[style*="position"][style*="fixed"] iframe,
-[data-bs-theme="dark"] iframe[src*="rocket.xana.space"],
-[data-bs-theme="dark"] iframe[src*="livechat"],
-[data-bs-theme="dark"] div[style*="position"][style*="fixed"] {
-    background: transparent !important;
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
+
+
+[class*="screen__"] {
+    --color: black !important;
+    color: black !important;
+}
+.screen__POUUM {
+    --color: black !important;
+    color: black !important;
 }
 
-[data-bs-theme="dark"] div[style*="position"][style*="fixed"][style*="bottom"] {
-    background: transparent !important;
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
+/* Force Rocket.Chat widget to always use light mode */
+.rocketchat-wrapper,
+.rocketchat-wrapper *,
+.rocketchat-widget,
+.rocketchat-container {
+    color-scheme: light !important;
+}
+
+/* Prevent dark mode from affecting the Rocket.Chat widget */
+[data-bs-theme="dark"] .rocketchat-wrapper,
+[data-bs-theme="dark"] .rocketchat-wrapper *,
+[data-bs-theme="dark"] .rocketchat-widget,
+[data-bs-theme="dark"] .rocketchat-container {
+    color-scheme: light !important;
+}
+
+/* Override prefers-color-scheme for the widget context */
+@media (prefers-color-scheme: dark) {
+    .rocketchat-wrapper,
+    .rocketchat-wrapper *,
+    .rocketchat-widget,
+    .rocketchat-container {
+        color-scheme: light !important;
+    }
 }
