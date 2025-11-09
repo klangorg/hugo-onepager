@@ -8,8 +8,10 @@ position: "System Manager, Baloise Lebensversicherung AG Deutschland"
 
 params:
   image:
-    x: "images/testimonial/anonym.jpg"
-    _2x: "images/testimonial/anonym@2x.jpg"
+    src: "images/testimonial/wiards.jpg"
+    x: "images/testimonial/wiards.jpg"
+    _2x: "images/testimonial/wiards@2x.jpg"
+    scale: 0.5
 
 ## For the content, you can use markdown
 ##  

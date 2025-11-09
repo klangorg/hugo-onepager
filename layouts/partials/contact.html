@@ -1,0 +1,110 @@
+{{/*
+  contact.html, used via {{ partial "contact.html" . }}
+  from contact-section.html
+  
+  Custom version - Contact info and social media only, no form
+*/}}
+
+{{- $contextType := printf "%T" . -}}
+{{- $isShortcode := (eq $contextType "*hugolib.ShortcodeWithPage") -}}
+
+{{ $sectionId := "contact" }}
+{{ if $isShortcode }}
+  {{ with .Get "sectionId" }}
+    {{ $sectionId = . }}
+  {{ end }}
+{{ end }}
+
+{{/*----------------------------------------------
+    TITLE
+------------------------------------------------*/}}
+{{ $title := "" }}
+{{ if $isShortcode }}
+  {{ $title = .Get "title" | default (i18n "contact_title") }}
+{{ else }}
+  {{ $title = i18n "contact_title" }}
+{{ end }}
+
+{{/*----------------------------------------------
+    CONTACT INFORMATION FIELDS
+------------------------------------------------*/}}
+{{ $phone := "" }}
+{{ $phone_display := "" }}
+{{ $email := "" }}
+{{ $location := "" }}
+{{ if $isShortcode }}
+  {{ $phone = .Get "contact_phone_number" | default (.Get "phone") | default .Site.Data.homepage.contact.phone }}
+  {{ $phone_display = .Get "contact_phone_number" | default (.Get "phone_display") | default .Site.Data.homepage.contact.phone_display | default $phone }}
+  {{ $email = .Get "contact_email_email" | default (.Get "email") | default .Site.Data.homepage.contact.email }}
+  {{ $location = .Get "contact_address_address" | default (.Get "location") | default .Site.Data.homepage.contact.location }}
+{{ else }}
+  {{ $phone = .Site.Data.homepage.contact.phone }}
+  {{ $phone_display = .Site.Data.homepage.contact.phone_display | default $phone }}
+  {{ $email = .Site.Data.homepage.contact.email }}
+  {{ $location = .Site.Data.homepage.contact.location }}
+{{ end }}
+
+{{/*----------------------------------------------
+    HEADING LABELS
+------------------------------------------------*/}}
+{{ $phone_heading := "" }}
+{{ $email_heading := "" }}
+{{ $location_heading := "" }}
+{{ $social_heading := "" }}
+{{ $details_heading := "" }}
+{{ if $isShortcode }}
+  {{ $phone_heading = .Get "contact_phone_title" | default (.Get "phone_heading") | default .Site.Data.homepage.contact.phone_heading | default (i18n "contact_phone_heading") }}
+  {{ $email_heading = .Get "contact_email_title" | default (.Get "email_heading") | default .Site.Data.homepage.contact.email_heading | default (i18n "contact_email_heading") }}
+  {{ $location_heading = .Get "contact_address_title" | default (.Get "location_heading") | default .Site.Data.homepage.contact.location_heading | default (i18n "contact_location_heading") }}
+  {{ $social_heading = .Get "contact_social_heading" | default (.Get "social_heading") | default .Site.Data.homepage.contact.social_heading | default (i18n "contact_social_heading") }}
+  {{ $details_heading = .Get "contact_details_heading" | default (.Get "details_heading") | default .Site.Data.homepage.contact.details_heading | default (i18n "contact_details_heading") }}
+{{ else }}
+  {{ $phone_heading = .Site.Data.homepage.contact.phone_heading | default (i18n "contact_phone_heading") }}
+  {{ $email_heading = .Site.Data.homepage.contact.email_heading | default (i18n "contact_email_heading") }}
+  {{ $location_heading = .Site.Data.homepage.contact.location_heading | default (i18n "contact_location_heading") }}
+  {{ $social_heading = .Site.Data.homepage.contact.social_heading | default (i18n "contact_social_heading") }}
+  {{ $details_heading = .Site.Data.homepage.contact.details_heading | default (i18n "contact_details_heading") }}
+{{ end }}
+
+<section {{if $sectionId}} id="{{ $sectionId }}"{{end}} class="section section--contact pt-0">
+    <div class="container">
+        <div class="contact w-100">
+            <h2>{{ $title }}</h2>
+
+            <div class="row pt-4">
+                <div class="col-12 col-md-6">
+                    {{ if .Site.Data.homepage.showcase.socialLinks }}
+                    <h5>{{ $social_heading }}</h5>
+                    <div class="platform-links pt-3">
+                        {{ range .Site.Data.homepage.showcase.socialLinks }}
+                        {{ if .URL }}
+                        <a href="{{ .URL | absURL }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .icon }}">
+                            <i class="icon-{{ .icon }}"></i>
+                        </a>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+
+                <div class="col-12 col-md-6 contact__info">
+                    <h5>{{ $details_heading }}</h5>
+                    {{ if $phone }}
+                    <p class="mb-0 mt-3"><em>{{ $phone_heading }}</em></p>
+                    <span>{{ $phone | safeHTML }}</span>
+                    {{ end }}
+
+                    {{ if $email }}
+                    <p class="mb-0 mt-3"><em>{{ $email_heading }}</em></p>
+                    <span>{{ $email | safeHTML }}</span>
+                    {{ end }}
+                    
+                    {{ if $location }}
+                    <p class="mb-0 mt-3"><em>{{ $location_heading }}</em></p>
+                    <span>{{ $location | safeHTML }}</span>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -8,8 +8,10 @@ position: "Senior Engagement Manager, Nortal AG"
 
 params:
   image:
+    src: "images/testimonial/bordihn.jpg"
     x: "images/testimonial/bordihn.jpg"
     _2x: "images/testimonial/bordihn@2x.jpg"
+    scale: 0.5
 
 ## For the content, you can use markdown
 ##  

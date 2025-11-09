@@ -8,8 +8,10 @@ position: "Head of Support & IT, Univention GmbH"
 
 params:
   image:
+    src: "images/testimonial/magenheim.jpg"
     x: "images/testimonial/magenheim.jpg"
     _2x: "images/testimonial/magenheim@2x.jpg"
+    scale: 0.5
 
 ## For the content, you can use markdown
 ##  

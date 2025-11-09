@@ -8,8 +8,10 @@ position: "Projektleiter, conuno GmBH"
 
 params:
   image:
+    src: "images/testimonial/rieck.jpg"
     x: "images/testimonial/rieck.jpg"
     _2x: "images/testimonial/rieck@2x.jpg"
+    scale: 0.5
 
 ## For the content, you can use markdown
 ##  

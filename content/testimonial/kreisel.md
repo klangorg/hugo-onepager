@@ -1,15 +1,17 @@
 ---
 date: '2024-11-25T21:50:45+01:00'
-title: 'Patrick Kreisels'
+title: 'Patrick Kreisel'
 draft: false
 
-name: "Patrick Kreisels"
+name: "Patrick Kreisel"
 position: "DevOps Engineer, Baloise Lebensversicherung AG Deutschland"
 
 params:
   image:
+    src: "images/testimonial/kreisel.jpg"
     x: "images/testimonial/kreisel.jpg"
     _2x: "images/testimonial/kreisel@2x.jpg"
+    scale: 0.5
 
 ## For the content, you can use markdown
 ##  

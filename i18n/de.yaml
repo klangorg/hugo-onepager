@@ -1,9 +1,9 @@
 ## Header
 - id: "logo_text1"
-  translation: "Max"
+  translation: ""
 
 - id: "logo_text2"
-  translation: "Rößler"
+  translation: ""
 
 - id: "logo_alt"
   translation: "Max Rößler"
@@ -90,13 +90,13 @@
   translation: "Erfahrung"
 
 - id: "experience_description"
-  translation: "Hier können Sie ein wenig über Ihre Erfahrungen berichten. Jahre der Gesamterfahrung, Spezialisierung, usw."
+  translation: "Mit über 12 Jahren Berufserfahrung im IT-Bereich habe ich mich vom IT-Administrator zum spezialisierten Consultant entwickelt. Meine Expertise umfasst Atlassian-Systeme, Linux-Administration, Automatisierung, Monitoring und Cloud-Migrationen."
 
 - id: "experience_button"
   translation: "LinkedIn" 
 
 - id: "experience_button_url"
-  translation: "https://www.linkedin.com/in/max-r%C3%B6%C3%9Fler/"
+  translation: "https://www.linkedin.com/in/roessler-max/"
 
 - id: "experience_button2"
   translation: "Lebenslauf"
@@ -112,7 +112,7 @@
 
 ## Homepage client & work
 - id: "client_work_title"
-  translation: "Kunden & Arbeit"
+  translation: "Technologie-Stack & Kompetenzen"
 
 ## Homepage newsletter
 - id: "newsletter_title"
@@ -144,11 +144,29 @@
 - id: "contact_button"
   translation: "Nachricht senden"
 
+- id: "contact_button_text"
+  translation: "Nachricht senden"
+
+- id: "contact_name_placeholder"
+  translation: "Dein Name"
+
+- id: "contact_email_placeholder"
+  translation: "Deine E-Mail"
+
+- id: "contact_phone_placeholder"
+  translation: "Deine Telefonnummer"
+
+- id: "contact_message_placeholder"
+  translation: "Deine Nachricht"
+
 - id: "contact_form_name"
   translation: "Vollständiger Name"
 
 - id: "contact_form_email"
   translation: "E-Mail Adresse"
+
+- id: "contact_form_phone"
+  translation: "Telefonnummer"
 
 - id: "contact_form_message"
   translation: "Geben Sie hier Ihre Nachricht ein"
@@ -156,17 +174,32 @@
 - id: "contact_phone_title"
   translation: "Rufnummer"
 
+- id: "contact_phone_heading"
+  translation: "Meine Telefonnummer"
+
 - id: "contact_phone_number"
-  translation: "+49 176 489 959 53"
+  translation: '<a href="tel:+4917648995953">+49 176 489 959 53</a>'
 
 - id: "contact_email_title"
   translation: "Email"
+
+- id: "contact_email_heading"
+  translation: "Meine E-Mail"
 
 - id: "contact_email_email"
   translation: '<a href="mailto:mail@max-it.tech">mail@max-it.tech</a>'
 
 - id: "contact_address_title"
   translation: "Adresse"
+
+- id: "contact_location_heading"
+  translation: "Mein Standort"
+
+- id: "contact_social_heading"
+  translation: "Soziale Medien"
+
+- id: "contact_details_heading"
+  translation: "Kontaktdetails"
 
 - id: "contact_address_address"
   translation: "Radeberger Straße 24b<br />01328 Dresden<br />Germany"
