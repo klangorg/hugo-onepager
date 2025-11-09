@@ -274,29 +274,45 @@ footer.footer .footer_links ul.navbar-nav {
     font-size: 0.65rem !important;
 }
 
-/* Rocket.Chat Widget - Remove white background in light and dark mode */
+/* Rocket.Chat Widget - Dark background for white text visibility */
 div[style*="position"][style*="fixed"] iframe,
 iframe[src*="rocket.xana.space"],
 iframe[src*="livechat"] {
-    background: transparent !important;
     border: none !important;
-
+    box-shadow: none !important;
 }
 
 div[style*="position"][style*="fixed"][style*="bottom"] {
-    background: transparent !important;
     border: none !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
 }
 
-
-
-[class*="screen__"] {
-    --color: black !important;
-    color: black !important;
+/* Make the Rocket.Chat button smaller and add offset from corner */
+.rocketchat-widget[data-state="closed"] {
+    transform: scale(0.7) !important;
+    transform-origin: bottom right !important;
+    margin-right: 20px !important;
+    margin-bottom: 20px !important;
 }
-.screen__POUUM {
-    --color: black !important;
-    color: black !important;
+
+/* Add offset for the opened chat window too */
+.rocketchat-widget {
+    margin-right: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+/* Force dark text colors in the chat interface */
+.rocketchat-widget iframe,
+iframe[src*="rocket.xana.space"],
+iframe[src*="livechat"] {
+    color: #000000 !important;
+}
+
+/* Try to override text colors inside chat */
+.rocketchat-container *,
+.rocketchat-widget * {
+    color: #000000 !important;
 }
 
 /* Force Rocket.Chat widget to always use light mode */
@@ -323,4 +339,17 @@ div[style*="position"][style*="fixed"][style*="bottom"] {
     .rocketchat-container {
         color-scheme: light !important;
     }
+}
+
+/* Override iframe internal styles - force black text color */
+.screen__POUUM {
+    --color: #000000 !important;
+    color: #000000 !important;
+}
+
+/* Additional overrides for Rocket.Chat iframe header and content */
+iframe[src*="rocket.xana.space"] .header__Ma8Sh,
+iframe[src*="livechat"] .header__Ma8Sh {
+    --color: #000000 !important;
+    color: #000000 !important;
 }

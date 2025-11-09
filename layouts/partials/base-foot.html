@@ -52,15 +52,18 @@
 	h.parentNode.insertBefore(j, h);
 })(window, document, 'script', 'https://rocket.xana.space/livechat');
 
-// Force light theme on Rocket.Chat widget
+// Force light theme with proper API
 RocketChat(function() {
-	// Try various methods to force light theme
-	if (this.setTheme) {
-		this.setTheme('light');
-	}
-	if (this.setGuestTheme) {
-		this.setGuestTheme('light');
-	}
+	// Set complete theme configuration with all color options
+	this.setTheme({
+		color: '#ffffff',              // Header background - white
+		fontColor: '#000000',          // Header text - black
+		iconColor: '#000000',          // Icons - black
+		title: 'Support',
+		offlineTitle: 'Support',
+		guestBubbleBackgroundColor: '#f0f0f0',  // Guest message bubbles
+		agentBubbleBackgroundColor: '#0084ff'   // Agent message bubbles
+	});
 });
 </script>
 </div>
