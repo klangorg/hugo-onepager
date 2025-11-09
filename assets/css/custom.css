@@ -353,3 +353,28 @@ iframe[src*="livechat"] .header__Ma8Sh {
     --color: #000000 !important;
     color: #000000 !important;
 }
+
+/* Bottom Arrow Overlay - fixed to viewport, points at Rocket.Chat widget */
+.bottom-arrow-overlay {
+    position: fixed; /* Fixed to viewport like Rocket.Chat */
+    bottom: 20px; /* Match Rocket.Chat positioning */
+    right: 100px; /* More to the left */
+    z-index: 998; /* Just below Rocket.Chat widget */
+    pointer-events: none; /* Non-interactive, purely decorative */
+    transform: scale(1.2); /* Larger size */
+    transform-origin: bottom right; /* Arrow tip stays anchored at bottom-right */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out; /* Smooth fade in/out */
+}
+
+.bottom-arrow-overlay.visible {
+    opacity: 1; /* Show when contact section is visible */
+}
+
+.bottom-arrow-overlay img {
+    display: block;
+    max-width: 500px; /* Larger maximum size */
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
