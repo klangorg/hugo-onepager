@@ -357,11 +357,12 @@ iframe[src*="livechat"] .header__Ma8Sh {
 /* Bottom Arrow Overlay - fixed to viewport, points at Rocket.Chat widget */
 .bottom-arrow-overlay {
     position: fixed; /* Fixed to viewport like Rocket.Chat */
-    bottom: 20px; /* Match Rocket.Chat positioning */
-    right: 100px; /* More to the left */
+    bottom: 40px; /* More bottom margin */
+    right: 80px; /* More right margin */
+    left: 20px; /* Give it full width minus right margin */
     z-index: 998; /* Just below Rocket.Chat widget */
     pointer-events: none; /* Non-interactive, purely decorative */
-    transform: scale(1.2); /* Larger size */
+    transform: scale(1); /* Default scale */
     transform-origin: bottom right; /* Arrow tip stays anchored at bottom-right */
     opacity: 0; /* Hidden by default */
     transition: opacity 0.3s ease-in-out; /* Smooth fade in/out */
@@ -373,8 +374,18 @@ iframe[src*="livechat"] .header__Ma8Sh {
 
 .bottom-arrow-overlay img {
     display: block;
-    max-width: 500px; /* Larger maximum size */
+    width: 100%; /* Full width by default */
+    max-width: 500px; /* Maximum size for large screens */
     height: auto;
     margin: 0;
     padding: 0;
+}
+
+/* Responsive sizing for large screens only */
+@media (min-width: 769px) {
+    .bottom-arrow-overlay {
+        right: 100px; /* More to the left on desktop */
+        left: auto; /* Remove left constraint on desktop */
+        transform: scale(1.2); /* Larger scale only on desktop */
+    }
 }
