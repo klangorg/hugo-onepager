@@ -274,96 +274,23 @@ footer.footer .footer_links ul.navbar-nav {
     font-size: 0.65rem !important;
 }
 
-/* Rocket.Chat Widget - Dark background for white text visibility */
-div[style*="position"][style*="fixed"] iframe,
+/* Rocket.Chat Widget - Transparent styling and forced light mode */
 iframe[src*="rocket.xana.space"],
 iframe[src*="livechat"] {
-    border: none !important;
-    box-shadow: none !important;
-}
-
-div[style*="position"][style*="fixed"][style*="bottom"] {
-    border: none !important;
-    border-radius: 12px !important;
-    box-shadow: none !important;
-}
-
-/* Make the Rocket.Chat button smaller and add offset from corner */
-.rocketchat-widget[data-state="closed"] {
-    transform: scale(0.7) !important;
-    transform-origin: bottom right !important;
-    margin-right: 20px !important;
-    margin-bottom: 20px !important;
-}
-
-/* Add offset for the opened chat window too */
-.rocketchat-widget {
-    margin-right: 20px !important;
-    margin-bottom: 20px !important;
-}
-
-/* Force dark text colors in the chat interface */
-.rocketchat-widget iframe,
-iframe[src*="rocket.xana.space"],
-iframe[src*="livechat"] {
-    color: #000000 !important;
-}
-
-/* Try to override text colors inside chat */
-.rocketchat-container *,
-.rocketchat-widget * {
-    color: #000000 !important;
-}
-
-/* Force Rocket.Chat widget to always use light mode */
-.rocketchat-wrapper,
-.rocketchat-wrapper *,
-.rocketchat-widget,
-.rocketchat-container {
+    background: transparent !important;
     color-scheme: light !important;
-}
-
-/* Prevent dark mode from affecting the Rocket.Chat widget */
-[data-bs-theme="dark"] .rocketchat-wrapper,
-[data-bs-theme="dark"] .rocketchat-wrapper *,
-[data-bs-theme="dark"] .rocketchat-widget,
-[data-bs-theme="dark"] .rocketchat-container {
-    color-scheme: light !important;
-}
-
-/* Override prefers-color-scheme for the widget context */
-@media (prefers-color-scheme: dark) {
-    .rocketchat-wrapper,
-    .rocketchat-wrapper *,
-    .rocketchat-widget,
-    .rocketchat-container {
-        color-scheme: light !important;
-    }
-}
-
-/* Override iframe internal styles - force black text color */
-.screen__POUUM {
-    --color: #000000 !important;
-    color: #000000 !important;
-}
-
-/* Additional overrides for Rocket.Chat iframe header and content */
-iframe[src*="rocket.xana.space"] .header__Ma8Sh,
-iframe[src*="livechat"] .header__Ma8Sh {
-    --color: #000000 !important;
-    color: #000000 !important;
 }
 
 /* Bottom Arrow Overlay - fixed to viewport, points at Rocket.Chat widget */
 .bottom-arrow-overlay {
     position: fixed; /* Fixed to viewport like Rocket.Chat */
     bottom: 40px; /* More bottom margin */
-    right: 80px; /* More right margin */
-    left: 20px; /* Give it full width minus right margin */
+    left: 80px; /* Position on the left side */
+    right: auto; /* Remove right positioning */
     z-index: 998; /* Just below Rocket.Chat widget */
     pointer-events: none; /* Non-interactive, purely decorative */
     transform: scale(1); /* Default scale */
-    transform-origin: bottom right; /* Arrow tip stays anchored at bottom-right */
+    transform-origin: bottom left; /* Arrow tip stays anchored at bottom-left */
     opacity: 0; /* Hidden by default */
     transition: opacity 0.3s ease-in-out; /* Smooth fade in/out */
 }
@@ -384,8 +311,7 @@ iframe[src*="livechat"] .header__Ma8Sh {
 /* Responsive sizing for large screens only */
 @media (min-width: 769px) {
     .bottom-arrow-overlay {
-        right: 100px; /* More to the left on desktop */
-        left: auto; /* Remove left constraint on desktop */
+        left: 100px; /* More spacing on desktop */
         transform: scale(1.2); /* Larger scale only on desktop */
     }
 }
