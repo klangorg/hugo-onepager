@@ -2,9 +2,9 @@
 - id: "meta_title"
   translation: "Max Rößler - IT Freelancer & DevOps Engineer | Dresden, Germany"
 - id: "meta_description"
-  translation: "Experienced IT freelancer and DevOps engineer with 12+ years expertise in CI/CD pipelines, Infrastructure as Code, Docker, automation, Linux administration, and cloud migrations. Based in Dresden, Germany."
+  translation: "Experienced IT freelancer and DevOps engineer with 12+ years expertise in CI/CD pipelines, Infrastructure as Code, Docker, Kubernetes, Linux administration, automation, and cloud migrations. Based in Dresden, Germany."
 - id: "meta_keywords"
-  translation: "Max Rößler, IT Freelancer, DevOps Engineer, CI/CD, Infrastructure as Code, Docker, Automation, Linux, Cloud Migration, IT Consultant, Dresden, Germany"
+  translation: "Max Rößler, IT Freelancer, DevOps Engineer, CI/CD, Infrastructure as Code, Docker, Kubernetes, Linux, Cloud Migration, Automation, IT Consultant, Dresden, Germany"
 - id: "meta_author"
   translation: "Max Rößler"
 - id: "meta_image"
@@ -85,7 +85,7 @@ This year, I celebrated my 12th anniversary in the IT industry. A lot has change
       Open and direct communication is one of my core values. As an independent DevOps specialist, I'm committed to peaceful civil development and deliberately choose not to work with military or arms industry clients.
       </p>
       <p class="lead">
-      In my free time, I run home server projects with Docker, automation, and monitoring stacks. There I experiment with new technologies and keep my skills current. Beyond IT, I balance my technical interests with environmental consciousness and nature-oriented gardening.
+      In my free time, I run home server projects with Docker, Ansible, and monitoring stacks. There I experiment with new technologies and keep my skills current. Beyond IT, I balance my technical interests with environmental consciousness and nature-oriented gardening.
     </p>
 
 - id: "about_button"
