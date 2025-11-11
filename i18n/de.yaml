@@ -1,3 +1,15 @@
+## Meta tags
+- id: "meta_title"
+  translation: "Max Rößler - IT Freelancer & DevOps Engineer | Dresden, Deutschland"
+- id: "meta_description"
+  translation: "Erfahrener IT Freelancer und DevOps Engineer mit 12+ Jahren Expertise in CI/CD-Pipelines, Infrastructure as Code, Docker, Kubernetes, Linux-Administration, Automatisierung und Cloud-Migrationen. Ansässig in Dresden, Deutschland."
+- id: "meta_keywords"
+  translation: "Max Rößler, IT Freelancer, DevOps Engineer, CI/CD, Infrastructure as Code, Docker, Kubernetes, Linux, Cloud Migration, Automatisierung, IT Berater, Dresden, Deutschland"
+- id: "meta_author"
+  translation: "Max Rößler"
+- id: "meta_image"
+  translation: "/android-chrome-512x512.png"
+
 ## Header
 - id: "logo_text1"
   translation: ""
@@ -37,10 +49,10 @@
 
 ## Homepage head title
 - id: "head_title"
-  translation: "IT-Kompetenz für Ihren digitalen Erfolg"
+  translation: "Max Rößler - IT Freelancer & DevOps Engineer | Dresden"
 
 - id: "head_description"
-  translation: "ieses Hugo-Theme (Adritian) basiert auf Bootstrap und verfügt über Funktionen, die es für eine persönliche Website, ein Portfolio oder eine andere Art von Single-Page-Anwendungen geeignet machen."
+  translation: "Erfahrener IT Freelancer und DevOps Engineer mit 12+ Jahren Expertise in CI/CD, Infrastructure as Code, Container-Technologien, Linux-Administration, Automatisierung und Cloud-Migrationen."
 
 ## Homepage showcase
 - id: "showcase_title"

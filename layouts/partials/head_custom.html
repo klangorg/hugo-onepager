@@ -1,0 +1,52 @@
+<!-- Favicons and App Icons -->
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/android-chrome-192x192.png" type="image/png" sizes="192x192">
+<link rel="icon" href="/android-chrome-512x512.png" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- Web App Manifest -->
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Windows Tiles -->
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#1a1a1a">
+
+<!-- Additional SEO Meta Tags -->
+{{- if .Site.Params.author }}
+<meta name="author" content="{{ .Site.Params.author }}">
+{{- end }}
+{{- if .Site.Params.keywords }}
+<meta name="keywords" content="{{ delimit .Site.Params.keywords ", " }}">
+{{- end }}
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ i18n "head_title" }}">
+<meta property="og:description" content="{{ i18n "head_description" }}">
+{{- if .Site.Params.images }}
+<meta property="og:image" content="{{ index .Site.Params.images 0 | absURL }}">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="{{ .Site.Params.title }}">
+{{- end }}
+<meta property="og:locale" content="{{ .Site.LanguageCode }}">
+<meta property="og:site_name" content="{{ .Site.Params.title }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ .Permalink }}">
+<meta name="twitter:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ i18n "head_title" }}">
+<meta name="twitter:description" content="{{ i18n "head_description" }}">
+{{- if .Site.Params.images }}
+<meta name="twitter:image" content="{{ index .Site.Params.images 0 | absURL }}">
+<meta name="twitter:image:alt" content="{{ .Site.Params.title }}">
+{{- end }}
+
+<!-- Mobile Web App Capable -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Max Rößler">
