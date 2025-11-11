@@ -20,7 +20,7 @@ Meine Kunden schätzen besonders die lösungsorientierte Arbeitsweise, die Fähi
 **Kernkompetenzen:**
 - DevOps Engineering und CI/CD-Pipeline-Entwicklung
 - Infrastructure as Code (Ansible, Terraform)
-- Container-Technologien (Docker, Kubernetes)
+- Container-Technologien (Docker, Automation)
 - Linux-Administration und System Engineering
 - Cloud-Migration und Infrastruktur-Optimierung
 - Security-Implementierung und Best Practices

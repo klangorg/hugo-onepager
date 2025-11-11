@@ -33,7 +33,7 @@ skill_categories:
         level: 80
         years: "3+"
         description: "Container development, Deployment configuration, Build strategies, Routes"
-      - name: "Kubernetes"
+      - name: "Automation"
         level: 75
         years: "5+"
         description: "Pods, Services, Deployments, ConfigMaps, Persistent volumes"
