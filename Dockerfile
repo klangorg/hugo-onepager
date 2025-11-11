@@ -15,7 +15,7 @@ COPY . .
 
 # Bootstrap SCSS und JS in Hugo Assets verfügbar machen
 RUN mkdir -p assets/scss/bootstrap && \
-    cp -r node_modules/bootstrap/scss/* assets/scss/bootstrap/ && \
+    cp -r node_modules/bootstrap/scss/* assets/scss/bootstrap/ && \ 
     mkdir -p assets/js/vendor && \
     cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js assets/js/vendor/
 
