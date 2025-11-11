@@ -9,7 +9,7 @@ duration: "07.2021 - 11.2022"
 
 ---
 
-At demicon GmbH, I was able to further deepen my expertise in the Atlassian ecosystem and successfully implement demanding migration projects. As an Atlassian Consultant, I was responsible for supporting complex customer environments and carrying out strategically important cloud migrations.
+At demicon GmbH, I was able to further deepen my expertise in the Atlassian ecosystem and successfully implement demanding migration projects. In this position, I was responsible for supporting complex customer environments and carrying out strategically important cloud migrations.
 
 A highlight of my time at demicon was the successful planning and execution of several Server/Data Center to Atlassian Cloud migrations. These projects required not only technical know-how but also strong communication skills to guide stakeholders through the transformation process and ensure that business processes were not impacted during the migration.
 
