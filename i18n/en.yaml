@@ -100,7 +100,7 @@ This year, I celebrated my 12th anniversary in the IT industry. A lot has change
   translation: "Experience"
 
 - id: "experience_description"
-  translation: "With over 12 years of professional IT experience, I've evolved from IT Administrator to DevOps Engineer. My expertise includes DevOps practices, Infrastructure as Code, container technologies, Linux administration, automation, monitoring, and cloud migrations."
+  translation: "With over 12 years of professional IT experience, I've evolved from IT administrator to DevOps engineer. My expertise includes DevOps practices, Infrastructure as Code, container technologies, Linux administration, automation, monitoring, and cloud migrations."
 
 - id: "experience_button"
   translation: "LinkedIn" 

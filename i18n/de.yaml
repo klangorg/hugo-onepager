@@ -90,7 +90,7 @@
   translation: "Erfahrung"
 
 - id: "experience_description"
-  translation: "Mit über 12 Jahren Berufserfahrung im IT-Bereich habe ich mich vom IT-Administrator zum DevOps Engineer entwickelt. Meine Expertise umfasst DevOps-Praktiken, Infrastructure as Code, Container-Technologien, Linux-Administration, Automatisierung, Monitoring und Cloud-Migrationen."
+  translation: "Mit über 12 Jahren Berufserfahrung im IT-Bereich habe ich mich vom IT-Administrator zum DevOps-Engineer entwickelt. Meine Expertise umfasst DevOps-Praktiken, Infrastructure as Code, Container-Technologien, Linux-Administration, Automatisierung, Monitoring und Cloud-Migrationen."
 
 - id: "experience_button"
   translation: "LinkedIn" 

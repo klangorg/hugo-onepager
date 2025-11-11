@@ -267,6 +267,6 @@ skill_categories:
         description: "Confluence, Markdown, Diagramme, Runbooks, Wissensdatenbank, SOPs"
 ---
 
-Als DevOps Engineer und Systemadministrator mit über 12 Jahren Erfahrung habe ich umfassende Expertise in Linux-Systemadministration, DevOps-Praktiken, Container-Technologien, Monitoring-Lösungen und IT-Automatisierung entwickelt. Meine technischen Fähigkeiten basieren auf solider praktischer Erfahrung aus zahlreichen Projekten in mittelständischen und Enterprise-Umgebungen.
+Als DevOps-Engineer und Systemadministrator mit über 12 Jahren Erfahrung habe ich umfassende Expertise in Linux-Systemadministration, DevOps-Praktiken, Container-Technologien, Monitoring-Lösungen und IT-Automatisierung entwickelt. Meine technischen Fähigkeiten basieren auf solider praktischer Erfahrung aus zahlreichen Projekten in mittelständischen und Enterprise-Umgebungen.
 
 Mein Fokus liegt auf zuverlässigen, gut dokumentierten Lösungen und exzellentem Support. Ich kombiniere tiefgehendes technisches Know-how mit ausgeprägten Troubleshooting-Fähigkeiten und der Fähigkeit, komplexe technische Sachverhalte verständlich zu vermitteln. Besonders stark bin ich in der Administration von Atlassian-Produkten, Linux-Systemen und Monitoring-Infrastrukturen.
