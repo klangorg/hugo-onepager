@@ -58,16 +58,16 @@ html {
     display: none !important;
 }
 
-/* Reduce space between header and showcase section */
+/* Ensure showcase section never overlaps navbar */
 .rad-showcase {
-    margin-top: -80px !important;
-    padding-top: 60px !important;
+    margin-top: 0 !important;
+    padding-top: 80px !important;
 }
 
 @media (min-width: 992px) {
     .rad-showcase {
-        margin-top: -100px !important;
-        padding-top: 80px !important;
+        margin-top: 0 !important;
+        padding-top: 100px !important;
     }
 }
 
