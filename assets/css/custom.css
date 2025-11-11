@@ -322,3 +322,29 @@ iframe[src*="livechat"] {
         margin-left: 0 !important;
     }
 }
+
+/* Fix testimonial image aspect ratio on all screen sizes */
+.testimonial__author-image,
+.testimonial picture img,
+picture.testimonial img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    max-width: 52px !important;
+    max-height: 52px !important;
+}
+
+/* Ensure testimonial picture container doesn't stretch */
+picture.testimonial {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    max-width: 52px !important;
+}
+
+/* Add padding between testimonial image and text */
+.testimonial__author-info {
+    padding-left: 16px !important;
+}
