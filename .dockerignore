@@ -1,0 +1,39 @@
+# Git
+.git
+.gitignore
+
+# Node
+node_modules
+npm-debug.log
+
+# Hugo
+/public
+/resources/_gen
+/.hugo_build.lock
+
+# Editor
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# CI/CD
+.github
+
+# Docs
+README.md
+LICENSE
+
+# Playwright Tests
+tests
+playwright-report

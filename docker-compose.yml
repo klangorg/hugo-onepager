@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  hugo-onepager:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hugo-onepager
+    restart: unless-stopped
+    networks:
+      - traefik
+    labels:
+      # Traefik aktivieren
+      - "traefik.enable=true"
+      
+      # HTTP Router
+      - "traefik.http.routers.hugo-onepager.rule=Host(`deine-domain.de`)"
+      - "traefik.http.routers.hugo-onepager.entrypoints=websecure"
+      - "traefik.http.routers.hugo-onepager.tls=true"
+      - "traefik.http.routers.hugo-onepager.tls.certresolver=letsencrypt"
+      
+      # HTTP zu HTTPS Redirect
+      - "traefik.http.routers.hugo-onepager-http.rule=Host(`deine-domain.de`)"
+      - "traefik.http.routers.hugo-onepager-http.entrypoints=web"
+      - "traefik.http.routers.hugo-onepager-http.middlewares=redirect-to-https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.permanent=true"
+      
+      # Service Definition
+      - "traefik.http.services.hugo-onepager.loadbalancer.server.port=80"
+      
+      # Security Headers (Optional aber empfohlen)
+      - "traefik.http.middlewares.hugo-security.headers.customresponseheaders.X-Robots-Tag=all"
+      - "traefik.http.middlewares.hugo-security.headers.sslRedirect=true"
+      - "traefik.http.middlewares.hugo-security.headers.stsSeconds=315360000"
+      - "traefik.http.middlewares.hugo-security.headers.browserXssFilter=true"
+      - "traefik.http.middlewares.hugo-security.headers.contentTypeNosniff=true"
+      - "traefik.http.middlewares.hugo-security.headers.forceSTSHeader=true"
+      - "traefik.http.middlewares.hugo-security.headers.stsIncludeSubdomains=true"
+      - "traefik.http.middlewares.hugo-security.headers.stsPreload=true"
+      - "traefik.http.routers.hugo-onepager.middlewares=hugo-security"
+
+networks:
+  traefik:
+    external: true

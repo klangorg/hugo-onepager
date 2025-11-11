@@ -1,5 +1,5 @@
 ---
-date: 2025-02-01T00:00:00+01:00
+date: 2025-10-01T00:00:00+01:00
 draft: false
 title: "Atlassian Consultant"
 jobTitle: "Atlassian Consultant"
