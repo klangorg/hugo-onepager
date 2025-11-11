@@ -315,3 +315,10 @@ iframe[src*="livechat"] {
         transform: scale(1.2); /* Larger scale only on desktop */
     }
 }
+
+/* Fix platform links positioning - remove negative margin on mobile */
+@media (max-width: 991px) {
+    .showcase-section .platform-links.shortcode {
+        margin-left: 0 !important;
+    }
+}

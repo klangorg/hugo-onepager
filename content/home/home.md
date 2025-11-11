@@ -9,6 +9,14 @@ draft = false
     imgScale="0.5"
  >}}
 
+{{< platform-links >}}
+    {{< link icon="linkedin" url="https://www.linkedin.com/in/roessler-max/" >}}
+    {{< link icon="square-xing" url="https://www.xing.com/profile/Max_Roessler3" >}}
+    {{< link icon="email" url="mailto:mail@max-it.tech" >}}
+    {{< link icon="square-github" url="https://github.com/klangborste" >}}
+    {{< link icon="freelancermap" url="https://www.freelancermap.de/profil/it-administrator-system-engineer-it-consultant" >}}
+{{< /platform-links >}}
+
 {{< /showcase-section >}}
 
 {{< about-section
