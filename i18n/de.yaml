@@ -76,14 +76,14 @@
   translation: "Wer bin ich?"
 
 - id: "about_content"
-  translation:  <p class=„lead“>
-      Als IT-Fachmann glaube ich an eine einfühlsame Analyse, um sowohl die Bedürfnisse der Entwickler als auch der Nutzer zu verstehen. Meine ständige Lernbereitschaft wird von der Begeisterung angetrieben, neue Lösungen zu entdecken und die richtigen Verbindungen herzustellen.
+  translation:  <p class="lead">
+      Als DevOps-Engineer liegt mein Fokus auf der Automatisierung von Infrastrukturen und der Optimierung von Deployment-Prozessen. Ich entwickle skalierbare Lösungen mit Infrastructure as Code, Container-Orchestrierung und CI/CD-Pipelines. Meine Arbeitsweise kombiniert technische Tiefe mit pragmatischem Problemlösen.
       </p>
-      <p class=„lead“>
-      Offene und direkte Kommunikation ist einer meiner zentralen Werte. Als unabhängiger Berater setze ich mich für eine friedliche zivile Entwicklung ein und arbeite bewusst nicht mit militärischen oder rüstungsindustriellen Kunden zusammen.
+      <p class="lead">
+      Offene und direkte Kommunikation ist einer meiner zentralen Werte. Als unabhängiger DevOps-Spezialist setze ich mich für eine friedliche zivile Entwicklung ein und arbeite bewusst nicht mit militärischen oder rüstungsindustriellen Kunden zusammen.
       </p>
-      <p class=„lead“>
-      Ich bringe mein technisches Interesse mit Umweltbewusstsein und naturnaher Gartenarbeit in Einklang. Neben meiner beruflichen Tätigkeit arbeite ich in meiner Freizeit gerne an verschiedenen Heimserver-Projekten und erweitere so kontinuierlich meine IT-Kenntnisse.
+      <p class="lead">
+      In meiner Freizeit betreibe ich Heimserver-Projekte mit Docker, Kubernetes und Monitoring-Stacks. Dort experimentiere ich mit neuen Technologien und halte meine Skills aktuell. Neben der IT bringe ich mein technisches Interesse mit Umweltbewusstsein und naturnaher Gartenarbeit in Einklang.
     </p>
 
 - id: "about_button"
