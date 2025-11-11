@@ -100,13 +100,13 @@ This year, I celebrated my 12th anniversary in the IT industry. A lot has change
   translation: "Experience"
 
 - id: "experience_description"
-  translation: "This is where you can highlight a bit over your experience. Years of total experience, specialization, etc."
+  translation: "With over 12 years of professional IT experience, I've evolved from IT Administrator to specialized Consultant. My expertise includes Atlassian systems, Linux administration, automation, monitoring, and cloud migrations."
 
 - id: "experience_button"
   translation: "LinkedIn" 
 
 - id: "experience_button_url"
-  translation: "https://www.linkedin.com/in/max-r%C3%B6%C3%9Fler/"
+  translation: "https://www.linkedin.com/in/roessler-max/"
 
 - id: "experience_button2"
   translation: "Download resume"
@@ -122,7 +122,7 @@ This year, I celebrated my 12th anniversary in the IT industry. A lot has change
 
 ## Homepage client & work
 - id: "client_work_title"
-  translation: "Clients & Work"
+  translation: "Technology Stack & Skills"
 
 ## Homepage newsletter
 - id: "newsletter_title"
@@ -154,11 +154,29 @@ This year, I celebrated my 12th anniversary in the IT industry. A lot has change
 - id: "contact_button"
   translation: "Send message"
 
+- id: "contact_button_text"
+  translation: "Send message"
+
+- id: "contact_name_placeholder"
+  translation: "Your name"
+
+- id: "contact_email_placeholder"
+  translation: "Your e-mail"
+
+- id: "contact_phone_placeholder"
+  translation: "Your phone number"
+
+- id: "contact_message_placeholder"
+  translation: "Your message"
+
 - id: "contact_form_name"
   translation: "Full Name"
 
 - id: "contact_form_email"
   translation: "Email Address"
+
+- id: "contact_form_phone"
+  translation: "Phone Number"
 
 - id: "contact_form_message"
   translation: "Type Your Message Here"
@@ -166,17 +184,32 @@ This year, I celebrated my 12th anniversary in the IT industry. A lot has change
 - id: "contact_phone_title"
   translation: "Phone Number"
 
+- id: "contact_phone_heading"
+  translation: "My phone"
+
 - id: "contact_phone_number"
-  translation: "+49 176 489 959 53"
+  translation: '<a href="tel:+4917648995953">+49 176 489 959 53</a>'
 
 - id: "contact_email_title"
   translation: "Email"
+
+- id: "contact_email_heading"
+  translation: "My mail"
 
 - id: "contact_email_email"
   translation: '<a href="mailto:mail@max-it.tech">mail@max-it.tech</a>'
 
 - id: "contact_address_title"
   translation: "Address"
+
+- id: "contact_location_heading"
+  translation: "My location"
+
+- id: "contact_social_heading"
+  translation: "Social Media"
+
+- id: "contact_details_heading"
+  translation: "Contact details"
 
 - id: "contact_address_address"
   translation: "Radeberger Straße 24b<br />01328 Dresden<br />Germany"

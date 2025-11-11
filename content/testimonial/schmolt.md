@@ -8,8 +8,10 @@ position: "System Manager Windows, Baloise Lebensversicherung AG Deutschland"
 
 params:
   image:
+    src: "images/testimonial/schmolt.jpg"
     x: "images/testimonial/schmolt.jpg"
     _2x: "images/testimonial/schmolt@2x.jpg"
+    scale: 0.5
 
 ## For the content, you can use markdown
 ##  

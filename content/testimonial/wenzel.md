@@ -8,8 +8,10 @@ position: "Release Engineer, Baloise Lebensversicherung AG Deutschland"
 
 params:
   image:
+    src: "images/testimonial/wenzel.jpg"
     x: "images/testimonial/wenzel.jpg"
     _2x: "images/testimonial/wenzel@2x.jpg"
+    scale: 0.5
 
 ## For the content, you can use markdown
 ##  

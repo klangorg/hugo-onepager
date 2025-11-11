@@ -8,8 +8,10 @@ position: "Softwarearchitekt, Baloise Lebensversicherung AG Deutschland"
 
 params:
   image:
+    src: "images/testimonial/stammer.jpg"
     x: "images/testimonial/stammer.jpg"
     _2x: "images/testimonial/stammer@2x.jpg"
+    scale: 0.5
 
 ## For the content, you can use markdown
 ##  

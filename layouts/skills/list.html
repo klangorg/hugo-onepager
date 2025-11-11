@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="{{- $.Lang }}">
+
+<head>
+  {{ partial "head.html" . }}
+  {{ partial "head_custom.html" . }}
+</head>
+
+<body>
+  {{ partial "header.html" . }}
+
+  <section id="main-content" class="site-skills-section section rad-animation-group flex-grow-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center rad-fade-down">
+                <h1 class="site-skills-title">{{ .Title }}</h1>
+                {{ if .Params.description }}
+                <p class="site-skills-description lead">{{ .Params.description }}</p>
+                {{ end }}
+                <div class="site-skills-description">
+                    {{ .Content }}
+                </div>
+
+                {{/* Optional buttons */}}
+                {{ if or .Params.button1_text .Params.button2_text }}
+                <div class="mt-4 mb-5">
+                    {{ if .Params.button1_text }}
+                    <a href="{{ .Params.button1_url }}" class="btn btn-primary me-2" target="_blank" rel="noopener noreferrer">
+                        {{ if .Params.button1_icon }}<i class="{{ .Params.button1_icon }}"></i>{{ end }}
+                        {{ .Params.button1_text }}
+                    </a>
+                    {{ end }}
+                    {{ if .Params.button2_text }}
+                    <a href="{{ .Params.button2_url }}" class="btn btn-frameless">
+                        {{ if .Params.button2_icon }}<i class="{{ .Params.button2_icon }}"></i>{{ end }}
+                        {{ .Params.button2_text }}
+                    </a>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+
+        {{ range .Params.skill_categories }}
+        <div class="row mt-5 rad-fade-down">
+            <div class="col-12">
+                <h2 class="mb-4">{{ .name }}</h2>
+                <div class="row">
+                    {{ range .skills }}
+                    <div class="col-md-6">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3 class="skill-name">{{ .name }}</h3>
+                                <span class="skill-level">{{ .level }}%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" style="width: {{ .level }}%;"></div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="skill-years">{{ .years }} years</span>
+                                <span class="skill-description">{{ .description }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+  </section>
+
+  {{ partial "footer.html" . }}
+  {{ partial "base-foot.html" . }}
+</body>
+
+</html>
+12.10.2025 21:33:44

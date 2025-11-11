@@ -1,0 +1,317 @@
+/* Logo size */
+.header .navbar-brand img {
+    max-height: 60px !important;  /* Reduced from 90px */
+}
+
+/* DISABLE browser smooth scrolling - use instant jumps */
+html {
+    scroll-behavior: auto !important;
+}
+
+/* Reduce header padding at the top of the page */
+.header {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+@media (min-width: 992px) {
+    .header {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+}
+
+/* Reduce sticky header size even more when scrolled */
+.header--sticky-triggered {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+@media (min-width: 992px) {
+    .header--sticky-triggered {
+        padding-top: 3px !important;
+        padding-bottom: 3px !important;
+    }
+}
+
+/* Also make logo smaller when scrolled */
+.header--sticky-triggered .navbar-brand img {
+    max-height: 45px !important;
+    transition: max-height 0.3s ease;
+}
+
+/* Remove extra navbar padding */
+.header .navbar {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Tighter navbar brand */
+.header .navbar-brand {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: 1 !important;
+}
+
+/* Hide empty spans if logo text is removed */
+.header .navbar-brand span:empty {
+    display: none !important;
+}
+
+/* Reduce space between header and showcase section */
+.rad-showcase {
+    margin-top: -80px !important;
+    padding-top: 60px !important;
+}
+
+@media (min-width: 992px) {
+    .rad-showcase {
+        margin-top: -100px !important;
+        padding-top: 80px !important;
+    }
+}
+
+/* About section image alignment */
+@media (max-width: 767px) {
+    .about__profile-picture {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+    
+    .about__profile-picture img {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+    
+    /* Center the entire about section on mobile */
+    .about .row {
+        justify-content: center !important;
+    }
+    
+    .about .col-12 {
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .about__profile-picture {
+        margin-left: 120px !important;
+        margin-right: 0 !important;
+    }
+    
+    /* Ensure the about section uses flexbox to keep content side by side */
+    .about .row {
+        display: flex !important;
+        align-items: flex-start !important;
+    }
+    
+    /* Make sure the text column takes remaining space */
+    .about__profile-picture + div {
+        flex: 1 !important;
+        margin-left: 40px !important;
+    }
+}
+
+/* Ensure proper alignment */
+.about__profile-picture img {
+    display: block !important;
+}
+
+/* Skills Page Styles */
+.skill-bar {
+    height: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    background-color: var(--bs-primary, #6f42c1);
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+.skill-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.skill-level {
+    font-weight: 600;
+    color: var(--bs-primary, #6f42c1);
+    font-size: 0.9rem;
+}
+
+.skill-years {
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: #e9ecef;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.skill-description {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+.site-skills-section {
+    padding: 100px 0;
+}
+
+.site-skills-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.site-skills-description {
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+@media (max-width: 768px) {
+    .site-skills-section {
+        padding: 60px 0;
+    }
+}
+
+/* Dark mode support */
+[data-bs-theme="dark"] .skill-item {
+    background-color: #2d2d2d;
+}
+
+[data-bs-theme="dark"] .skill-name {
+    color: #fff;
+}
+
+[data-bs-theme="dark"] .skill-bar {
+    background-color: #3d3d3d;
+}
+
+[data-bs-theme="dark"] .skill-years {
+    background-color: #3d3d3d;
+    color: #fff;
+}
+
+[data-bs-theme="dark"] .skill-description {
+    color: #adb5bd;
+}
+
+/* Force language and theme dropdowns in HEADER to open downwards */
+.header .dropdown:not(.dropup) .dropdown-menu,
+.header .dropup .dropdown-menu {
+    top: 100% !important;
+    bottom: auto !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+}
+
+/* Remove dropup behavior in header */
+.header .dropup .dropdown-menu {
+    top: 100% !important;
+    bottom: auto !important;
+}
+
+/* Ensure dropdown menus have proper z-index and visibility */
+.header .dropdown-menu {
+    z-index: 1050 !important;
+    position: absolute !important;
+}
+
+/* Ensure header doesn't clip dropdown content */
+.header .navbar-collapse {
+    overflow: visible !important;
+}
+
+.header .navbar {
+    overflow: visible !important;
+}
+
+/* Keep footer dropdowns opening upwards */
+.footer .dropdown-menu {
+    bottom: 100% !important;
+    top: auto !important;
+}
+
+/* Make footer menu entries smaller */
+footer.footer .footer_links .nav-item .nav-link,
+footer.footer .footer_links .nav-item a {
+    font-size: 0.65rem !important; /* 10.4px */
+    line-height: 1.3 !important;
+}
+
+footer.footer .footer_links ul.navbar-nav {
+    font-size: 0.65rem !important;
+}
+
+/* Rocket.Chat Widget - Transparent styling and forced light mode */
+iframe[src*="rocket.xana.space"],
+iframe[src*="livechat"] {
+    background: transparent !important;
+    color-scheme: light !important;
+}
+
+/* Bottom Arrow Overlay - fixed to viewport, points at Rocket.Chat widget */
+.bottom-arrow-overlay {
+    position: fixed; /* Fixed to viewport like Rocket.Chat */
+    bottom: 40px; /* More bottom margin */
+    left: 80px; /* Position on the left side */
+    right: auto; /* Remove right positioning */
+    z-index: 998; /* Just below Rocket.Chat widget */
+    pointer-events: none; /* Non-interactive, purely decorative */
+    transform: scale(1); /* Default scale */
+    transform-origin: bottom left; /* Arrow tip stays anchored at bottom-left */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out; /* Smooth fade in/out */
+}
+
+.bottom-arrow-overlay.visible {
+    opacity: 1; /* Show when contact section is visible */
+}
+
+.bottom-arrow-overlay img {
+    display: block;
+    width: 100%; /* Full width by default */
+    max-width: 500px; /* Maximum size for large screens */
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive sizing for large screens only */
+@media (min-width: 769px) {
+    .bottom-arrow-overlay {
+        left: 100px; /* More spacing on desktop */
+        transform: scale(1.2); /* Larger scale only on desktop */
+    }
+}
