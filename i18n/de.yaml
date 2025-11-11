@@ -114,7 +114,7 @@
   translation: "Lebenslauf"
 
 - id: "experience_button2_url"
-  translation: "/files/cv.pdf"
+  translation: "/files/cv_max_roessler.pdf"
 
 - id: "experience_button3"
   translation: "Alle anzeigen"
