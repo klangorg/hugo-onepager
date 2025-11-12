@@ -199,13 +199,18 @@
       "page-freelancing",
       "page-home",
       "page-imprint",
+      "page-juergens",
       "page-kreisel",
       "page-magenheim",
+      "page-marcus-a",
+      "page-markus-baloise",
       "page-petzold",
       "page-rahate",
       "page-rieck",
+      "page-roesler",
       "page-schmitt",
       "page-schmolt",
+      "page-stadler",
       "page-stagil",
       "page-stammer",
       "page-t-systems-mms",
@@ -276,8 +281,7 @@
       "theme-selector",
       "translation",
       "visually-hidden",
-      "w-100",
-      "„lead“"
+      "w-100"
     ],
     "ids": [
       "about",
