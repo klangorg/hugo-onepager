@@ -44,11 +44,11 @@ skill_categories:
         level: 90
         years: "7+"
         description: "PromQL, Dashboard-Entwicklung, Alarmierung, Schwellwerte"
-      - name: "Icinga2 & Nagios"
+      - name: "Icinga2 / Nagios"
         level: 85
         years: "9+"
         description: "Service-Monitoring, Check-Plugins, Performance-Daten"
-      - name: "InfluxDB & Telegraf"
+      - name: "TIG Stack"
         level: 80
         years: "6+"
         description: "Zeitreihendatenbank, Metriken-Sammlung, Datenaufbewahrung"
