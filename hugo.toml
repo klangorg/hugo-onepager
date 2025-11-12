@@ -23,6 +23,7 @@ theme = "adritian-free-hugo-theme"
   logo = '/img/logo.svg'
 
   homepageExperienceCount = 2
+  homepageSkillsCount = 4
 
   [params.analytics]
   ## Analytics parameters.
@@ -69,14 +70,14 @@ theme = "adritian-free-hugo-theme"
         weight = 2
 
       [[languages.de.menus.header]]
+        name = "Skills"
+        URL = "#skills-single"
+        weight = 3
+
+      [[languages.de.menus.header]]
         name = "Erfahrung"
         URL = "#experience-single"
         weight = 4
-
-      [[languages.de.menus.header]]
-        name = "Skills"
-        URL = "/skills"
-        weight = 5
 
       #[[languages.de.menus.header]]
       #  name = "Blog"
@@ -104,13 +105,13 @@ theme = "adritian-free-hugo-theme"
         weight = 2
 
       [[languages.de.menus.footer]]
-        name = "Erfahrung"
-        URL = "/experience"
+        name = "Skills"
+        URL = "#skills-single"
         weight = 3
 
       [[languages.de.menus.footer]]
-        name = "Skills"
-        URL = "/skills"
+        name = "Erfahrung"
+        URL = "/experience"
         weight = 4
 
       [[languages.de.menus.footer]]
@@ -139,14 +140,14 @@ theme = "adritian-free-hugo-theme"
         weight = 2
 
       [[languages.en.menus.header]]
+        name = "Skills"
+        URL = "/en/#skills-single"
+        weight = 3
+
+      [[languages.en.menus.header]]
         name = "Experience"
         URL = "/en/#experience-single"
         weight = 4
-
-      [[languages.en.menus.header]]
-        name = "Skills"
-        URL = "/en/skills"
-        weight = 5
 
       #[[languages.en.menus.header]]
       #  name = "Blog"
@@ -174,13 +175,13 @@ theme = "adritian-free-hugo-theme"
         weight = 2
 
       [[languages.en.menus.footer]]
-        name = "Experience"
-        URL = "/en/experience"
+        name = "Skills"
+        URL = "/en/#skills-single"
         weight = 3
 
       [[languages.en.menus.footer]]
-        name = "Skills"
-        URL = "/en/skills"
+        name = "Experience"
+        URL = "/en/experience"
         weight = 4
 
       [[languages.en.menus.footer]]

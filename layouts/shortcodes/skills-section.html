@@ -1,0 +1,61 @@
+{{- $title := .Get "title" | default (i18n "skills_title") -}}
+{{- $sectionId := .Get "sectionId" | default "skills-single" -}}
+{{- $button3Icon := .Get "button3_icon" | default "icon-cloud-arrow-down" -}}
+{{- $button3Text := .Get "button3_text" | default (i18n "skills_button3") -}}
+{{- $button3Url := .Get "button3_url" | default "/skills" -}}
+
+{{- $homepageSkillsCount := .Site.Params.homepageSkillsCount | default 4 -}}
+
+{{- /* Get the skills page to access skill_categories */ -}}
+{{- $skillsPage := .Site.GetPage "/skills" -}}
+{{- $allSkills := slice -}}
+
+{{- /* Flatten all skills from all categories */ -}}
+{{- range $skillsPage.Params.skill_categories -}}
+  {{- $categoryName := .name -}}
+  {{- range .skills -}}
+    {{- $allSkills = $allSkills | append (dict "name" .name "category" $categoryName "level" .level "years" .years "description" .description) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Sort by level (highest first) and take top N */ -}}
+{{- $topSkills := first $homepageSkillsCount (sort $allSkills "level" "desc") -}}
+{{- $totalSkillsCount := len $allSkills -}}
+{{- $remainingSkills := sub $totalSkillsCount $homepageSkillsCount -}}
+
+<section id="{{ $sectionId }}" class="section-skills section section--border-bottom rad-animation-group flex-grow-1">
+  <div class="row rad-fade-down">
+    <div class="col-12">
+      <h2>{{ $title }}</h2>
+
+      <div class="skills-grid">
+        {{- range $topSkills -}}
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <div class="skill-card__title">{{ .name }}</div>
+            <div class="skill-card__level">{{ .level }}%</div>
+          </div>
+          <div class="skill-card__category">{{ .category }}</div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: {{ .level }}%;"></div>
+          </div>
+          <div class="skill-card__meta">
+            <span class="skill-card__years">{{ .years }} years</span>
+            <span class="skill-card__description">{{ .description }}</span>
+          </div>
+        </div>
+        {{- end -}}
+      </div>
+
+      {{- if gt $totalSkillsCount $homepageSkillsCount -}}
+      <div class="all-skills-container">
+        <em>And {{ $remainingSkills }} more skills</em><br />
+        <a href="{{ $button3Url | relLangURL }}" class="btn btn-primary btn-all-skills">
+          <i class="{{ $button3Icon }}"></i>
+          {{ $button3Text }}
+        </a>
+      </div>
+      {{- end -}}
+    </div>
+  </div>
+</section>

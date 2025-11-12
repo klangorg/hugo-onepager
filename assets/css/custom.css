@@ -123,6 +123,113 @@ html {
     display: block !important;
 }
 
+/* Homepage Skills Section Styles */
+.section-skills {
+    padding: 60px 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.skill-card {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.skill-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.skill-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.skill-card__title {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.skill-card__level {
+    font-weight: 600;
+    color: var(--bs-primary, #6f42c1);
+    font-size: 0.9rem;
+}
+
+.skill-card__category {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.skill-card__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.skill-card__years {
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: #e9ecef;
+    border-radius: 20px;
+    font-size: 0.75rem;
+}
+
+.skill-card__description {
+    font-size: 0.85rem;
+    color: #6c757d;
+    flex: 1;
+    margin-left: 10px;
+    text-align: right;
+}
+
+.all-skills-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.all-skills-container em {
+    display: block;
+    margin-bottom: 8px;
+    color: #6c757d;
+}
+
+.btn-all-skills {
+    padding: 12px 30px;
+}
+
+/* Dark mode for homepage skills */
+[data-bs-theme="dark"] .skill-card {
+    background-color: #2d2d2d;
+    border-color: #3d3d3d;
+}
+
+[data-bs-theme="dark"] .skill-card__title {
+    color: #fff;
+}
+
+[data-bs-theme="dark"] .skill-card__years {
+    background-color: #3d3d3d;
+    color: #fff;
+}
+
+[data-bs-theme="dark"] .skill-card__category,
+[data-bs-theme="dark"] .skill-card__description {
+    color: #adb5bd;
+}
+
 /* Skills Page Styles */
 .skill-bar {
     height: 10px;

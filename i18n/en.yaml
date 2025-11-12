@@ -120,6 +120,16 @@ This year, I celebrated my 12th anniversary in the IT industry. A lot has change
 - id: "experience_button3_url"
   translation: "/experience"
 
+## Homepage skills
+- id: "skills_title"
+  translation: "Technical Skills"
+
+- id: "skills_button3"
+  translation: "View all"
+
+- id: "skills_button3_url"
+  translation: "/en/skills"
+
 ## Homepage client & work
 - id: "client_work_title"
   translation: "Technology Stack & Skills"

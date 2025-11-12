@@ -122,6 +122,16 @@
 - id: "experience_button3_url"
   translation: "/de/experience"
 
+## Homepage skills
+- id: "skills_title"
+  translation: "Technische Fähigkeiten"
+
+- id: "skills_button3"
+  translation: "Alle anzeigen"
+
+- id: "skills_button3_url"
+  translation: "/de/skills"
+
 ## Homepage client & work
 - id: "client_work_title"
   translation: "Technologie-Stack & Kompetenzen"

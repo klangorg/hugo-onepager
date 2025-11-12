@@ -19,10 +19,13 @@ draft = false
 
 {{< /showcase-section >}}
 
-{{< about-section
-    imgSrc="images/about/user-picture.jpg"
-    imgScale="0.5"
- >}}
+{{< skills-section
+    sectionId="skills-single"
+    title="Technical Skills"
+    button3_icon="icon-cloud-arrow-down"
+    button3_text="View all"
+    button3_url="/skills"
+>}}
 
 {{< experience-section
     sectionId="experience-single"
@@ -38,6 +41,11 @@ draft = false
     button3_text="View all"
     button3_url="/en/experience"
 >}}
+
+{{< about-section
+    imgSrc="images/about/user-picture.jpg"
+    imgScale="0.5"
+ >}}
 
 {{< testimonial-section
     title="Testimonials" >}}
