@@ -1,10 +1,10 @@
 ## Meta tags
 - id: "meta_title"
-  translation: "Max Rößler - IT Freelancer & DevOps Engineer | Dresden, Deutschland"
+  translation: "Max Rößler - DevOps- und System Engineer | Dresden, Deutschland"
 - id: "meta_description"
-  translation: "Erfahrener IT Freelancer und DevOps Engineer mit 12+ Jahren Expertise in CI/CD-Pipelines, Infrastructure as Code, Docker, Kubernetes, Linux-Administration, Automatisierung und Cloud-Migrationen. Ansässig in Dresden, Deutschland."
+  translation: "Erfahrener DevOps- und System Engineer mit 12+ Jahren Expertise in CI/CD-Pipelines, Infrastructure as Code, Docker, Kubernetes, Linux-Administration, Automatisierung und Cloud-Migrationen. Ansässig in Dresden, Deutschland."
 - id: "meta_keywords"
-  translation: "Max Rößler, IT Freelancer, DevOps Engineer, CI/CD, Infrastructure as Code, Docker, Kubernetes, Linux, Cloud Migration, Automatisierung, IT Berater, Dresden, Deutschland"
+  translation: "Max Rößler, DevOps Engineer, System Engineer, CI/CD, Infrastructure as Code, Docker, Kubernetes, Linux, Cloud Migration, Automatisierung, IT Berater, Dresden, Deutschland"
 - id: "meta_author"
   translation: "Max Rößler"
 - id: "meta_image"
@@ -49,10 +49,10 @@
 
 ## Homepage head title
 - id: "head_title"
-  translation: "Max Rößler - IT Freelancer & DevOps Engineer | Dresden"
+  translation: "Max Rößler - DevOps- und System Engineer | Dresden"
 
 - id: "head_description"
-  translation: "Erfahrener IT Freelancer und DevOps Engineer mit 12+ Jahren Expertise in CI/CD, Infrastructure as Code, Container-Technologien, Linux-Administration, Automatisierung und Cloud-Migrationen."
+  translation: "Erfahrener DevOps- und System Engineer mit 12+ Jahren Expertise in CI/CD, Infrastructure as Code, Container-Technologien, Linux-Administration, Automatisierung und Cloud-Migrationen."
 
 ## Homepage showcase
 - id: "showcase_title"

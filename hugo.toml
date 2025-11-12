@@ -10,14 +10,14 @@ theme = "adritian-free-hugo-theme"
 
 [params]
 
-  title = 'Max Rößler - IT Freelancer & DevOps Engineer | Dresden'
-  description = 'Experienced IT freelancer and DevOps engineer with 12+ years in CI/CD, Infrastructure as Code, container technologies, Linux administration, and cloud migrations. Based in Dresden, Germany.'
+  title = 'Max Rößler - DevOps- und System Engineer | Dresden'
+  description = 'Experienced DevOps and System engineer with 12+ years in CI/CD, Infrastructure as Code, container technologies, Linux administration, and cloud migrations. Based in Dresden, Germany.'
   images = ['/android-chrome-512x512.png']
   sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
 
   # SEO and Social Media
   author = 'Max Rößler'
-  keywords = ['IT Freelancer', 'DevOps Engineer', 'CI/CD', 'Infrastructure as Code', 'Docker', 'Kubernetes', 'Linux', 'Cloud Migration', 'Dresden', 'Germany']
+  keywords = ['DevOps Engineer', 'System Engineer', 'CI/CD', 'Infrastructure as Code', 'Docker', 'Kubernetes', 'Linux', 'Cloud Migration', 'Dresden', 'Germany']
 
   # If you want to display an image logo in the header, you can add it here
   logo = '/img/logo.svg'
