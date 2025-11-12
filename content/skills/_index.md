@@ -51,7 +51,7 @@ skill_categories:
       - name: "TIG Stack"
         level: 80
         years: "6+"
-        description: "Zeitreihendatenbank, Metriken-Sammlung, Datenaufbewahrung"
+        description: "Telegraf, InfluxDB, Grafana, Metriken-Sammlung, Datenaufbewahrung"
       - name: "ELK Stack"
         level: 70
         years: "4+"
