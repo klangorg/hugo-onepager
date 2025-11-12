@@ -67,10 +67,6 @@ skill_categories:
         level: 80
         years: "4+"
         description: "PAM-Lösungen, Credential-Tresor, Just-in-Time-Zugriff"
-      - name: "HashiCorp Vault"
-        level: 75
-        years: "3+"
-        description: "Secrets-Management, dynamische Geheimnisse, PKI"
       - name: "Sicherheitshärtung"
         level: 85
         years: "10+"
