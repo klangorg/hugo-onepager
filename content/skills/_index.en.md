@@ -25,7 +25,7 @@ skill_categories:
 
   - name: "Container & Orchestration"
     skills:
-      - name: "Docker & Docker Compose"
+      - name: "Docker / Docker Compose"
         level: 90
         years: "8+"
         description: "Container development, Dockerfile, Compose, Registry management"
