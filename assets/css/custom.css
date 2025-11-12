@@ -202,7 +202,8 @@ html {
 
 .all-skills-container em {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 0;
+    line-height: 1em;
     color: #6c757d;
 }
 
