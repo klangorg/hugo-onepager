@@ -20,7 +20,7 @@ My clients particularly appreciate the solution-oriented approach, the ability t
 **Core Competencies:**
 - DevOps Engineering and CI/CD Pipeline Development
 - Infrastructure as Code (Ansible, Terraform)
-- Container Technologies (Docker, Automation)
+- Container Technologies (Docker, Kubernetes)
 - Linux Administration and System Engineering
 - Cloud Migration and Infrastructure Optimization
 - Security Implementation and Best Practices

@@ -17,7 +17,7 @@ theme = "adritian-free-hugo-theme"
 
   # SEO and Social Media
   author = 'Max Rößler'
-  keywords = ['IT Freelancer', 'DevOps Engineer', 'CI/CD', 'Infrastructure as Code', 'Docker', 'Automation', 'Linux', 'Cloud Migration', 'Dresden', 'Germany']
+  keywords = ['IT Freelancer', 'DevOps Engineer', 'CI/CD', 'Infrastructure as Code', 'Docker', 'Kubernetes', 'Linux', 'Cloud Migration', 'Dresden', 'Germany']
 
   # If you want to display an image logo in the header, you can add it here
   logo = '/img/logo.svg'
