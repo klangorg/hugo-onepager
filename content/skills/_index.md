@@ -211,14 +211,14 @@ skill_categories:
 
   - name: "Netzwerkdienste"
     skills:
-      - name: "BIND9 DNS"
+      - name: "HAProxy"
         level: 85
-        years: "10+"
-        description: "Zonenverwaltung, DNSSEC, Split-DNS, Record-Typen, Fehleranalyse"
-      - name: "ISC DHCP"
+        years: "6+"
+        description: "Load-Balancing, SSL-Terminierung, Health-Checks, ACLs, Backend-Pools"
+      - name: "WireGuard VPN"
         level: 80
-        years: "7+"
-        description: "IP-Adressverwaltung, Failover, PXE-Boot, Reservierungen, Scopes"
+        years: "4+"
+        description: "Site-to-Site VPN, Peer-Konfiguration, Routing, Performance"
       - name: "pfSense"
         level: 75
         years: "5+"
