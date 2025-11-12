@@ -55,7 +55,7 @@ skill_categories:
       - name: "ELK Stack"
         level: 70
         years: "4+"
-        description: "Log-Aggregation, Elasticsearch, Kibana, Logstash"
+        description: "Elasticsearch, Logstash, Kibana, Log-Aggregation, Suche"
 
   - name: "IT-Sicherheit & Identitätsverwaltung"
     skills:
