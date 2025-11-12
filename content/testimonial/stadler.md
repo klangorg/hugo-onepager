@@ -8,9 +8,9 @@ position: "System Engineer, Baloise Lebensversicherung AG Deutschland"
 
 params:
   image:
-    src: "images/testimonial/default.jpg"
-    x: "images/testimonial/default.jpg"
-    _2x: "images/testimonial/default@2x.jpg"
+    src: "images/testimonial/stadler.jpg"
+    x: "images/testimonial/stadler.jpg"
+    _2x: "images/testimonial/stadler@2x.jpg"
     scale: 0.5
 
 ## For the content, you can use markdown

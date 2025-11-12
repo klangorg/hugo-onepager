@@ -8,9 +8,9 @@ position: "CIO, Allied Vision"
 
 params:
   image:
-    src: "images/testimonial/default.jpg"
-    x: "images/testimonial/default.jpg"
-    _2x: "images/testimonial/default@2x.jpg"
+    src: "images/testimonial/juergens.jpg"
+    x: "images/testimonial/juergens.jpg"
+    _2x: "images/testimonial/juergens@2x.jpg"
     scale: 0.5
 
 ## For the content, you can use markdown

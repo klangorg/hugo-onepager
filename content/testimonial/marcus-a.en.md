@@ -8,9 +8,9 @@ position: "Managing Director, HGIW UG"
 
 params:
   image:
-    src: "images/testimonial/default.jpg"
-    x: "images/testimonial/default.jpg"
-    _2x: "images/testimonial/default@2x.jpg"
+    src: "images/testimonial/marcus-a.jpg"
+    x: "images/testimonial/marcus-a.jpg"
+    _2x: "images/testimonial/marcus-a@2x.jpg"
     scale: 0.5
 
 ## For the content, you can use markdown
