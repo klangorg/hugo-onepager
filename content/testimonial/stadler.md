@@ -4,7 +4,7 @@ title: 'Robert Stadler'
 draft: false
 
 name: "Robert Stadler"
-position: "System Engineer, Baloise Lebensversicherung AG Deutschland"
+position: "Sales Manager, Seffner & Schlesier GmbH"
 
 params:
   image:
