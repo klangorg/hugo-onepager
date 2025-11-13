@@ -14,7 +14,7 @@ button2_icon: "icon-email"
 skill_categories:
   - name: "OS Administration"
     skills:
-      - name: "Linux (RHEL/CentOS/Debian/Ubuntu)"
+      - name: "Linux (RHEL/Debian/Ubuntu)"
         level: 95
         years: "12+"
         description: "System-Administration, Package Management, Security Hardening"

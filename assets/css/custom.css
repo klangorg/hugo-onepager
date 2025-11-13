@@ -202,13 +202,6 @@ html {
 
 .all-skills-container em {
     display: block;
-    margin-bottom: 0;
-    line-height: 1em;
-    color: #6c757d;
-}
-
-.btn-all-skills {
-    padding: 12px 30px;
 }
 
 /* Dark mode for homepage skills */
