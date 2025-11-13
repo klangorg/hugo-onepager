@@ -1,3 +1,67 @@
+<!-- Language Auto-Detection Script -->
+<script>
+(function() {
+  'use strict';
+  const STORAGE_KEY = 'preferredLanguage';
+  const LANG = { GERMAN: 'de', ENGLISH: 'en' };
+
+  function getStoredLanguage() {
+    try { return localStorage.getItem(STORAGE_KEY); } catch (e) { return null; }
+  }
+
+  function storeLanguage(lang) {
+    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+  }
+
+  function detectBrowserLanguage() {
+    try {
+      let lang = navigator.language || navigator.userLanguage;
+      if (lang) {
+        lang = lang.toLowerCase();
+        if (lang.startsWith('de')) return LANG.GERMAN;
+        if (lang.startsWith('en')) return LANG.ENGLISH;
+      }
+      if (navigator.languages && navigator.languages.length > 0) {
+        for (let i = 0; i < navigator.languages.length; i++) {
+          const browserLang = navigator.languages[i].toLowerCase();
+          if (browserLang.startsWith('de')) return LANG.GERMAN;
+          if (browserLang.startsWith('en')) return LANG.ENGLISH;
+        }
+      }
+    } catch (e) {}
+    return LANG.ENGLISH;
+  }
+
+  function getCurrentLanguage() {
+    const path = window.location.pathname;
+    return (path.startsWith('/en/') || path === '/en') ? LANG.ENGLISH : LANG.GERMAN;
+  }
+
+  function redirectToLanguage(targetLang) {
+    const currentLang = getCurrentLanguage();
+    if (currentLang === targetLang) return;
+    const currentPath = window.location.pathname;
+    const hash = window.location.hash;
+    let newPath;
+    if (targetLang === LANG.ENGLISH) {
+      newPath = (currentPath === '/' || currentPath === '') ? '/en/' : '/en' + currentPath;
+    } else {
+      newPath = (currentPath === '/en' || currentPath === '/en/') ? '/' : currentPath.replace(/^\/en/, '');
+    }
+    window.location.href = newPath + hash;
+  }
+
+  const storedLang = getStoredLanguage();
+  if (storedLang) {
+    redirectToLanguage(storedLang);
+  } else {
+    const browserLang = detectBrowserLanguage();
+    storeLanguage(browserLang);
+    redirectToLanguage(browserLang);
+  }
+})();
+</script>
+
 <!-- Favicons and App Icons -->
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
