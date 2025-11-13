@@ -1,0 +1,188 @@
+/**
+ * Intelligent Language Detection & Auto-Redirect
+ * Priority: localStorage > Browser Language > English Fallback
+ */
+
+(function() {
+  'use strict';
+
+  // Configuration
+  const STORAGE_KEY = 'preferredLanguage';
+  const LANGUAGES = {
+    GERMAN: 'de',
+    ENGLISH: 'en'
+  };
+  const PATHS = {
+    GERMAN: '/',
+    ENGLISH: '/en/'
+  };
+
+  /**
+   * Get stored language preference
+   */
+  function getStoredLanguage() {
+    try {
+      return localStorage.getItem(STORAGE_KEY);
+    } catch (e) {
+      console.warn('localStorage not available:', e);
+      return null;
+    }
+  }
+
+  /**
+   * Store language preference
+   */
+  function storeLanguage(lang) {
+    try {
+      localStorage.setItem(STORAGE_KEY, lang);
+    } catch (e) {
+      console.warn('Could not store language preference:', e);
+    }
+  }
+
+  /**
+   * Detect browser language
+   * Fuzzy matching: de-DE, de-AT, de-CH → de
+   *                 en-US, en-GB, en-CA → en
+   */
+  function detectBrowserLanguage() {
+    try {
+      // Try navigator.language first (most specific)
+      let lang = navigator.language || navigator.userLanguage;
+
+      if (lang) {
+        lang = lang.toLowerCase();
+
+        // Check if German variant
+        if (lang.startsWith('de')) {
+          return LANGUAGES.GERMAN;
+        }
+
+        // Check if English variant
+        if (lang.startsWith('en')) {
+          return LANGUAGES.ENGLISH;
+        }
+      }
+
+      // Try navigator.languages array (ordered by preference)
+      if (navigator.languages && navigator.languages.length > 0) {
+        for (let i = 0; i < navigator.languages.length; i++) {
+          const browserLang = navigator.languages[i].toLowerCase();
+
+          if (browserLang.startsWith('de')) {
+            return LANGUAGES.GERMAN;
+          }
+
+          if (browserLang.startsWith('en')) {
+            return LANGUAGES.ENGLISH;
+          }
+        }
+      }
+    } catch (e) {
+      console.warn('Could not detect browser language:', e);
+    }
+
+    // Fallback to English for international audience
+    return LANGUAGES.ENGLISH;
+  }
+
+  /**
+   * Get current language from URL
+   */
+  function getCurrentLanguage() {
+    const path = window.location.pathname;
+
+    // English URLs start with /en/
+    if (path.startsWith('/en/') || path === '/en') {
+      return LANGUAGES.ENGLISH;
+    }
+
+    // Everything else is German (root path)
+    return LANGUAGES.GERMAN;
+  }
+
+  /**
+   * Redirect to appropriate language version
+   */
+  function redirectToLanguage(targetLang) {
+    const currentLang = getCurrentLanguage();
+
+    // Already on correct language - no redirect needed
+    if (currentLang === targetLang) {
+      return;
+    }
+
+    const currentPath = window.location.pathname;
+    const hash = window.location.hash;
+    let newPath;
+
+    if (targetLang === LANGUAGES.ENGLISH) {
+      // Switch to English
+      if (currentPath === '/' || currentPath === '') {
+        newPath = '/en/';
+      } else {
+        // Add /en prefix
+        newPath = '/en' + currentPath;
+      }
+    } else {
+      // Switch to German (remove /en prefix)
+      if (currentPath === '/en' || currentPath === '/en/') {
+        newPath = '/';
+      } else {
+        newPath = currentPath.replace(/^\/en/, '');
+      }
+    }
+
+    // Preserve hash (e.g., #about, #contact)
+    window.location.href = newPath + hash;
+  }
+
+  /**
+   * Main detection logic
+   */
+  function detectAndRedirect() {
+    // Priority 1: Check stored preference
+    const storedLang = getStoredLanguage();
+    if (storedLang) {
+      console.log('Using stored language preference:', storedLang);
+      redirectToLanguage(storedLang);
+      return;
+    }
+
+    // Priority 2: Detect browser language
+    const browserLang = detectBrowserLanguage();
+    console.log('Detected browser language:', browserLang);
+
+    // Store the detected language for future visits
+    storeLanguage(browserLang);
+
+    // Redirect if necessary
+    redirectToLanguage(browserLang);
+  }
+
+  /**
+   * Save language preference when user manually switches
+   * Call this function when language selector is clicked
+   */
+  window.saveLanguagePreference = function(lang) {
+    console.log('Saving user language preference:', lang);
+    storeLanguage(lang);
+  };
+
+  /**
+   * Update stored preference based on current URL
+   * Useful for keeping localStorage in sync if user manually navigates
+   */
+  window.updateLanguagePreference = function() {
+    const currentLang = getCurrentLanguage();
+    storeLanguage(currentLang);
+  };
+
+  // Run detection on page load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', detectAndRedirect);
+  } else {
+    detectAndRedirect();
+  }
+
+})();

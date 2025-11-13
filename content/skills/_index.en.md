@@ -33,6 +33,7 @@ skill_categories:
         level: 80
         years: "3+"
         description: "Container development, Deployment configuration, Build strategies, Routes"
+        featured: true
       - name: "Kubernetes"
         level: 75
         years: "5+"
@@ -109,6 +110,7 @@ skill_categories:
         level: 75
         years: "4+"
         description: "VMs, Azure DevOps, Azure IoT Hub, Storage, Networking, Cloud migration"
+        featured: true
       - name: "Amazon Web Services (AWS EC2)"
         level: 70
         years: "3+"
@@ -139,6 +141,7 @@ skill_categories:
         level: 95
         years: "6+"
         description: "Playbooks, Roles, Collections, Windows management, Linux management"
+        featured: true
       - name: "Terraform"
         level: 70
         years: "3+"
@@ -242,6 +245,7 @@ skill_categories:
         level: 100
         years: "12+"
         description: "Troubleshooting, Post-mortem, ITIL, Ticket system, SLA management"
+        featured: true
       - name: "Disaster Recovery"
         level: 95
         years: "7+"

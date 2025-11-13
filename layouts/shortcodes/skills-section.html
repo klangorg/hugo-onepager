@@ -11,15 +11,19 @@
 {{- $allSkills := slice -}}
 
 {{- /* Flatten all skills from all categories */ -}}
+{{- $featuredSkills := slice -}}
 {{- range $skillsPage.Params.skill_categories -}}
   {{- $categoryName := .name -}}
   {{- range .skills -}}
-    {{- $allSkills = $allSkills | append (dict "name" .name "category" $categoryName "level" .level "years" .years "description" .description) -}}
+    {{- $allSkills = $allSkills | append . -}}
+    {{- if .featured -}}
+      {{- $featuredSkills = $featuredSkills | append (dict "name" .name "category" $categoryName "level" .level "years" .years "description" .description) -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 
-{{- /* Sort by level (highest first) and take top N */ -}}
-{{- $topSkills := first $homepageSkillsCount (sort $allSkills "level" "desc") -}}
+{{- /* Use featured skills (first N in order) */ -}}
+{{- $topSkills := first $homepageSkillsCount $featuredSkills -}}
 {{- $totalSkillsCount := len $allSkills -}}
 {{- $remainingSkills := sub $totalSkillsCount $homepageSkillsCount -}}
 
