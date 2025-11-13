@@ -203,10 +203,10 @@ html {
     padding-left: 0;
 }
 
-.all-skills-container em,
-.all-experience-container em {
+/* Skills uses display:block for spacing (no <br> in template) */
+.all-skills-container em {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
 }
 
 /* Dark mode for homepage skills */
