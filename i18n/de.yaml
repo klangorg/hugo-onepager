@@ -132,6 +132,12 @@
 - id: "skills_button3_url"
   translation: "/de/skills"
 
+- id: "and_x_more"
+  translation: "Und {{ . }} weitere"
+
+- id: "and_x_more_skills"
+  translation: "Und {{ . }} weitere Fähigkeiten"
+
 ## Homepage client & work
 - id: "client_work_title"
   translation: "Technologie-Stack & Kompetenzen"
