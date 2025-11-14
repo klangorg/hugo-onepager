@@ -8,9 +8,9 @@ position: "Developer, Baloise Life Insurance AG Germany"
 
 params:
   image:
-    src: "images/testimonial/markus-baloise.jpg"
-    x: "images/testimonial/markus-baloise.jpg"
-    _2x: "images/testimonial/markus-baloise@2x.jpg"
+    src: "images/testimonial/anonym.jpg"
+    x: "images/testimonial/anonym.jpg"
+    _2x: "images/testimonial/anonym@2x.jpg"
     scale: 0.5
 
 ## For the content, you can use markdown
