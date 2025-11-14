@@ -53,7 +53,7 @@
 
       {{- if gt $totalSkillsCount $homepageSkillsCount -}}
       <div class="all-skills-container">
-        <em>And {{ $remainingSkills }} more skills</em>
+        <em>{{ i18n "and_x_more_skills" $remainingSkills }}</em>
         <a href="{{ $button3Url | relLangURL }}" class="btn btn-primary btn-all-skills">
           <i class="{{ $button3Icon }}"></i>
           {{ $button3Text }}

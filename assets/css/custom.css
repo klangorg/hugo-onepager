@@ -195,13 +195,18 @@ html {
     text-align: right;
 }
 
-.all-skills-container {
+/* Shared styles for "View all" buttons in experience and skills sections */
+.all-skills-container,
+.all-experience-container {
     text-align: left;
     margin-top: 40px;
+    padding-left: 0;
 }
 
+/* Skills uses display:block for spacing (no <br> in template) */
 .all-skills-container em {
     display: block;
+    margin-bottom: 0;
 }
 
 /* Dark mode for homepage skills */
