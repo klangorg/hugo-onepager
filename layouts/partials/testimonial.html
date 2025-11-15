@@ -41,7 +41,8 @@
                 {{ .Content }}
                 <div class="testimonial__author row gx-0">
 
-                    {{ partial "lazypicture" (dict "src" .Params.image.src "scale" .Params.image.scale "pictureclass" "picture testimonial col-2" "alt" $title)}}
+                {{- $authorAlt := printf "%s portrait" (.Params.name | default $title) -}}
+                {{ partial "lazypicture" (dict "src" .Params.image.src "scale" .Params.image.scale "pictureclass" "picture testimonial col-2" "class" "testimonial__author-image" "alt" $authorAlt "sizes" "52px")}}
                     
                          <div class="testimonial__author-info col-10">
                         <h3>{{ .Params.name }}</h3>

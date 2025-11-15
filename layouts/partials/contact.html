@@ -110,7 +110,9 @@
 
     <!-- Bottom Arrow Overlay -->
     <div class="bottom-arrow-overlay">
-        {{- $arrow := resources.Get "images/arrow.png" }}
-        <img src="{{ $arrow.RelPermalink }}" alt="" aria-hidden="true">
+      {{- $arrow := resources.Get "images/arrow.png" -}}
+      {{- with $arrow -}}
+      <img src="{{ .RelPermalink }}" alt="" aria-hidden="true" width="{{ .Width }}" height="{{ .Height }}" loading="lazy" decoding="async">
+      {{- end -}}
     </div>
 </section>

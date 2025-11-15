@@ -44,30 +44,34 @@
       {{ end }}
 
       {{ range first $totalCount (sort $xp "Date" "desc") }}
+      {{- $pageCtx := . -}}
       <div class="experience">
-        <a href="{{ .Permalink | relURL }}" class="experience__link">
+        <a href="{{ $pageCtx.Permalink | relURL }}" class="experience__link">
           <div class="experience__header">
-            {{ $img := resources.Get .Params.companyLogo }}
+            {{ $img := resources.Get $pageCtx.Params.companyLogo }}
             {{ with $img }}
-              {{ $imgWebp := $img.Resize (printf "%dx%d webp q75 Lanczos picture" $img.Width $img.Height) }}
+              {{ $imgWebp := .Resize (printf "%dx%d webp q75 Lanczos picture" .Width .Height) }}
               <img 
                 src="{{ $imgWebp.RelPermalink }}" 
-                alt="{{ .Params.company }} logo"
+                alt="{{ $pageCtx.Params.company }} logo"
                 class="experience__company-logo"
+                width="{{ $imgWebp.Width }}"
+                height="{{ $imgWebp.Height }}"
                 loading="lazy"
+                decoding="async"
               />
             {{ end }}
             <div class="experience__meta">
-              <div class="experience__date">{{ .Params.duration }}</div>
-              <div class="experience__title">{{ .Params.jobTitle }}</div>
+              <div class="experience__date">{{ $pageCtx.Params.duration }}</div>
+              <div class="experience__title">{{ $pageCtx.Params.jobTitle }}</div>
               <div class="experience__company">
-                {{ .Params.company }}.
-                <span class="experience__location">{{ .Params.location }}</span>
+                {{ $pageCtx.Params.company }}.
+                <span class="experience__location">{{ $pageCtx.Params.location }}</span>
               </div>
             </div>
             <div class="experience__description d-none d-print-block">
-              <h1>{{ .Params.title }}</h1>
-              {{ .Content | safeHTML | transform.Plainify }}
+              <h1>{{ $pageCtx.Params.title }}</h1>
+              {{ $pageCtx.Content | safeHTML | transform.Plainify }}
             </div>
           </div>
         </a>

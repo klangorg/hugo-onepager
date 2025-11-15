@@ -24,6 +24,11 @@
             src="{{ .Site.Params.logo | absURL }}"
             alt="{{ i18n "logo_alt" }}"
             class="logo"
+            width="400"
+            height="400"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
             />
             {{ end }}
           <span>{{ i18n "logo_text1" }}</span>

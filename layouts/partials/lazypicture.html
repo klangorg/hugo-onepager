@@ -1,0 +1,86 @@
+{{/*
+  Responsive image helper.
+  Accepts:
+    - src (required)
+    - width / height (optional explicit target size)
+    - scale (fallback resize ratio when explicit size is missing)
+    - alt, class, pictureclass, sizes, loading, decoding (optional attributes)
+*/}}
+{{- $src := .src -}}
+{{- if not $src -}}
+  {{- warnf "lazypicture: missing src" -}}
+  {{- return -}}
+{{- end -}}
+
+{{- $img := resources.Get $src -}}
+{{- if not $img -}}
+  {{- warnf "lazypicture: image not found for %q" $src -}}
+  {{- return -}}
+{{- end -}}
+
+{{- $pictureClass := "" -}}
+{{- with .pictureclass }}
+  {{- $pictureClass = . -}}
+{{- end -}}
+
+{{- $imgClass := "lozad img-responsive" -}}
+{{- with .class }}
+  {{- $imgClass = printf "%s %s" $imgClass . -}}
+{{- end -}}
+
+{{- $alt := .alt | default "" -}}
+{{- $loading := .loading | default "lazy" -}}
+{{- $decoding := .decoding | default "async" -}}
+{{- $sizes := .sizes | default "100vw" -}}
+
+{{- $target1 := "" -}}
+{{- $target2 := "" -}}
+
+{{- if and .width .height -}}
+  {{- $w := int .width -}}
+  {{- $h := int .height -}}
+  {{- $target1 = printf "%dx%d" $w $h -}}
+  {{- $target2 = printf "%dx%d" (mul 2 $w) (mul 2 $h) -}}
+{{- else if .width -}}
+  {{- $w := int .width -}}
+  {{- $target1 = printf "%dx" $w -}}
+  {{- $target2 = printf "%dx" (mul 2 $w) -}}
+{{- else if .height -}}
+  {{- $h := int .height -}}
+  {{- $target1 = printf "x%d" $h -}}
+  {{- $target2 = printf "x%d" (mul 2 $h) -}}
+{{- else if .scale -}}
+  {{- $scaledW := int (mul (float $img.Width) (float .scale)) -}}
+  {{- $scaledH := int (mul (float $img.Height) (float .scale)) -}}
+  {{- $target1 = printf "%dx%d" $scaledW $scaledH -}}
+  {{- $target2 = printf "%dx%d" (mul 2 $scaledW) (mul 2 $scaledH) -}}
+{{- else -}}
+  {{- $target1 = printf "%dx%d" $img.Width $img.Height -}}
+{{- end -}}
+
+{{- $imgPrimary := $img.Resize (printf "%s q80 Lanczos picture" $target1) -}}
+{{- $imgWebp := $img.Resize (printf "%s webp q80 Lanczos picture" $target1) -}}
+
+<picture class="{{ $pictureClass }}">
+  {{- if $target2 -}}
+    {{- $imgPrimary2 := $img.Resize (printf "%s q80 Lanczos picture" $target2) -}}
+    {{- $imgWebp2 := $img.Resize (printf "%s webp q80 Lanczos picture" $target2) -}}
+    <source srcset="{{ $imgWebp.RelPermalink }} 1x, {{ $imgWebp2.RelPermalink }} 2x" type="image/webp" />
+    <source srcset="{{ $imgPrimary.RelPermalink }} 1x, {{ $imgPrimary2.RelPermalink }} 2x" type="{{ $imgPrimary.MediaType.Type }}" />
+  {{- else -}}
+    <source srcset="{{ $imgWebp.RelPermalink }} 1x" type="image/webp" />
+    <source srcset="{{ $imgPrimary.RelPermalink }} 1x" type="{{ $imgPrimary.MediaType.Type }}" />
+  {{- end }}
+
+  <img
+    width="{{ $imgPrimary.Width }}"
+    height="{{ $imgPrimary.Height }}"
+    class="{{ $imgClass }}"
+    data-src="{{ $imgPrimary.RelPermalink }}"
+    alt="{{ $alt }}"
+    loading="{{ $loading }}"
+    decoding="{{ $decoding }}"
+    sizes="{{ $sizes }}"
+    src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+  />
+</picture>

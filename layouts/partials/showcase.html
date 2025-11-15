@@ -84,7 +84,8 @@
         {{ end }}
       </div>
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 profile-image">
-        {{ partial "lazypicture" (dict "src" $imgSrc "width" $imgWidth "height" $imgHeight "scale" $imgScale "class" "")}}
+        {{- $heroAlt := printf "%s portrait" $showcaseTitle -}}
+        {{ partial "lazypicture" (dict "src" $imgSrc "width" $imgWidth "height" $imgHeight "scale" $imgScale "class" "profile-image__photo" "alt" $heroAlt "sizes" "(max-width: 767px) 90vw, 50vw")}}
 
 <!-- future "right text -->
 
