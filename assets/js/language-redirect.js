@@ -1,6 +1,5 @@
 (function () {
   'use strict';
-
   var STORAGE_KEY = 'preferredLanguage';
   var LANG = { GERMAN: 'de', ENGLISH: 'en' };
 
@@ -28,7 +27,7 @@
         if (lang.indexOf('de') === 0) return LANG.GERMAN;
         if (lang.indexOf('en') === 0) return LANG.ENGLISH;
       }
-      if (navigator.languages && navigator.languages.length > 0) {
+      if (navigator.languages && navigator.languages.length) {
         for (var i = 0; i < navigator.languages.length; i += 1) {
           var browserLang = navigator.languages[i].toLowerCase();
           if (browserLang.indexOf('de') === 0) return LANG.GERMAN;
@@ -43,7 +42,7 @@
 
   function getCurrentLanguage() {
     var path = window.location.pathname;
-    return (path.indexOf('/en/') === 0 || path === '/en') ? LANG.ENGLISH : LANG.GERMAN;
+    return path.indexOf('/en/') === 0 || path === '/en' ? LANG.ENGLISH : LANG.GERMAN;
   }
 
   function redirectToLanguage(targetLang) {
@@ -55,12 +54,12 @@
     var newPath;
 
     if (targetLang === LANG.ENGLISH) {
-      newPath = (currentPath === '/' || currentPath === '') ? '/en/' : '/en' + currentPath;
+      newPath = currentPath === '/' || currentPath === '' ? '/en/' : '/en' + currentPath;
     } else {
       if (currentPath === '/en' || currentPath === '/en/') {
         newPath = '/';
       } else {
-        newPath = currentPath.replace(/^\/en/, '');
+        newPath = currentPath.replace(/^\/en/, '') || '/';
       }
     }
 

@@ -1,7 +1,3 @@
-<!-- Optimized lazy loading initialization -->
-{{- $lozadInit := resources.Get "js/lozad-init.js" | minify | fingerprint | resources.Copy "/assets/js/lozad-init.js" }}
-<script defer src="{{ $lozadInit.RelPermalink }}"></script>
-
 <!-- Non-critical scripts loaded with defer for better performance -->
 <script defer src='{{ "js/rad-animations.js" | absURL }}'></script>
 <script defer src='{{ "js/library/smooth-scroll.polyfills.min.js" | absURL }}'></script>
@@ -11,13 +7,14 @@
 {{- $bootstrapJs := resources.Get "js/vendor/bootstrap.bundle.min.js" | fingerprint | resources.Copy "/assets/js/vendor/bootstrap.bundle.min.js" }}
 <script defer src="{{ $bootstrapJs.RelPermalink }}"></script>
 
+{{- $inlineFooter := resources.Get "js/site-inline.js" | minify | fingerprint | resources.Copy "/assets/js/site-inline.js" -}}
+<script defer src="{{ $inlineFooter.RelPermalink }}"></script>
+
 
 <!-- vercel insights -->
 {{- $vercelPageInsights := .Site.Params.analytics.vercelPageInsights }}
 {{- $vercelAnalytics := .Site.Params.analytics.vercelAnalytics }}
 
-{{- $vercelSiInit := resources.Get "js/vercel-si-init.js" | minify | fingerprint | resources.Copy "/assets/js/vercel-si-init.js" }}
-<script defer src="{{ $vercelSiInit.RelPermalink }}"></script>
 {{- if $vercelPageInsights }}
 <script defer src="/_vercel/speed-insights/script.js"></script>
 {{- end }}
@@ -26,11 +23,6 @@
 {{- end }}
 
 <!-- Start of Rocket.Chat Livechat Script -->
-<div data-bs-theme="light" class="rocketchat-wrapper" style="color-scheme: light;">
-</div>
-{{- $rocketChatInit := resources.Get "js/rocketchat-init.js" | minify | fingerprint | resources.Copy "/assets/js/rocketchat-init.js" }}
-<script defer src="{{ $rocketChatInit.RelPermalink }}"></script>
+<div data-bs-theme="light" class="rocketchat-wrapper" style="color-scheme: light;"></div>
 
-<!-- Arrow Visibility Control - Show only when contact section is visible -->
-{{- $arrowVisibility := resources.Get "js/arrow-visibility.js" | minify | fingerprint | resources.Copy "/assets/js/arrow-visibility.js" }}
-<script defer src="{{ $arrowVisibility.RelPermalink }}"></script>
+<!-- Rocket.Chat logic handled in site-inline.js -->
