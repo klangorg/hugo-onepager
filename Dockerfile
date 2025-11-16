@@ -29,28 +29,32 @@ FROM nginx:alpine
 COPY --from=builder /src/public /usr/share/nginx/html
 
 # Custom Nginx Config (optional)
-RUN echo 'server { \
-    listen 80; \
-    server_name _; \
-    root /usr/share/nginx/html; \
-    index index.html; \
-    \
-    location / { \
-        try_files $uri $uri/ /index.html; \
-    } \
-    \
-    # Gzip Kompression \
-    gzip on; \
-    gzip_vary on; \
-    gzip_min_length 1024; \
-    gzip_types text/plain text/css text/xml text/javascript application/x-javascript application/xml+rss application/json application/javascript; \
-    \
-    # Cache Headers für statische Assets \
-    location ~* \.(jpg|jpeg|png|gif|ico|css|js|svg|woff|woff2|ttf|eot)$ { \
-        expires 1y; \
-        add_header Cache-Control "public, immutable"; \
-    } \
-}' > /etc/nginx/conf.d/default.conf
+RUN cat <<'NGINX_CONF' > /etc/nginx/conf.d/default.conf
+server {
+    listen 80;
+    server_name _;
+    root /usr/share/nginx/html;
+    index index.html;
+
+    add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://rocket.xana.space; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://rocket.xana.space wss://rocket.xana.space; frame-src 'self' https://www.googletagmanager.com https://rocket.xana.space; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;" always;
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    # Gzip Kompression
+    gzip on;
+    gzip_vary on;
+    gzip_min_length 1024;
+    gzip_types text/plain text/css text/xml text/javascript application/x-javascript application/xml+rss application/json application/javascript;
+
+    # Cache Headers für statische Assets
+    location ~* \.(jpg|jpeg|png|gif|ico|css|js|svg|woff|woff2|ttf|eot)$ {
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+}
+NGINX_CONF
 
 EXPOSE 80
 
