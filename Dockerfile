@@ -36,7 +36,7 @@ server {
     root /usr/share/nginx/html;
     index index.html;
 
-    add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://rocket.xana.space; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://rocket.xana.space wss://rocket.xana.space; frame-src 'self' https://www.googletagmanager.com https://rocket.xana.space; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;" always;
+    add_header Content-Security-Policy "default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://rocket.xana.space; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://rocket.xana.space wss://rocket.xana.space; frame-src 'self' https://www.googletagmanager.com https://rocket.xana.space; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;" always;
 
     location / {
         try_files $uri $uri/ /index.html;
