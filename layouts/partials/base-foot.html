@@ -1,22 +1,6 @@
 <!-- Optimized lazy loading initialization -->
-<script>
-  window.addEventListener("load", function() {
-    if (typeof lozad !== 'undefined') {
-      try {
-        var observer = window.lozad(".lozad", {
-          rootMargin: window.innerHeight / 2 + "px 0px",
-          threshold: 0.01,
-          loaded: function(el) {
-            el.setAttribute('data-loaded', 'true');
-          }
-        });
-        observer.observe();
-      } catch(e) {
-        console.error('Lozad initialization error:', e);
-      }
-    }
-  });
-</script>
+{{- $lozadInit := resources.Get "js/lozad-init.js" | minify | fingerprint | resources.Copy "/assets/js/lozad-init.js" }}
+<script defer src="{{ $lozadInit.RelPermalink }}"></script>
 
 <!-- Non-critical scripts loaded with defer for better performance -->
 <script defer src='{{ "js/rad-animations.js" | absURL }}'></script>
@@ -32,9 +16,8 @@
 {{- $vercelPageInsights := .Site.Params.analytics.vercelPageInsights }}
 {{- $vercelAnalytics := .Site.Params.analytics.vercelAnalytics }}
 
-<script>
-  window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-</script>
+{{- $vercelSiInit := resources.Get "js/vercel-si-init.js" | minify | fingerprint | resources.Copy "/assets/js/vercel-si-init.js" }}
+<script defer src="{{ $vercelSiInit.RelPermalink }}"></script>
 {{- if $vercelPageInsights }}
 <script defer src="/_vercel/speed-insights/script.js"></script>
 {{- end }}
@@ -44,50 +27,10 @@
 
 <!-- Start of Rocket.Chat Livechat Script -->
 <div data-bs-theme="light" class="rocketchat-wrapper" style="color-scheme: light;">
-<script type="text/javascript">
-(function(w, d, s, u) {
-	w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
-	var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
-	j.async = true; j.src = 'https://rocket.xana.space/livechat/rocketchat-livechat.min.js?_=201903270000';
-	h.parentNode.insertBefore(j, h);
-})(window, document, 'script', 'https://rocket.xana.space/livechat');
-
-// Force light theme with comprehensive font color properties
-RocketChat(function() {
-	this.setTheme({
-		// Title bar
-		color: '#2bb673',
-		fontColor: '#000',
-		iconColor: '#ffffff',
-	});
-});
-</script>
 </div>
+{{- $rocketChatInit := resources.Get "js/rocketchat-init.js" | minify | fingerprint | resources.Copy "/assets/js/rocketchat-init.js" }}
+<script defer src="{{ $rocketChatInit.RelPermalink }}"></script>
 
 <!-- Arrow Visibility Control - Show only when contact section is visible -->
-<script>
-window.addEventListener('load', function() {
-	var arrow = document.querySelector('.bottom-arrow-overlay');
-	var contactSection = document.querySelector('#contact');
-
-	if (!arrow || !contactSection) return;
-
-	// Create Intersection Observer to watch contact section
-	var observer = new IntersectionObserver(function(entries) {
-		entries.forEach(function(entry) {
-			// Add 'visible' class when contact section is in viewport
-			if (entry.isIntersecting) {
-				arrow.classList.add('visible');
-			} else {
-				arrow.classList.remove('visible');
-			}
-		});
-	}, {
-		threshold: 0.6, // Trigger when 20% of contact section is visible
-		rootMargin: '0px'
-	});
-
-	// Start observing the contact section
-	observer.observe(contactSection);
-});
-</script>
+{{- $arrowVisibility := resources.Get "js/arrow-visibility.js" | minify | fingerprint | resources.Copy "/assets/js/arrow-visibility.js" }}
+<script defer src="{{ $arrowVisibility.RelPermalink }}"></script>
