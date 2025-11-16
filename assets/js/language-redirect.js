@@ -66,13 +66,43 @@
     window.location.href = newPath + hash;
   }
 
+  function bindLanguageSelectorEvents() {
+    function attachHandlers() {
+      try {
+        var selectorLinks = document.querySelectorAll('a.translation[data-lang-code]');
+        if (!selectorLinks || !selectorLinks.length) {
+          return;
+        }
+
+        for (var i = 0; i < selectorLinks.length; i += 1) {
+          selectorLinks[i].addEventListener('click', function (event) {
+            var lang = event.currentTarget && event.currentTarget.getAttribute('data-lang-code');
+            if (lang) {
+              storeLanguage(lang);
+            }
+          });
+        }
+      } catch (error) {
+        /* ignore */
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', attachHandlers);
+    } else {
+      attachHandlers();
+    }
+  }
+
   var storedLang = getStoredLanguage();
   if (storedLang) {
     redirectToLanguage(storedLang);
+    bindLanguageSelectorEvents();
     return;
   }
 
   var browserLang = detectBrowserLanguage();
   storeLanguage(browserLang);
   redirectToLanguage(browserLang);
+  bindLanguageSelectorEvents();
 })();

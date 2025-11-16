@@ -25,7 +25,6 @@ so far the placement can either be header or footer */}}
         title="{{ .Language.LanguageName }}"
         href="{{ .Permalink }}"
         data-lang-code="{{ .Language.Lang }}"
-        onclick="if(typeof localStorage !== 'undefined'){try{localStorage.setItem('preferredLanguage','{{ .Language.Lang }}');}catch(e){}}"
         >{{ .Language.LanguageName }}</a>
     </li>
     {{ end }}
