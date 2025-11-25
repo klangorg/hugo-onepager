@@ -40,7 +40,8 @@
       this.setTheme({
         color: '#2bb673',
         fontColor: '#000',
-        iconColor: '#ffffff'
+        iconColor: '#ffffff',
+        background: 'transparent'
       });
     });
   }

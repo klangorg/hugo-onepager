@@ -382,9 +382,19 @@ footer.footer .footer_links ul.navbar-nav {
 
 /* Rocket.Chat Widget - Transparent styling and forced light mode */
 iframe[src*="rocket.xana.space"],
-iframe[src*="livechat"] {
+iframe[src*="livechat"],
+#rocketchat-iframe {
     background: transparent !important;
+    background-color: transparent !important;
     color-scheme: light !important;
+}
+
+/* RocketChat widget container */
+.rocketchat-widget,
+.rocketchat-container,
+.rocketchat-wrapper > div {
+    background: transparent !important;
+    background-color: transparent !important;
 }
 
 /* Bottom Arrow Overlay - fixed to viewport, points at Rocket.Chat widget */
