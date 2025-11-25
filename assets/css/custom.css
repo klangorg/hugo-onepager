@@ -229,6 +229,28 @@ html {
     color: #adb5bd;
 }
 
+/* Skill level width classes (to avoid inline styles for CSP compliance) */
+.skill-level-5 { width: 5%; }
+.skill-level-10 { width: 10%; }
+.skill-level-15 { width: 15%; }
+.skill-level-20 { width: 20%; }
+.skill-level-25 { width: 25%; }
+.skill-level-30 { width: 30%; }
+.skill-level-35 { width: 35%; }
+.skill-level-40 { width: 40%; }
+.skill-level-45 { width: 45%; }
+.skill-level-50 { width: 50%; }
+.skill-level-55 { width: 55%; }
+.skill-level-60 { width: 60%; }
+.skill-level-65 { width: 65%; }
+.skill-level-70 { width: 70%; }
+.skill-level-75 { width: 75%; }
+.skill-level-80 { width: 80%; }
+.skill-level-85 { width: 85%; }
+.skill-level-90 { width: 90%; }
+.skill-level-95 { width: 95%; }
+.skill-level-100 { width: 100%; }
+
 /* Skills Page Styles */
 .skill-bar {
     height: 10px;
@@ -395,6 +417,17 @@ iframe[src*="livechat"],
 .rocketchat-wrapper > div {
     background: transparent !important;
     background-color: transparent !important;
+}
+
+/* RocketChat light color scheme (replaces inline style) */
+.rocketchat-light-scheme {
+    color-scheme: light;
+}
+
+/* GTM noscript iframe (replaces inline style) */
+.gtm-noscript-iframe {
+    display: none;
+    visibility: hidden;
 }
 
 /* Bottom Arrow Overlay - fixed to viewport, points at Rocket.Chat widget */
