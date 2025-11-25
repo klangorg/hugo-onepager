@@ -2,10 +2,13 @@ const { chromium } = require('playwright');
 
 (async () => {
   const browser = await chromium.launch();
-  const context = await browser.newContext({
-    viewport: { width: 1920, height: 1080 }
+  
+  // Test German version with German locale
+  const contextDE = await browser.newContext({
+    viewport: { width: 1920, height: 1080 },
+    locale: 'de-DE'
   });
-  const page = await context.newPage();
+  const page = await contextDE.newPage();
 
   console.log('Testing https://max-it.tech/ (DE)...');
   
@@ -20,23 +23,34 @@ const { chromium } = require('playwright');
     if (msg.type() === 'error') errors.push(msg.text());
   });
 
-  // Test English version
+  // Test English version with English locale
   console.log('Testing https://max-it.tech/en/ (EN)...');
-  await page.goto('https://max-it.tech/en/', { waitUntil: 'networkidle' });
-  await page.screenshot({ path: 'screenshot-en.jpg', type: 'jpeg', quality: 80 });
+  const contextEN = await browser.newContext({
+    viewport: { width: 1920, height: 1080 },
+    locale: 'en-US'
+  });
+  const pageEN = await contextEN.newPage();
+  
+  // Clear localStorage to prevent redirect
+  await pageEN.addInitScript(() => {
+    localStorage.removeItem('preferredLanguage');
+  });
+  
+  await pageEN.goto('https://max-it.tech/en/', { waitUntil: 'networkidle' });
+  await pageEN.screenshot({ path: 'screenshot-en.jpg', type: 'jpeg', quality: 80 });
   console.log('✓ Screenshot EN saved');
 
   // Test navigation and interactive elements
   console.log('Testing navigation...');
-  const navLinks = await page.locator('nav a').count();
+  const navLinks = await pageEN.locator('nav a').count();
   console.log(`✓ Found ${navLinks} navigation links`);
 
   // Check if main sections are visible
-  const header = await page.locator('header').isVisible();
+  const header = await pageEN.locator('header').isVisible();
   console.log(`✓ Header visible: ${header}`);
 
   // Check CSP headers
-  const response = await page.goto('https://max-it.tech/');
+  const response = await pageEN.goto('https://max-it.tech/en/');
   const csp = response.headers()['content-security-policy'];
   console.log('\n--- CSP Header ---');
   console.log(csp ? csp.substring(0, 200) + '...' : 'No CSP header found!');
