@@ -37,9 +37,9 @@ server {
     index index.html;
 
     # Strict CSP for A+ Mozilla Observatory rating
-    # Removed 'unsafe-inline' from style-src - all styles now use CSS classes
+    # Using 'unsafe-hashes' with specific hashes for inline styles from Bootstrap/external scripts
     # Hash for inline theme-switching script, 'unsafe-hashes' for CSS preload onload handler
-    add_header Content-Security-Policy "default-src 'none'; script-src 'self' 'sha256-ZOQDuM1Drke+vh8UIUnmlKCfOACcK475v9NHGjyGL00=' 'unsafe-hashes' 'sha256-uq+4nUqZONgARzmy2kR1w9EC+Qeig/Syd091LyT8vOk=' https://www.googletagmanager.com https://www.google-analytics.com https://rocket.xana.space; style-src 'self'; img-src 'self' data: blob: https://www.google-analytics.com https://rocket.xana.space https://www.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://rocket.xana.space wss://rocket.xana.space https://www.googletagmanager.com; frame-src https://www.googletagmanager.com https://rocket.xana.space; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'; upgrade-insecure-requests;" always;
+    add_header Content-Security-Policy "default-src 'none'; script-src 'self' 'sha256-ZOQDuM1Drke+vh8UIUnmlKCfOACcK475v9NHGjyGL00=' 'unsafe-hashes' 'sha256-uq+4nUqZONgARzmy2kR1w9EC+Qeig/Syd091LyT8vOk=' https://www.googletagmanager.com https://www.google-analytics.com https://rocket.xana.space; style-src 'self' 'unsafe-hashes' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-EntWS0hFrz2vH7susM+dPUxvHlL6sBswmM8K80E5oUk='; img-src 'self' data: blob: https://www.google-analytics.com https://rocket.xana.space https://www.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://rocket.xana.space wss://rocket.xana.space https://www.googletagmanager.com; frame-src https://www.googletagmanager.com https://rocket.xana.space; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'; upgrade-insecure-requests;" always;
     
     # Additional security headers
     add_header Strict-Transport-Security "max-age=63072000; includeSubDomains; preload" always;
