@@ -65,34 +65,29 @@ theme = "adritian-free-hugo-theme"
 
     [languages.de.menus]
       [[languages.de.menus.header]]
-        name = 'Über mich'
-        URL = '#about'
-        weight = 2
-
-      [[languages.de.menus.header]]
         name = "Skills"
         URL = "#skills-single"
-        weight = 3
+        weight = 2
 
       [[languages.de.menus.header]]
         name = "Erfahrung"
         URL = "#experience-single"
-        weight = 4
+        weight = 3
 
-      #[[languages.de.menus.header]]
-      #  name = "Blog"
-      #  URL = "/blog"
-      #  weight = 6
+      [[languages.de.menus.header]]
+        name = 'Über mich'
+        URL = '#about'
+        weight = 4
 
       [[languages.de.menus.header]]
         name = "Kontakt"
         URL = "#contact"
-        weight = 7
+        weight = 5
 
       [[languages.de.menus.header]]
         name = "Impressum"
         URL = "/imprint"
-        weight = 8
+        weight = 6
 
       [[languages.de.menus.footer]]
         name = "Startseite"
@@ -100,18 +95,18 @@ theme = "adritian-free-hugo-theme"
         weight = 1
 
       [[languages.de.menus.footer]]
-        name = "Über mich"
-        URL = "#about"
-        weight = 2
-
-      [[languages.de.menus.footer]]
         name = "Skills"
         URL = "#skills-single"
-        weight = 3
+        weight = 2
 
       [[languages.de.menus.footer]]
         name = "Erfahrung"
         URL = "/experience"
+        weight = 3
+
+      [[languages.de.menus.footer]]
+        name = "Über mich"
+        URL = "#about"
         weight = 4
 
       [[languages.de.menus.footer]]
@@ -135,34 +130,29 @@ theme = "adritian-free-hugo-theme"
 
     [languages.en.menus]
       [[languages.en.menus.header]]
-        name = 'About'
-        URL = '/en/#about'
-        weight = 2
-
-      [[languages.en.menus.header]]
         name = "Skills"
         URL = "/en/#skills-single"
-        weight = 3
+        weight = 2
 
       [[languages.en.menus.header]]
         name = "Experience"
         URL = "/en/#experience-single"
-        weight = 4
+        weight = 3
 
-      #[[languages.en.menus.header]]
-      #  name = "Blog"
-      #  URL = "/en/blog"
-      #  weight = 6
+      [[languages.en.menus.header]]
+        name = 'About'
+        URL = '/en/#about'
+        weight = 4
 
       [[languages.en.menus.header]]
         name = "Contact"
         URL = "/en/#contact"
-        weight = 7
+        weight = 5
 
       [[languages.en.menus.header]]
         name = "Imprint"
         URL = "/en/imprint"
-        weight = 8
+        weight = 6
 
       [[languages.en.menus.footer]]
         name = "Home"
@@ -170,18 +160,18 @@ theme = "adritian-free-hugo-theme"
         weight = 1
 
       [[languages.en.menus.footer]]
-        name = "About"
-        URL = "/en/#about"
-        weight = 2
-
-      [[languages.en.menus.footer]]
         name = "Skills"
         URL = "/en/#skills-single"
-        weight = 3
+        weight = 2
 
       [[languages.en.menus.footer]]
         name = "Experience"
         URL = "/en/experience"
+        weight = 3
+
+      [[languages.en.menus.footer]]
+        name = "About"
+        URL = "/en/#about"
         weight = 4
 
       [[languages.en.menus.footer]]

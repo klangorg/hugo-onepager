@@ -42,12 +42,12 @@ draft = false
     button3_url="/en/experience"
 >}}
 
+{{< testimonial-section
+    title="Testimonials" >}}
+
 {{< about-section
     imgSrc="images/about/user-picture.jpg"
     imgScale="0.5"
  >}}
-
-{{< testimonial-section
-    title="Testimonials" >}}
 
 {{< contact-section >}}
