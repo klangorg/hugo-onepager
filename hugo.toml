@@ -75,18 +75,18 @@ theme = "adritian-free-hugo-theme"
         weight = 3
 
       [[languages.de.menus.header]]
+        name = "Referenzen"
+        URL = "#testimonial"
+        weight = 4
+
+      [[languages.de.menus.header]]
         name = 'Über mich'
         URL = '#about'
-        weight = 4
+        weight = 5
 
       [[languages.de.menus.header]]
         name = "Kontakt"
         URL = "#contact"
-        weight = 5
-
-      [[languages.de.menus.header]]
-        name = "Impressum"
-        URL = "/imprint"
         weight = 6
 
       [[languages.de.menus.footer]]
@@ -105,19 +105,24 @@ theme = "adritian-free-hugo-theme"
         weight = 3
 
       [[languages.de.menus.footer]]
+        name = "Referenzen"
+        URL = "#testimonial"
+        weight = 4
+
+      [[languages.de.menus.footer]]
         name = "Über mich"
         URL = "#about"
-        weight = 4
+        weight = 5
 
       [[languages.de.menus.footer]]
         name = "Kontakt"
         URL = "#contact"
-        weight = 5
+        weight = 6
 
       [[languages.de.menus.footer]]
         name = "Impressum"
         URL = "/imprint"
-        weight = 6
+        weight = 7
 
 
   [languages.en]
@@ -140,18 +145,18 @@ theme = "adritian-free-hugo-theme"
         weight = 3
 
       [[languages.en.menus.header]]
+        name = "Testimonials"
+        URL = "/en/#testimonial"
+        weight = 4
+
+      [[languages.en.menus.header]]
         name = 'About'
         URL = '/en/#about'
-        weight = 4
+        weight = 5
 
       [[languages.en.menus.header]]
         name = "Contact"
         URL = "/en/#contact"
-        weight = 5
-
-      [[languages.en.menus.header]]
-        name = "Imprint"
-        URL = "/en/imprint"
         weight = 6
 
       [[languages.en.menus.footer]]
@@ -170,19 +175,24 @@ theme = "adritian-free-hugo-theme"
         weight = 3
 
       [[languages.en.menus.footer]]
+        name = "Testimonials"
+        URL = "/en/#testimonial"
+        weight = 4
+
+      [[languages.en.menus.footer]]
         name = "About"
         URL = "/en/#about"
-        weight = 4
+        weight = 5
 
       [[languages.en.menus.footer]]
         name = "Contact"
         URL = "/en/#contact"
-        weight = 5
+        weight = 6
 
       [[languages.en.menus.footer]]
         name = "Imprint"
         URL = "/en/imprint"
-        weight = 6
+        weight = 7
 
 
   [languages.fr]
