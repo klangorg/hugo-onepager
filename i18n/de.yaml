@@ -59,10 +59,10 @@
   translation: "IT-Kompetenz für Ihren digitalen Erfolg"
 
 - id: "showcase_subtitle"
-  translation: "Leidenschaft für IT seit 1997"
+  translation: "Ihre Herausforderungen. Meine Lösungen."
 
 - id: "showcase_description"
-  translation: "Meine Begeisterung für Computer begann 1997, als ich im Alter von 10 Jahren meinen ersten PC benutzte: Windows 95 auf einem Pentium I - damals noch High-End! 😄 Seitdem hat mich die Faszination für Technik nicht mehr losgelassen. Dieses Jahr habe ich mein 12-jähriges Jubiläum in der IT-Branche gefeiert. Vieles hat sich verändert, aber meine Leidenschaft für IT bleibt - ebenso wie meine Begeisterung für das Lösen komplexer Probleme. 😊"
+  translation: "Komplexe IT-Infrastrukturen, instabile Deployments oder manuelle Prozesse, die Zeit und Ressourcen kosten? Mit über 12 Jahren Erfahrung als DevOps- und System Engineer unterstütze ich Sie dabei, diese Hürden zu überwinden – praxisnah und lösungsorientiert. Von CI/CD-Optimierung über Container-Orchestrierung bis zur Cloud-Migration: Ich schaffe Infrastrukturen, die funktionieren, skalieren und Ihr Team entlasten."
 
 - id: "showcase_button"
   translation: "Kontakt"

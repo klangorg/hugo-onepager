@@ -59,12 +59,10 @@
   translation: "IT expertise for your digital success"
 
 - id: "showcase_subtitle"
-  translation: "Passion for IT since 1997"
+  translation: "Your Challenges. My Solutions."
 
 - id: "showcase_description"
-  translation: "My enthusiasm for computers began in 1997, when I used my first PC at the age of 10: Windows 95 on a Pentium I - high-end at the time! 😄 Since then, my fascination with technology has never left me.
-
-This year, I celebrated my 12th anniversary in the IT industry. A lot has changed, but my passion for IT remains - and my enthusiasm for solving complex problems. 😊"
+  translation: "Complex IT infrastructures, unstable deployments, or manual processes draining time and resources? With over 12 years of experience as a DevOps and System Engineer, I help you overcome these obstacles – hands-on and solution-oriented. From CI/CD optimization to container orchestration and cloud migration: I build infrastructures that work, scale, and free up your team."
 
 - id: "showcase_button"
   translation: "Contact"
