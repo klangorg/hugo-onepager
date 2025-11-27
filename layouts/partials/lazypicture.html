@@ -33,6 +33,18 @@
 {{- $decoding := .decoding | default "async" -}}
 {{- $sizes := .sizes | default "100vw" -}}
 
+{{- if eq $img.MediaType.SubType "svg" -}}
+  <img
+    src="{{ $img.RelPermalink }}"
+    class="{{ $imgClass }}"
+    alt="{{ $alt }}"
+    loading="{{ $loading }}"
+    decoding="{{ $decoding }}"
+    {{ with .width }}width="{{ . }}"{{ end }}
+    {{ with .height }}height="{{ . }}"{{ end }}
+  />
+{{- else -}}
+
 {{- $target1 := "" -}}
 {{- $target2 := "" -}}
 
@@ -84,3 +96,4 @@
     src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
   />
 </picture>
+{{- end -}}
