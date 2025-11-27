@@ -5,8 +5,8 @@ draft = false
 +++
 
 {{< showcase-section
-    imgSrc="images/showcase/showcase.png"
-    imgScale="0.5"
+    imgSrc="images/showcase/showcase_new.svg"
+    imgScale="0.8"
  >}}
 
 {{< platform-links >}}
