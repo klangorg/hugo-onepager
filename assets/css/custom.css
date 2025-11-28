@@ -497,18 +497,3 @@ picture.testimonial {
 .testimonial__author-info {
     padding-left: 16px !important;
 }
-
-/* Showcase Image Filter - Adapt original image to theme colors */
-.profile-image__photo img {
-    /* Grayscale to remove original colors (especially red) */
-    /* Sepia + Hue Rotate to tint it Purple (Theme Color) */
-    filter: grayscale(100%) sepia(80%) hue-rotate(230deg) saturate(180%) contrast(1.1);
-    transition: filter 0.3s ease;
-    mix-blend-mode: multiply; /* Blends better with background */
-}
-
-.profile-image__photo img:hover {
-    /* Slightly reveal original colors on hover, or just brighten */
-    filter: grayscale(0%) sepia(0%) hue-rotate(0deg) saturate(100%);
-    mix-blend-mode: normal;
-}
