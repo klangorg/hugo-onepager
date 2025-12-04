@@ -76,7 +76,7 @@
   translation: "Who am I?"
 
 - id: "about_content"
-  translation: '<p class="lead">As an independent DevOps Engineer, I automate infrastructures and optimize deployment processes. Using Infrastructure as Code, Kubernetes, and CI/CD pipelines on AWS/Azure, I deliver stable solutions from concept to production. The result: Faster releases, higher system stability, predictable costs.</p><p class="lead">Transparent communication and responsible project selection define my approach. I exclusively support civilian development and decline military or defense projects. This clear stance builds trust and enables sustainable focus on future-oriented technology.</p><p class="lead">Regular hands-on projects keep my expertise aligned with industry best practices. I deepen practical knowledge in automation, container orchestration, and monitoring, ensuring you always benefit from the most efficient methods.</p>'
+  translation: '<p class="lead">As an independent DevOps Engineer, I focus on developing automated and scalable infrastructures. I optimize deployment and operational stability using Infrastructure as Code, Kubernetes, and CI/CD pipelines, aiming for economically stable results. The outcome: Faster releases, higher system stability, predictable costs.</p><p class="lead">My foundation is integrity: I stand for transparent communication and consciously engage only in civilian development. This clear stance builds trust and enables sustainable focus on future-oriented technology.</p><p class="lead">Continuous hands-on projects ensure my clients always benefit from the latest industry best practices. I deepen practical knowledge in automation, container orchestration, and monitoring.</p>'
 
 - id: "about_button"
   translation: "About Me"
