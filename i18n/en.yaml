@@ -77,13 +77,13 @@
 
 - id: "about_content"
   translation: <p class="lead">
-      As a DevOps engineer, I focus on infrastructure automation and deployment process optimization. I develop scalable solutions using Infrastructure as Code, container orchestration, and CI/CD pipelines. My approach combines technical depth with pragmatic problem-solving.
+      As an independent DevOps Engineer, I automate infrastructures and optimize deployment processes. Using Infrastructure as Code, Kubernetes, and CI/CD pipelines on AWS/Azure, I deliver stable solutions from concept to production. The result: Faster releases, higher system stability, predictable costs.
       </p>
       <p class="lead">
-      Open and direct communication is one of my core values. As an independent DevOps specialist, I'm committed to peaceful civil development and deliberately choose not to work with military or arms industry clients.
+      Transparent communication and responsible project selection define my approach. I exclusively support civilian development and decline military or defense projects. This clear stance builds trust and enables sustainable focus on future-oriented technology.
       </p>
       <p class="lead">
-      In my free time, I run home server projects with Docker, Ansible, and monitoring stacks. There I experiment with new technologies and keep my skills current. Beyond IT, I balance my technical interests with environmental consciousness and nature-oriented gardening.
+      Regular hands-on projects keep my expertise aligned with industry best practices. I deepen practical knowledge in automation, container orchestration, and monitoring, ensuring you always benefit from the most efficient methods.
     </p>
 
 - id: "about_button"

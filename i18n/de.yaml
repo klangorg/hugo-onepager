@@ -77,13 +77,13 @@
 
 - id: "about_content"
   translation:  <p class="lead">
-      Als DevOps-Engineer liegt mein Fokus auf der Automatisierung von Infrastrukturen und der Optimierung von Deployment-Prozessen. Ich entwickle skalierbare Lösungen mit Infrastructure as Code, Container-Orchestrierung und CI/CD-Pipelines. Meine Arbeitsweise kombiniert technische Tiefe mit pragmatischem Problemlösen.
+      Als unabhängiger DevOps Engineer automatisiere ich Infrastrukturen und optimiere Deployment-Prozesse. Mit Infrastructure as Code, Kubernetes und CI/CD-Pipelines auf AWS/Azure liefere ich stabile Lösungen von der Konzeption bis zur Produktivumgebung. Das Ergebnis: Schnellere Releases, höhere Systemstabilität, planbare Kosten.
       </p>
       <p class="lead">
-      Offene und direkte Kommunikation ist einer meiner zentralen Werte. Als unabhängiger DevOps-Spezialist setze ich mich für eine friedliche zivile Entwicklung ein und arbeite bewusst nicht mit militärischen oder rüstungsindustriellen Kunden zusammen.
+      Transparente Kommunikation und verantwortungsvolle Projektwahl prägen meine Arbeitsweise. Ich unterstütze ausschließlich zivile Entwicklung und lehne Militär- oder Rüstungsprojekte ab. Diese klare Haltung schafft Vertrauen und ermöglicht nachhaltigen Fokus auf zukunftsorientierte Technologie.
       </p>
       <p class="lead">
-      In meiner Freizeit betreibe ich Heimserver-Projekte mit Docker, Ansible und Monitoring-Stacks. Dort experimentiere ich mit neuen Technologien und halte meine Skills aktuell. Neben der IT bringe ich mein technisches Interesse mit Umweltbewusstsein und naturnaher Gartenarbeit in Einklang.
+      Regelmäßige Praxisprojekte halten meine Expertise bei Industry Best Practices aktuell. Ich vertiefe praktisches Wissen in Automatisierung, Container-Orchestrierung und Monitoring, damit Sie stets von den effizientesten Methoden profitieren.
     </p>
 
 - id: "about_button"

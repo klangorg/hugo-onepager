@@ -106,7 +106,39 @@ git submodule update --remote
 
 ## Deployment
 
-This site is configured for deployment with:
+This site is deployed via Docker on a self-hosted server using Traefik as reverse proxy.
+
+### Deployment Workflow
+
+1. **Make changes locally** and commit them:
+   ```bash
+   git add .
+   git commit -m "Your commit message"
+   git push
+   ```
+
+2. **Deploy to server** via SSH:
+   ```bash
+   ssh docker "cd /home/docker/docker/hugo && git pull && docker-compose up -d --build"
+   ```
+
+   Or step by step:
+   ```bash
+   ssh docker
+   cd /home/docker/docker/hugo
+   git pull
+   docker-compose up -d --build
+   ```
+
+### Server Configuration
+
+- **SSH Host**: `docker` (configured in `~/.ssh/config`)
+- **Server Path**: `/home/docker/docker/hugo`
+- **Docker Network**: `t2_proxy` (Traefik)
+- **Domain**: `max-it.tech`
+
+### Configuration
+
 - Base URL: `https://max-it.tech`
 - Vercel Analytics support (can be enabled in `hugo.toml`)
 - Google Analytics support (can be enabled in `hugo.toml`)
