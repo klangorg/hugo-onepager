@@ -271,7 +271,7 @@ skill_categories:
       - name: "Static Website Generators (Hugo CMS)"
         level: 85
         years: "3+"
-        description: "Hugo templates, Content management, Multi-language sites, Deployment"
+        description: "Templates, Content management, Multi-language, Deployment"
 ---
 
 As a DevOps engineer and system administrator with over 12 years of experience, I have developed comprehensive expertise in Linux system administration, CI/CD pipelines, container technologies, monitoring solutions, and IT automation. My technical skills are based on solid practical experience from numerous projects in mid-sized and enterprise environments.
