@@ -265,6 +265,13 @@ skill_categories:
         level: 95
         years: "12+"
         description: "Confluence, Markdown, Diagrams, Runbooks, Knowledge base, SOPs"
+
+  - name: "Web Development & CMS"
+    skills:
+      - name: "Static Website Generators (Hugo CMS)"
+        level: 85
+        years: "3+"
+        description: "Hugo templates, Content management, Multi-language sites, Deployment automation"
 ---
 
 As a DevOps engineer and system administrator with over 12 years of experience, I have developed comprehensive expertise in Linux system administration, CI/CD pipelines, container technologies, monitoring solutions, and IT automation. My technical skills are based on solid practical experience from numerous projects in mid-sized and enterprise environments.
