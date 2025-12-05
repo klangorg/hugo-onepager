@@ -269,7 +269,7 @@ skill_categories:
   - name: "Web Development & CMS"
     skills:
       - name: "Static Website Generators (Hugo CMS)"
-        level: 85
+        level: 65
         years: "3+"
         description: "Templates, Content management, Multi-language, Deployment"
 ---
