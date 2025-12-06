@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ssh docker \"cd /home/docker/docker/hugo && sudo git pull && sudo docker compose up -d --build\")",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nShorten Hugo skill description to 65 chars max\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push)",
+      "Bash(git commit:*)",
+      "Bash(curl:*)",
+      "Bash(npx playwright:*)",
+      "Bash(npm install:*)",
+      "Bash(node test-rocketchat.js:*)",
+      "Bash(sudo apt-get update:*)",
+      "Bash(sudo apt-get:*)",
+      "Bash(ssh docker:*)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(git clone:*)",
+      "Bash(python3:*)",
+      "Bash(source venv/bin/activate)",
+      "Bash(pip install:*)",
+      "Bash(python3.13:*)",
+      "Bash(node test-rocketchat-detailed.js:*)",
+      "Bash(node test-widget-simple.js:*)",
+      "Bash(chmod:*)",
+      "Bash(scp:*)",
+      "Bash(dos2unix:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
