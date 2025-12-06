@@ -2,7 +2,7 @@
 title: "Technical Skills"
 date: 2025-10-12T00:00:00+01:00
 draft: false
-description: "A comprehensive overview of my technical skills and expertise across various DevOps domains."
+description: "Not just surface-level knowledge: An honest assessment of my technical skills from Ansible (95%) to Kubernetes (75%) and Incident Management (100%), structured across 15 categories and over 50 individual skills with experience levels."
 button1_text: "LinkedIn Profile"
 button1_url: "https://www.linkedin.com/in/roessler-max/"
 button1_icon: "icon-linkedin"

@@ -24,7 +24,17 @@
       "Bash(node test-widget-simple.js:*)",
       "Bash(chmod:*)",
       "Bash(scp:*)",
-      "Bash(dos2unix:*)"
+      "Bash(dos2unix:*)",
+      "Bash(node check-image.js:*)",
+      "Bash(identify:*)",
+      "Bash(cp:*)",
+      "Bash(node debug-showcase-complete.js)",
+      "Bash(find:*)",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(xargs -I {} bash -c 'echo \"\"\"\"=== {} ===\"\"\"\" && head -5 {}')",
+      "Bash(git config:*)",
+      "Bash(GIT_DIR=/home/max/Git/hugo-onepager/.git GIT_WORK_TREE=/home/max/Git/hugo-onepager git commit:*)"
     ],
     "deny": [],
     "ask": []

@@ -2,7 +2,7 @@
 title: "Technische Fähigkeiten"
 date: 2025-10-12T00:00:00+01:00
 draft: false
-description: "Ein umfassender Überblick über meine technischen Fähigkeiten und Expertise in verschiedenen DevOps-Bereichen."
+description: "Nicht nur oberflächliches Know-how: Eine ehrliche Bewertung meiner technischen Fähigkeiten von Ansible (95%) über Kubernetes (75%) bis hin zu Incident Management (100%), strukturiert nach 15 Kategorien und über 50 einzelnen Skills mit Erfahrungslevel."
 button1_text: "LinkedIn Profil"
 button1_url: "https://www.linkedin.com/in/roessler-max/"
 button1_icon: "icon-linkedin"

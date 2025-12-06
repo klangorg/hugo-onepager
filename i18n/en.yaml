@@ -90,7 +90,7 @@
   translation: "Experience"
 
 - id: "experience_description"
-  translation: "With over 12 years of professional IT experience, I've evolved from IT administrator to DevOps engineer. My expertise includes CI/CD pipelines, Infrastructure as Code, container technologies, Linux administration, automation, monitoring, and cloud migrations."
+  translation: "12 years of IT experience mean one thing: I've made the mistakes you don't have to make anymore. From manual deployments to automated CI/CD pipelines. From unstable servers to container-based infrastructure. From reactive troubleshooting to proactive monitoring. My expertise in Infrastructure as Code, Linux administration, and cloud migration isn't just theoretical—it's battle-tested."
 
 - id: "experience_button"
   translation: "LinkedIn" 

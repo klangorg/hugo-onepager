@@ -9,11 +9,11 @@ duration: "05.2013 - 10.2018"
 
 ---
 
-Bei T-Systems Multimedia Solutions GmbH konnte ich über fünf Jahre lang fundierte Erfahrungen im Bereich System Engineering sammeln und mich zu einem vielseitigen IT-Experten entwickeln. Diese prägende Zeit legte den Grundstein für meine spätere Spezialisierung und meinen Werdegang als IT-Consultant.
+Nach zwei Jahren als IT-Administrator bei DAS Environmental Expert sammelte ich Erfahrung in einem kleinen Unternehmen mit überschaubarer IT-Landschaft. Um mein Know-how auf Enterprise-Niveau zu heben, wechselte ich 2013 zu T-Systems Multimedia Solutions GmbH. Über fünf Jahre lang entwickelte ich mich hier zum vielseitigen System Engineer und legte den Grundstein für meine spätere Spezialisierung als IT-Consultant.
 
-In dieser Position war ich maßgeblich am Aufbau und Betrieb von Web-Application-Servern beteiligt, die hochverfügbare eCommerce-Lösungen für namhafte Kunden bereitstellten. Meine Verantwortung umfasste die vollständige Lifecycle-Betreuung dieser Systeme – von der initialen Provisionierung über das Monitoring bis hin zur kontinuierlichen Optimierung.
+In dieser Position baute ich Web-Application-Server auf und betrieb diese, die hochverfügbare eCommerce-Lösungen für namhafte Kunden bereitstellten. Ich verantwortete die vollständige Lifecycle-Betreuung dieser Systeme von der initialen Provisionierung über das Monitoring bis hin zur kontinuierlichen Optimierung.
 
-Ein besonderes Highlight war meine Arbeit im Projektgeschäft, wo ich aktiv an der Entwicklung und Implementierung von eCommerce-Plattformen und DevOps-Tools mitwirkte. Hier konnte ich meine Leidenschaft für Automatisierung ausleben, indem ich Puppet-Module zur Konfiguration von Linux-Servern entwickelte. Diese Automatisierungslösungen steigerten die Effizienz erheblich und reduzierten manuelle Fehlerquellen.
+Ein besonderes Highlight war meine Arbeit im Projektgeschäft, wo ich aktiv an der Entwicklung und Implementierung von eCommerce-Plattformen und DevOps-Tools mitwirkte. Hier lebte ich meine Leidenschaft für Automatisierung aus und entwickelte Puppet-Module zur Konfiguration von Linux-Servern. Diese Automatisierungslösungen steigerten die Effizienz erheblich und reduzierten manuelle Fehlerquellen.
 
 Als System Engineer war ich täglich mit vielfältigen Herausforderungen konfrontiert – von der Administration komplexer Linux-Umgebungen und Web-Applikationen bis hin zum direkten IT-Support für interne und externe Stakeholder. Diese breite Aufstellung ermöglichte es mir, ein tiefes Verständnis für die verschiedenen Ebenen der IT-Infrastruktur zu entwickeln.
 

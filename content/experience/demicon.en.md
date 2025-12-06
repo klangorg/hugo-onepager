@@ -9,13 +9,15 @@ duration: "07.2021 - 11.2022"
 
 ---
 
-At demicon GmbH, I was able to further deepen my expertise in the Atlassian ecosystem and successfully implement demanding migration projects. In this position, I was responsible for supporting complex customer environments and carrying out strategically important cloud migrations.
+To deepen my Atlassian expertise at enterprise level, I switched to demicon GmbH in 2021, one of Germany's leading Atlassian partners. Here I focused on complex cloud migrations at large scale and supported enterprise customers with several thousand users. What I had learned as a consultant at STAGIL, I implemented at demicon in technically demanding, mission-critical projects.
 
-A highlight of my time at demicon was the successful planning and execution of several Server/Data Center to Atlassian Cloud migrations. These projects required not only technical know-how but also strong communication skills to guide stakeholders through the transformation process and ensure that business processes were not impacted during the migration.
+A highlight of my time at demicon was the successful planning and execution of multiple server/data center to Atlassian cloud migrations for enterprise customers. Unlike STAGIL, this involved systems with several thousand users, complex plugin landscapes, and strict compliance requirements. I developed zero-downtime migration strategies, used CCMA tools (Confluence Cloud Migration Assistant) for complex data transfers, and coordinated migration windows with minimal impact on business processes.
 
-Through my thorough requirements analysis and understanding of customer needs, I was able to develop customized solutions that were both technically robust and user-friendly. My work encompassed the complete lifecycle management of Atlassian systems – from initial deployment through updates and maintenance to troubleshooting.
+Through thorough requirements analyses and my understanding of enterprise needs, I developed customized solutions that were both technically robust and scalable. My work encompassed the complete lifecycle support of Atlassian systems in highly available environments: from initial deployment through updates and maintenance to troubleshooting under SLA conditions.
 
-As a technical consultant, I worked closely with customers to optimize the architecture of their IT systems and implement best practices. My 2nd-level support was particularly appreciated by customers for quick and competent problem-solving.
+As a technical consultant, I worked closely with clients to optimize their IT system architecture and implement best practices. My second-level support was particularly appreciated by clients for fast and competent problem-solving in critical situations.
+
+This position was my masterclass in scaling and technical sophistication. I learned to plan not just for 50 users, but for 5,000+. Not just to perform standard migrations, but to orchestrate zero-downtime transitions. This experience qualifies me today for the most demanding enterprise projects.
 
 **Main Responsibilities:**
 - Deployment, updates, and maintenance of Atlassian customer environments
