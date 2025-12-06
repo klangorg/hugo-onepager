@@ -11,7 +11,7 @@ duration: "08.2011 - 05.2013"
 
 My first position after training led me to DAS Environmental Expert GmbH, where I started my professional IT career as an IT Administrator. In this position, I was able to put the knowledge acquired during my training into practice and gain important experience in an international corporate environment.
 
-As an IT Administrator, I was responsible for coordinating and supporting the entire IT landscape of the company. This position offered me the unique opportunity to develop a holistic view of IT infrastructures and to become familiar with all aspects of system administration – from strategic planning to daily operational support.
+As an IT Administrator, I was responsible for coordinating and supporting the entire IT landscape of the company. This position offered me the unique opportunity to develop a holistic view of IT infrastructures and to become familiar with all aspects of system administration: from strategic planning to daily operational support.
 
 A central component of my work was multi-level IT support for international employees. As a contact person for 1st-, 2nd-, and 3rd-level support, I developed a deep understanding of the different complexity levels of IT problems and learned to establish efficient escalation processes. This experience sharpened my problem-solving competence and my ability to act calmly and solution-oriented even under pressure.
 

@@ -15,9 +15,9 @@ In dieser Position baute ich Web-Application-Server auf und betrieb diese, die h
 
 Ein besonderes Highlight war meine Arbeit im Projektgeschäft, wo ich aktiv an der Entwicklung und Implementierung von eCommerce-Plattformen und DevOps-Tools mitwirkte. Hier lebte ich meine Leidenschaft für Automatisierung aus und entwickelte Puppet-Module zur Konfiguration von Linux-Servern. Diese Automatisierungslösungen steigerten die Effizienz erheblich und reduzierten manuelle Fehlerquellen.
 
-Als System Engineer war ich täglich mit vielfältigen Herausforderungen konfrontiert – von der Administration komplexer Linux-Umgebungen und Web-Applikationen bis hin zum direkten IT-Support für interne und externe Stakeholder. Diese breite Aufstellung ermöglichte es mir, ein tiefes Verständnis für die verschiedenen Ebenen der IT-Infrastruktur zu entwickeln.
+Als System Engineer war ich täglich mit vielfältigen Herausforderungen konfrontiert: von der Administration komplexer Linux-Umgebungen und Web-Applikationen bis hin zum direkten IT-Support für interne und externe Stakeholder. Diese breite Aufstellung ermöglichte es mir, ein tiefes Verständnis für die verschiedenen Ebenen der IT-Infrastruktur zu entwickeln.
 
-Die Arbeit im Helpdesk schärfte meine Problemlösungsfähigkeiten und Kommunikationskompetenzen. Ich lernte, auch unter Zeitdruck strukturiert zu arbeiten und komplexe technische Sachverhalte verständlich zu kommunizieren – Fähigkeiten, die mir in meiner weiteren Karriere von unschätzbarem Wert wurden.
+Die Arbeit im Helpdesk schärfte meine Problemlösungsfähigkeiten und Kommunikationskompetenzen. Ich lernte, auch unter Zeitdruck strukturiert zu arbeiten und komplexe technische Sachverhalte verständlich zu kommunizieren. Diese Fähigkeiten wurden mir in meiner weiteren Karriere von unschätzbarem Wert.
 
 **Kernbereiche:**
 - Provisionierung und Hosting von Web-Application-Servern
