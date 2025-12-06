@@ -34,15 +34,22 @@ hugo                 # Production Build nach ./public
 ### Deployment auf Server
 
 ```bash
-# Einzeiler-Deployment
-ssh docker "cd /home/docker/docker/hugo && git pull && docker-compose up -d --build"
+# Einzeiler-Deployment (empfohlen - nutzt --no-cache für sauberen Build)
+ssh docker "cd /home/docker/docker/hugo && sudo git pull && sudo docker compose build --no-cache && sudo docker compose up -d"
+
+# Schnelles Deployment (nutzt Cache, kann bei geänderten Dateien mit gleichem Namen Probleme machen)
+ssh docker "cd /home/docker/docker/hugo && sudo git pull && sudo docker compose up -d --build"
 
 # Oder Schritt für Schritt
 ssh docker
 cd /home/docker/docker/hugo
-git pull
-docker-compose up -d --build
+sudo git pull
+sudo docker compose build --no-cache  # Kein Cache = alle Dateien werden neu kopiert
+sudo docker compose up -d
 ```
+
+**Hinweis:** `--no-cache` ist wichtig, wenn Dateien mit gleichem Namen ersetzt wurden (z.B. Bilder).
+Docker prüft nur den Timestamp, nicht den Inhalt. Ohne `--no-cache` kann der alte Build-Cache verwendet werden.
 
 ## Server-Zugang
 
@@ -81,3 +88,12 @@ docker-compose up -d --build
 | `assets/css/custom.css` | Custom Styles |
 | `layouts/partials/*.html` | Layout Overrides |
 | `i18n/*.yaml` | Übersetzungen |
+
+## Rocket.Chat Integration
+
+- **Widget**: Integriert im Theme über `assets/js/rocketchat-init.js`
+- **Server**: https://rocket.xana.space
+- **Agent Auto-Online**: Systemd Service auf dem Docker-Server (`rocketchat-agent-keeper.service`)
+  - Setzt Agent-Status alle 5 Minuten auf "available"
+  - Service verwalten: `ssh docker "sudo systemctl status rocketchat-agent-keeper"`
+  - Widget bleibt dadurch immer im Online-Modus
