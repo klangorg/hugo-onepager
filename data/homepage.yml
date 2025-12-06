@@ -7,7 +7,7 @@ showcase:
     src: "images/showcase/showcase.png"
     x: "images/showcase/showcase.png"
     _2x: "images/showcase/showcase@2x.png"
-    width: 400
+    width: 600
     height: 400
     scale: 0.5
   imageMobile:
