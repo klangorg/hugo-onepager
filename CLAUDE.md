@@ -91,9 +91,47 @@ Docker prüft nur den Timestamp, nicht den Inhalt. Ohne `--no-cache` kann der al
 
 ## Rocket.Chat Integration
 
-- **Widget**: Integriert im Theme über `assets/js/rocketchat-init.js`
+### Implementierung
+
+- **Widget**: Integriert über `assets/js/site-inline.js` (Funktion `initRocketChat()`)
 - **Server**: https://rocket.xana.space
-- **Agent Auto-Online**: Systemd Service auf dem Docker-Server (`rocketchat-agent-keeper.service`)
-  - Setzt Agent-Status alle 5 Minuten auf "available"
-  - Service verwalten: `ssh docker "sudo systemctl status rocketchat-agent-keeper"`
-  - Widget bleibt dadurch immer im Online-Modus
+- **Container**: `<div class="rocketchat-wrapper rocketchat-light-scheme">` in `layouts/partials/base-foot.html`
+- **Styling**: `assets/css/custom.css` (Zeilen 405-442)
+
+### Technische Details
+
+**JavaScript-Initialisierung** (`site-inline.js`):
+- Lädt externes Script asynchron von https://rocket.xana.space/livechat
+- Theme-Konfiguration: Grün (#2bb673), transparenter Hintergrund
+- **Race Condition Fix** (Commit e8f105a):
+  - `onload`-Handler für externes Script
+  - Retry-Mechanismus mit Validierung (5× mit 200ms Delay)
+  - Widget initial unsichtbar bis JS-Initialisierung bestätigt
+  - Console-Logging für Debugging
+
+**CSS-Schutz**:
+- `.rocketchat-wrapper:not(.rocketchat-initialized)` → unsichtbar
+- `.rocketchat-wrapper.rocketchat-initialized` → fadeIn (0.3s)
+- CSS-Fallback für grüne Farbe falls JS fehlschlägt
+
+### Agent Auto-Online Service
+
+- **Service**: Systemd Service auf dem Docker-Server (`rocketchat-agent-keeper.service`)
+- **Funktion**: Setzt Agent-Status alle 5 Minuten auf "available"
+- **Verwalten**: `ssh docker "sudo systemctl status rocketchat-agent-keeper"`
+- **Zweck**: Widget bleibt dadurch immer im Online-Modus
+
+### Debugging
+
+Console-Logs beim erfolgreichen Load:
+```
+[RocketChat] External script loaded
+[RocketChat] Theme applied successfully
+[RocketChat] Initialization complete
+```
+
+Bei Problemen Retry-Logs prüfen:
+```
+[RocketChat] Waiting for API... retry N
+[RocketChat] Reapplying theme, retry N
+```
