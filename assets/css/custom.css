@@ -424,6 +424,23 @@ iframe[src*="livechat"],
     color-scheme: light;
 }
 
+/* Visibility Control - Hide until JS confirms initialization */
+.rocketchat-wrapper:not(.rocketchat-initialized) {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+.rocketchat-wrapper.rocketchat-initialized {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* CSS Fallback - Force green if JS theme fails */
+iframe[src*="rocket.xana.space"] div[class*="button"],
+iframe[src*="livechat"] .widget-trigger {
+    background-color: #2bb673 !important;
+}
+
 /* GTM noscript iframe (replaces inline style) */
 .gtm-noscript-iframe {
     display: none;
