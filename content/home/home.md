@@ -5,7 +5,7 @@ draft = false
 +++
 
 {{< showcase-section
-    imgSrc="images/showcase/showcase.jpg"
+    imgSrc="images/showcase/showcase.png"
     imgScale="0.8"
  >}}
 

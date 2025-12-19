@@ -71,16 +71,22 @@
 {{- end -}}
 
 {{- $imgPrimary := $img.Resize (printf "%s q80 Lanczos picture" $target1) -}}
-{{- $imgWebp := $img.Resize (printf "%s webp q80 Lanczos picture" $target1) -}}
+{{- $isPNG := eq $img.MediaType.SubType "png" -}}
 
 <picture class="{{ $pictureClass }}">
   {{- if $target2 -}}
     {{- $imgPrimary2 := $img.Resize (printf "%s q80 Lanczos picture" $target2) -}}
-    {{- $imgWebp2 := $img.Resize (printf "%s webp q80 Lanczos picture" $target2) -}}
-    <source srcset="{{ $imgWebp.RelPermalink }} 1x, {{ $imgWebp2.RelPermalink }} 2x" type="image/webp" />
+    {{- if not $isPNG -}}
+      {{- $imgWebp := $img.Resize (printf "%s webp q80 Lanczos picture" $target1) -}}
+      {{- $imgWebp2 := $img.Resize (printf "%s webp q80 Lanczos picture" $target2) -}}
+      <source srcset="{{ $imgWebp.RelPermalink }} 1x, {{ $imgWebp2.RelPermalink }} 2x" type="image/webp" />
+    {{- end -}}
     <source srcset="{{ $imgPrimary.RelPermalink }} 1x, {{ $imgPrimary2.RelPermalink }} 2x" type="{{ $imgPrimary.MediaType.Type }}" />
   {{- else -}}
-    <source srcset="{{ $imgWebp.RelPermalink }} 1x" type="image/webp" />
+    {{- if not $isPNG -}}
+      {{- $imgWebp := $img.Resize (printf "%s webp q80 Lanczos picture" $target1) -}}
+      <source srcset="{{ $imgWebp.RelPermalink }} 1x" type="image/webp" />
+    {{- end -}}
     <source srcset="{{ $imgPrimary.RelPermalink }} 1x" type="{{ $imgPrimary.MediaType.Type }}" />
   {{- end }}
 
