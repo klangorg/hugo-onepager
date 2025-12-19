@@ -4,9 +4,9 @@
 showcase:
   enable: true
   image:
-    src: "images/showcase/showcase.png"
-    x: "images/showcase/showcase.png"
-    _2x: "images/showcase/showcase@2x.png"
+    src: "images/showcase/showcase.jpg"
+    x: "images/showcase/showcase.jpg"
+    _2x: "images/showcase/showcase.jpg"
     width: 600
     height: 400
     scale: 0.5
