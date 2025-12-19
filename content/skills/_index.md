@@ -272,6 +272,13 @@ skill_categories:
         level: 65
         years: "3+"
         description: "Templates, Content Management, Mehrsprachigkeit, Deployment"
+
+  - name: "Künstliche Intelligenz"
+    skills:
+      - name: "Prompt Engineering"
+        level: 85
+        years: "3+"
+        description: "Effektive Prompts für LLMs (ChatGPT, Claude, Gemini), Kontext-Optimierung, Chain-of-Thought, Automatisierung"
 ---
 
 Als DevOps-Engineer und Systemadministrator mit über 12 Jahren Erfahrung habe ich umfassende Expertise in Linux-Systemadministration, CI/CD-Pipelines, Container-Technologien, Monitoring-Lösungen und IT-Automatisierung entwickelt. Meine technischen Fähigkeiten basieren auf solider praktischer Erfahrung aus zahlreichen Projekten in mittelständischen und Enterprise-Umgebungen.
