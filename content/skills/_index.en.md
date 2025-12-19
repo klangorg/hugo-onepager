@@ -278,7 +278,7 @@ skill_categories:
       - name: "Prompt Engineering"
         level: 85
         years: "3+"
-        description: "LLM prompts (ChatGPT, Claude, Gemini), Chain-of-thought"
+        description: "LLM prompts (ChatGPT, Claude, Gemini), CoT, ToT"
       - name: "AI Agents & Coding Assistants"
         level: 80
         years: "2+"
@@ -291,7 +291,7 @@ skill_categories:
       - name: "Fine-Tuning & AI Models"
         level: 70
         years: "2+"
-        description: "Hugging Face, LoRA, local LLMs, Ollama"
+        description: "Hugging Face, local LLMs, Ollama"
 ---
 
 As a DevOps engineer and system administrator with over 12 years of experience, I have developed comprehensive expertise in Linux system administration, CI/CD pipelines, container technologies, monitoring solutions, and IT automation. My technical skills are based on solid practical experience from numerous projects in mid-sized and enterprise environments.
