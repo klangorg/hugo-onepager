@@ -271,7 +271,7 @@ skill_categories:
       - name: "Prompt Engineering"
         level: 85
         years: "3+"
-        description: "LLM prompts (ChatGPT, Claude, Gemini), CoT, ToT, Sub-Agents, Claude Skills"
+        description: "Claude, ChatGPT, Gemini, CoT, ToT, Sub-Agents, Claude Skills"
       - name: "AI Agents & Coding Assistants"
         level: 80
         years: "2+"
