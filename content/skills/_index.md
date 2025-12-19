@@ -266,13 +266,6 @@ skill_categories:
         years: "12+"
         description: "Confluence, Markdown, Diagramme, Runbooks, Wissensdatenbank, SOPs"
 
-  - name: "Webentwicklung & CMS"
-    skills:
-      - name: "Static Website Generators (Hugo CMS)"
-        level: 65
-        years: "3+"
-        description: "Templates, Content Management, Mehrsprachigkeit, Deployment"
-
   - name: "Künstliche Intelligenz"
     skills:
       - name: "Prompt Engineering"
@@ -292,6 +285,13 @@ skill_categories:
         level: 70
         years: "2+"
         description: "Hugging Face, lokale LLMs, Ollama"
+
+  - name: "Webentwicklung & CMS"
+    skills:
+      - name: "Static Website Generators (Hugo CMS)"
+        level: 65
+        years: "3+"
+        description: "Templates, Content Management, Mehrsprachigkeit, Deployment"
 ---
 
 Als DevOps-Engineer und Systemadministrator mit über 12 Jahren Erfahrung habe ich umfassende Expertise in Linux-Systemadministration, CI/CD-Pipelines, Container-Technologien, Monitoring-Lösungen und IT-Automatisierung entwickelt. Meine technischen Fähigkeiten basieren auf solider praktischer Erfahrung aus zahlreichen Projekten in mittelständischen und Enterprise-Umgebungen.
