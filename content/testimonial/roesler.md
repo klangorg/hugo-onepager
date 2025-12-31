@@ -8,9 +8,9 @@ position: "Anwendungsentwickler, Basler Versicherung AG"
 
 params:
   image:
-    src: "images/testimonial/anonym.jpg"
-    x: "images/testimonial/anonym.jpg"
-    _2x: "images/testimonial/anonym@2x.jpg"
+    src: "images/testimonial/roesler.jpg"
+    x: "images/testimonial/roesler.jpg"
+    _2x: "images/testimonial/roesler@2x.jpg"
     scale: 0.5
 
 ## For the content, you can use markdown
