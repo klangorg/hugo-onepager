@@ -7,11 +7,15 @@ services:
       dockerfile: Dockerfile
     container_name: hugo-onepager
     restart: unless-stopped
+    mem_limit: 64m
+    mem_reservation: 16m
+    cpus: 0.1
     networks:
       - t2_proxy
     labels:
       # Traefik aktivieren
       - "traefik.enable=true"
+      - "com.centurylinklabs.watchtower.enable=false"
       
       # HTTP Router
       - "traefik.http.routers.hugo-onepager.rule=Host(`max-it.tech`)"

@@ -102,7 +102,7 @@
   translation: "Download resume"
 
 - id: "experience_button2_url"
-  translation: "/files/cv_max_roessler.pdf"
+  translation: "/files/cv_max_roessler_en.pdf"
 
 - id: "experience_button3"
   translation: "View all"
