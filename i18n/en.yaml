@@ -2,7 +2,7 @@
 - id: "meta_title"
   translation: "Max Rößler - DevOps and System Engineer | Dresden, Germany"
 - id: "meta_description"
-  translation: "Experienced DevOps and System engineer with 12+ years expertise in CI/CD pipelines, Infrastructure as Code, Docker, Kubernetes, Linux administration, automation, and cloud migrations. Based in Dresden, Germany."
+  translation: "Experienced DevOps and System engineer with 15+ years expertise in CI/CD pipelines, Infrastructure as Code, Docker, Kubernetes, Linux administration, automation, and cloud migrations. Based in Dresden, Germany."
 - id: "meta_keywords"
   translation: "Max Rößler, DevOps Engineer, System Engineer, CI/CD, Infrastructure as Code, Docker, Kubernetes, Linux, Cloud Migration, Automation, IT Consultant, Dresden, Germany"
 - id: "meta_author"
@@ -52,7 +52,7 @@
   translation: "Max Rößler - DevOps and System Engineer | Dresden"
 
 - id: "head_description"
-  translation: "Experienced DevOps and System engineer with 12+ years expertise in CI/CD, Infrastructure as Code, container technologies, Linux administration, automation, and cloud migrations."
+  translation: "Experienced DevOps and System engineer with 15+ years expertise in CI/CD, Infrastructure as Code, container technologies, Linux administration, automation, and cloud migrations."
 
 ## Homepage showcase
 - id: "showcase_title"

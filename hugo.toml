@@ -11,7 +11,7 @@ theme = "adritian-free-hugo-theme"
 [params]
 
   title = 'Max Rößler - DevOps- und System Engineer | Dresden'
-  description = 'Experienced DevOps and System engineer with 12+ years in CI/CD, Infrastructure as Code, container technologies, Linux administration, and cloud migrations. Based in Dresden, Germany.'
+  description = 'Experienced DevOps and System engineer with 15+ years in CI/CD, Infrastructure as Code, container technologies, Linux administration, and cloud migrations. Based in Dresden, Germany.'
   images = ['/android-chrome-512x512.png']
   sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
 
