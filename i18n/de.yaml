@@ -2,7 +2,7 @@
 - id: "meta_title"
   translation: "Max Rößler - DevOps- und System Engineer | Dresden, Deutschland"
 - id: "meta_description"
-  translation: "Erfahrener DevOps- und System Engineer mit 12+ Jahren Expertise in CI/CD-Pipelines, Infrastructure as Code, Docker, Kubernetes, Linux-Administration, Automatisierung und Cloud-Migrationen. Ansässig in Dresden, Deutschland."
+  translation: "Erfahrener DevOps- und System Engineer mit 15+ Jahren Expertise in CI/CD-Pipelines, Infrastructure as Code, Docker, Kubernetes, Linux-Administration, Automatisierung und Cloud-Migrationen. Ansässig in Dresden, Deutschland."
 - id: "meta_keywords"
   translation: "Max Rößler, DevOps Engineer, System Engineer, CI/CD, Infrastructure as Code, Docker, Kubernetes, Linux, Cloud Migration, Automatisierung, IT Berater, Dresden, Deutschland"
 - id: "meta_author"
@@ -52,7 +52,7 @@
   translation: "Max Rößler - DevOps- und System Engineer | Dresden"
 
 - id: "head_description"
-  translation: "Erfahrener DevOps- und System Engineer mit 12+ Jahren Expertise in CI/CD, Infrastructure as Code, Container-Technologien, Linux-Administration, Automatisierung und Cloud-Migrationen."
+  translation: "Erfahrener DevOps- und System Engineer mit 15+ Jahren Expertise in CI/CD, Infrastructure as Code, Container-Technologien, Linux-Administration, Automatisierung und Cloud-Migrationen."
 
 ## Homepage showcase
 - id: "showcase_title"
@@ -62,7 +62,7 @@
   translation: "Ihre Herausforderungen. Meine Lösungen."
 
 - id: "showcase_description"
-  translation: "Komplexe IT-Infrastrukturen, instabile Deployments oder manuelle Prozesse, die Zeit und Ressourcen kosten? Mit über 12 Jahren Erfahrung als DevOps- und System Engineer unterstütze ich Sie dabei, diese Hürden zu überwinden – praxisnah und lösungsorientiert. Von CI/CD-Optimierung über Container-Orchestrierung bis zur Cloud-Migration: Ich schaffe Infrastrukturen, die funktionieren, skalieren und Ihr Team entlasten."
+  translation: "Komplexe IT-Infrastrukturen, instabile Deployments oder manuelle Prozesse, die Zeit und Ressourcen kosten? Mit über 15 Jahren Erfahrung als DevOps- und System Engineer unterstütze ich Sie dabei, diese Hürden zu überwinden – praxisnah und lösungsorientiert. Von CI/CD-Optimierung über Container-Orchestrierung bis zur Cloud-Migration: Ich schaffe Infrastrukturen, die funktionieren, skalieren und Ihr Team entlasten."
 
 - id: "showcase_button"
   translation: "Kontakt"
@@ -94,7 +94,7 @@
   translation: "Erfahrung"
 
 - id: "experience_description"
-  translation: "12 Jahre IT-Erfahrung bedeuten eines: Ich habe die Fehler gemacht, die Sie nicht mehr machen müssen. Von manuellen Deployments zu automatisierten CI/CD-Pipelines. Von instabilen Servern zu containerbasierter Infrastruktur. Von reaktivem Troubleshooting zu proaktivem Monitoring. Meine Expertise in Infrastructure as Code, Linux-Administration und Cloud-Migration ist nicht nur theoretisch, sie ist kampferprobt."
+  translation: "15 Jahre IT-Erfahrung bedeuten eines: Ich habe die Fehler gemacht, die Sie nicht mehr machen müssen. Von manuellen Deployments zu automatisierten CI/CD-Pipelines. Von instabilen Servern zu containerbasierter Infrastruktur. Von reaktivem Troubleshooting zu proaktivem Monitoring. Meine Expertise in Infrastructure as Code, Linux-Administration und Cloud-Migration ist nicht nur theoretisch, sie ist kampferprobt."
 
 - id: "experience_button"
   translation: "LinkedIn" 

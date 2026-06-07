@@ -9,7 +9,7 @@ duration: "11.2022 - heute"
 
 ---
 
-Die Erfahrungen aus über 10 Jahren in verschiedenen Unternehmen führten 2022 zum Schritt in die Selbstständigkeit. Als unabhängiger DevOps-Engineer setze ich nun meine gesamte technische Bandbreite ein, um Unternehmen bei der Modernisierung kritischer IT-Infrastrukturen zu unterstützen. Mein Schwerpunkt liegt auf Ansible-basierter Automatisierung, Container-Orchestrierung mit OpenShift und Kubernetes sowie der Implementation von Security-Best-Practices in hybriden Cloud-Umgebungen.
+Die Erfahrungen aus über 15 Jahren in verschiedenen Unternehmen führten 2022 zum Schritt in die Selbstständigkeit. Als unabhängiger DevOps-Engineer setze ich nun meine gesamte technische Bandbreite ein, um Unternehmen bei der Modernisierung kritischer IT-Infrastrukturen zu unterstützen. Mein Schwerpunkt liegt auf Ansible-basierter Automatisierung, Container-Orchestrierung mit OpenShift und Kubernetes sowie der Implementation von Security-Best-Practices in hybriden Cloud-Umgebungen.
 
 Seit 2022 begleite ich Unternehmen aus der Versicherungs-, Energie- und IT-Systemhaus-Branche bei strategischen Transformationsprojekten. Bei Baloise entwickelte ich über zwei Jahre (Dezember 2022 bis Dezember 2024) automatische Migrationen auf Windows-Servern mittels Ansible, Docker-Container für OpenShift und Helm Charts für ArgoCD. Die technische Projektplanung und Koordination von mehreren externen Dienstleistern gehörten ebenso zu meinen Aufgaben wie die Weiterentwicklung von MariaDB-Datenbanken für Cloud-Native-Deployments.
 

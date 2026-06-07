@@ -294,6 +294,6 @@ skill_categories:
         description: "Templates, Content management, Multi-language, Deployment"
 ---
 
-As a DevOps engineer and system administrator with over 12 years of experience, I have developed comprehensive expertise in Linux system administration, CI/CD pipelines, container technologies, monitoring solutions, and IT automation. My technical skills are based on solid practical experience from numerous projects in mid-sized and enterprise environments.
+As a DevOps engineer and system administrator with over 15 years of experience, I have developed comprehensive expertise in Linux system administration, CI/CD pipelines, container technologies, monitoring solutions, and IT automation. My technical skills are based on solid practical experience from numerous projects in mid-sized and enterprise environments.
 
 My focus is on reliable, well-documented solutions and excellent support. I combine deep technical knowledge with strong troubleshooting skills and the ability to communicate complex technical matters clearly. I am particularly strong in administering Atlassian products, Linux systems, and monitoring infrastructures.

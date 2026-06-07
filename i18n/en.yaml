@@ -62,7 +62,7 @@
   translation: "Your Challenges. My Solutions."
 
 - id: "showcase_description"
-  translation: "Complex IT infrastructures, unstable deployments, or manual processes draining time and resources? With over 12 years of experience as a DevOps and System Engineer, I help you overcome these obstacles – hands-on and solution-oriented. From CI/CD optimization to container orchestration and cloud migration: I build infrastructures that work, scale, and free up your team."
+  translation: "Complex IT infrastructures, unstable deployments, or manual processes draining time and resources? With over 15 years of experience as a DevOps and System Engineer, I help you overcome these obstacles – hands-on and solution-oriented. From CI/CD optimization to container orchestration and cloud migration: I build infrastructures that work, scale, and free up your team."
 
 - id: "showcase_button"
   translation: "Contact"
@@ -90,7 +90,7 @@
   translation: "Experience"
 
 - id: "experience_description"
-  translation: "12 years of IT experience mean one thing: I've made the mistakes you don't have to make anymore. From manual deployments to automated CI/CD pipelines. From unstable servers to container-based infrastructure. From reactive troubleshooting to proactive monitoring. My expertise in Infrastructure as Code, Linux administration, and cloud migration isn't just theoretical—it's battle-tested."
+  translation: "15 years of IT experience mean one thing: I've made the mistakes you don't have to make anymore. From manual deployments to automated CI/CD pipelines. From unstable servers to container-based infrastructure. From reactive troubleshooting to proactive monitoring. My expertise in Infrastructure as Code, Linux administration, and cloud migration isn't just theoretical—it's battle-tested."
 
 - id: "experience_button"
   translation: "LinkedIn" 
