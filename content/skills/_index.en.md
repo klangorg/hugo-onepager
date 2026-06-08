@@ -20,68 +20,68 @@ skill_categories:
         description: "System administration, Package management, Security hardening"
       - name: "Windows Server (2012-2022)"
         level: 85
-        years: "10+"
+        years: "14+"
         description: "Active Directory, GPO, PowerShell automation"
 
   - name: "Container & Orchestration"
     skills:
       - name: "Docker / Docker Compose"
         level: 90
-        years: "8+"
+        years: "6+"
         description: "Container development, Dockerfile, Compose, Registry management"
       - name: "OpenShift"
         level: 80
-        years: "3+"
+        years: "6+"
         description: "Container development, Deployment configuration, Build strategies, Routes"
         featured: true
       - name: "Kubernetes"
         level: 75
-        years: "5+"
+        years: "4+"
         description: "Pods, Services, Deployments, ConfigMaps, Persistent volumes"
 
   - name: "Monitoring & Observability"
     skills:
       - name: "Prometheus & Grafana"
         level: 90
-        years: "7+"
+        years: "3+"
         description: "PromQL, Dashboard development, Alerting, Thresholds"
       - name: "Icinga2 / Nagios"
         level: 85
-        years: "9+"
+        years: "15+"
         description: "Service monitoring, Check plugins, Notifications, Performance data"
       - name: "TIG Stack"
         level: 80
-        years: "6+"
+        years: "3+"
         description: "Telegraf, InfluxDB, Grafana, Metrics collection, Data retention"
       - name: "ELK Stack"
         level: 70
-        years: "4+"
+        years: "3+"
         description: "Elasticsearch, Logstash, Kibana, Log aggregation, Search"
 
   - name: "IT Security & Identity Management"
     skills:
       - name: "Samba4 & Active Directory"
         level: 90
-        years: "10+"
+        years: "4+"
         description: "Domain controller, LDAP integration, Group policies, Kerberos"
       - name: "Privileged Access Management (PAM)"
         level: 80
-        years: "4+"
+        years: "3+"
         description: "PAM solutions, Credential vaulting, Just-in-time access"
       - name: "Security Hardening"
         level: 85
-        years: "10+"
+        years: "12+"
         description: "SELinux, Firewall configuration, SSH hardening, Compliance"
       - name: "SSL/TLS & Certificate Management"
         level: 90
-        years: "15+"
+        years: "14+"
         description: "Certificate management, Let's Encrypt, Certificate lifecycle"
 
   - name: "Databases & Directory Services"
     skills:
       - name: "Microsoft SQL Server"
         level: 80
-        years: "8+"
+        years: "7+"
         description: "Administration, Backup/Restore, Performance tuning, Always On"
       - name: "PostgreSQL"
         level: 80
@@ -89,36 +89,32 @@ skill_categories:
         description: "Administration, Performance tuning, Replication, Backup/Restore"
       - name: "MySQL/MariaDB"
         level: 80
-        years: "9+"
+        years: "14+"
         description: "Administration, Slow query optimization, Installation"
       - name: "LDAP (OpenLDAP/Samba4)"
         level: 90
-        years: "10+"
+        years: "4+"
         description: "Directory services, Schema design, Replication, Kerberos, SSO"
 
   - name: "Cloud & Virtualization"
     skills:
       - name: "Proxmox VE"
         level: 85
-        years: "7+"
+        years: "6+"
         description: "Cluster management, KVM, Backup, High availability, Storage"
       - name: "VMware vSphere & ESXi"
         level: 80
-        years: "8+"
+        years: "7+"
         description: "Cluster management, vMotion, DRS, Snapshots, Templates, Storage"
       - name: "Microsoft Azure"
         level: 75
-        years: "4+"
+        years: "3+"
         description: "VMs, Azure DevOps, Azure IoT Hub, Storage, Networking, Cloud migration"
         featured: true
       - name: "Amazon Web Services (AWS EC2)"
         level: 70
-        years: "3+"
-        description: "Virtual machines, Load balancing, Auto-scaling, VPC, IAM, CloudWatch"
-      - name: "Citrix XenServer"
-        level: 70
         years: "6+"
-        description: "VM management, Storage repositories, High availability, Live migration"
+        description: "Virtual machines, Load balancing, Auto-scaling, VPC, IAM, CloudWatch"
 
   - name: "Scripting"
     skills:
@@ -128,18 +124,18 @@ skill_categories:
         description: "Automation, System scripts, Text processing, Cron jobs"
       - name: "PowerShell"
         level: 85
-        years: "8+"
+        years: "14+"
         description: "Windows automation, Active Directory, Exchange, WinRM"
       - name: "Python Scripting"
         level: 80
-        years: "7+"
+        years: "6+"
         description: "Automation, API integration, Requests, Tool development"
 
   - name: "Automation & IaC"
     skills:
       - name: "Ansible (Linux & Windows)"
         level: 95
-        years: "6+"
+        years: "8+"
         description: "Playbooks, Roles, Collections, Windows management, Linux management"
         featured: true
       - name: "Terraform"
@@ -155,26 +151,26 @@ skill_categories:
     skills:
       - name: "Jira Administration"
         level: 95
-        years: "8+"
+        years: "7+"
         description: "Workflows, Automation, ScriptRunner, REST API"
       - name: "Confluence Administration"
         level: 95
-        years: "8+"
+        years: "7+"
         description: "Space administration, Macros, User management"
       - name: "Bitbucket Administration"
         level: 90
-        years: "10+"
+        years: "6+"
         description: "Repository management, Branch permissions, Hooks, API"
       - name: "Bamboo Administration"
         level: 80
-        years: "9+"
+        years: "4+"
         description: "Build plans, Deployment projects, Agents, Integration"
 
   - name: "CI/CD & Build Pipelines"
     skills:
       - name: "Git"
         level: 90
-        years: "10+"
+        years: "9+"
         description: "Version control, Branching strategies, Code review, Merging"
       - name: "Jenkins"
         level: 75
@@ -182,30 +178,30 @@ skill_categories:
         description: "Pipeline development, Plugins, Build automation, Integration"
       - name: "GitHub Actions"
         level: 75
-        years: "4+"
+        years: "3+"
         description: "Workflow automation, Custom actions, Runners, Matrix builds"
       - name: "ArgoCD"
         level: 70
-        years: "2+"
+        years: "3+"
         description: "Continuous deployment, Sync policies, Helm integration"
       - name: "GitOps"
         level: 70
-        years: "3+"
+        years: "5+"
         description: "Declarative configuration, Git as source of truth, Automated deployments"
 
   - name: "Webserver & Reverse Proxy"
     skills:
       - name: "Apache HTTP Server"
         level: 90
-        years: "15+"
+        years: "14+"
         description: "Web server configuration, Modules, SSL/TLS, Virtual hosts"
       - name: "Nginx"
         level: 85
-        years: "8+"
+        years: "6+"
         description: "Reverse proxy, Load balancing, SSL/TLS, Performance tuning"
       - name: "Traefik"
         level: 70
-        years: "3+"
+        years: "5+"
         description: "Docker integration, Let's Encrypt, Dynamic configuration"
       - name: "Microsoft IIS"
         level: 70
@@ -216,15 +212,15 @@ skill_categories:
     skills:
       - name: "HAProxy"
         level: 85
-        years: "6+"
+        years: "4+"
         description: "Load balancing, SSL termination, Health checks, ACLs, Backend pools"
       - name: "WireGuard VPN"
         level: 80
-        years: "4+"
+        years: "6+"
         description: "Site-to-site VPN, Peer configuration, Routing, Performance"
       - name: "pfSense"
         level: 75
-        years: "5+"
+        years: "6+"
         description: "VPN, Routing, Traffic shaping, NAT, High availability, Rules"
       - name: "Network Troubleshooting"
         level: 95
@@ -235,7 +231,7 @@ skill_categories:
     skills:
       - name: "System Performance Analysis"
         level: 100
-        years: "10+"
+        years: "8+"
         description: "Bottleneck analysis, Capacity planning, Resource optimization"
       - name: "Log Analysis & Debugging"
         level: 100
@@ -248,14 +244,14 @@ skill_categories:
         featured: true
       - name: "Disaster Recovery"
         level: 95
-        years: "7+"
+        years: "9+"
         description: "Backup/Restore, Business continuity, Recovery testing"
 
   - name: "Consulting & Migration"
     skills:
       - name: "Atlassian Cloud/DC Migration"
         level: 95
-        years: "8+"
+        years: "7+"
         description: "Datacenter to Cloud migration, Planning, Coordination"
       - name: "Requirements Engineering"
         level: 90
