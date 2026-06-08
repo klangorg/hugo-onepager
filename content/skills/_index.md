@@ -16,7 +16,7 @@ skill_categories:
     skills:
       - name: "Linux (RHEL/Debian/Ubuntu)"
         level: 95
-        years: "12+"
+        years: "15+"
         description: "System-Administration, Package Management, Security Hardening"
       - name: "Windows Server (2012-2022)"
         level: 85
@@ -74,7 +74,7 @@ skill_categories:
         description: "SELinux, Firewall-Konfiguration, SSH-Härtung, Compliance"
       - name: "SSL/TLS & Certificate Management"
         level: 90
-        years: "12+"
+        years: "15+"
         description: "Zertifikats-Verwaltung, Let's Encrypt, Zertifikats-Lebenszyklus"
 
   - name: "Datenbanken & Verzeichnisdienste"
@@ -124,7 +124,7 @@ skill_categories:
     skills:
       - name: "Bash/Shell Skripting"
         level: 95
-        years: "12+"
+        years: "15+"
         description: "Automatisierung, System-Skripte, Textverarbeitung, Cronjobs"
       - name: "PowerShell"
         level: 85
@@ -155,11 +155,11 @@ skill_categories:
     skills:
       - name: "Jira Administration"
         level: 95
-        years: "12+"
+        years: "8+"
         description: "Workflows, Automatisierung, ScriptRunner, REST API"
       - name: "Confluence Administration"
         level: 95
-        years: "12+"
+        years: "8+"
         description: "Space-Administration, Makros, Benutzerverwaltung"
       - name: "Bitbucket Administration"
         level: 90
@@ -197,7 +197,7 @@ skill_categories:
     skills:
       - name: "Apache HTTP Server"
         level: 90
-        years: "12+"
+        years: "15+"
         description: "Webserver-Konfiguration, Module, SSL/TLS, virtuelle Hosts"
       - name: "Nginx"
         level: 85
@@ -228,7 +228,7 @@ skill_categories:
         description: "VPN, Routing, Traffic-Shaping, NAT, Hochverfügbarkeit, Regeln"
       - name: "Netzwerk-Troubleshooting"
         level: 95
-        years: "12+"
+        years: "15+"
         description: "tcpdump, Wireshark, netstat, Routing, Firewall, iptables"
 
   - name: "Troubleshooting & Support"
@@ -239,11 +239,11 @@ skill_categories:
         description: "Engpass-Analyse, Kapazitätsplanung, Ressourcen-Optimierung"
       - name: "Log-Analyse & Debugging"
         level: 100
-        years: "12+"
+        years: "15+"
         description: "grep, awk, sed, journalctl, systemd, Debugging, Ursachenanalyse"
       - name: "Incident & Problem Management"
         level: 100
-        years: "12+"
+        years: "15+"
         description: "Fehleranalyse, Post-Mortem, ITIL, Ticket-System, SLA-Management"
         featured: true
       - name: "Disaster Recovery"
@@ -263,7 +263,7 @@ skill_categories:
         description: "Interessengruppen-Interviews, Anforderungsanalyse, Lösungsdesign"
       - name: "Technische Dokumentation"
         level: 95
-        years: "12+"
+        years: "15+"
         description: "Confluence, Markdown, Diagramme, Runbooks, Wissensdatenbank, SOPs"
 
   - name: "Künstliche Intelligenz"
