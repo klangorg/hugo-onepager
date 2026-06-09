@@ -106,6 +106,10 @@ skill_categories:
         level: 80
         years: "7+"
         description: "Cluster management, vMotion, DRS, Snapshots, Templates, Storage"
+      - name: "Citrix XenServer"
+        level: 80
+        years: "5+"
+        description: "Virtualization, hypervisor operations, server management"
       - name: "Microsoft Azure"
         level: 75
         years: "3+"
