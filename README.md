@@ -106,7 +106,7 @@ git submodule update --remote
 
 ## Deployment
 
-This site is deployed via Docker on a self-hosted server using Traefik as reverse proxy.
+This site is deployed via Podman Quadlet on a self-hosted server using Traefik as reverse proxy.
 
 ### Deployment Workflow
 
@@ -119,22 +119,16 @@ This site is deployed via Docker on a self-hosted server using Traefik as revers
 
 2. **Deploy to server** via SSH:
    ```bash
-   ssh docker "cd /home/docker/docker/hugo && git pull && docker-compose up -d --build"
+   ssh docker "cd /home/docker/docker/hugo && git pull && ./deploy-quadlet.sh"
    ```
 
-   Or step by step:
-   ```bash
-   ssh docker
-   cd /home/docker/docker/hugo
-   git pull
-   docker-compose up -d --build
-   ```
+   The script builds with Podman, backs up the active Quadlet, pins the exact local image ID and restarts `hugo-onepager.service`.
 
 ### Server Configuration
 
 - **SSH Host**: `docker` (configured in `~/.ssh/config`)
 - **Server Path**: `/home/docker/docker/hugo`
-- **Docker Network**: `t2_proxy` (Traefik)
+- **Podman Quadlet Network**: `t2_proxy.network` (Traefik)
 - **Domain**: `max-it.tech`
 
 ### Configuration

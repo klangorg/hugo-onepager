@@ -26,6 +26,7 @@ Thumbs.db
 .dockerignore
 Dockerfile
 docker-compose.yml
+legacy/
 
 # CI/CD
 .github

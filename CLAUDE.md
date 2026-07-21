@@ -17,7 +17,7 @@ Hugo Static Site mit Multi-Stage Docker Build (Hugo → Nginx).
 ├── static/                       # Statische Dateien (Bilder, Fonts)
 ├── data/homepage.yml             # Homepage-Daten
 ├── hugo.toml                     # Hugo-Konfiguration
-├── docker-compose.yml            # Docker Compose für Deployment
+├── deploy-quadlet.sh             # Podman-Build und Quadlet-Cutover
 └── Dockerfile                    # Multi-Stage Build
 ```
 
@@ -34,22 +34,10 @@ hugo                 # Production Build nach ./public
 ### Deployment auf Server
 
 ```bash
-# Einzeiler-Deployment (empfohlen - nutzt --no-cache für sauberen Build)
-ssh docker "cd /home/docker/docker/hugo && sudo git pull && sudo docker compose build --no-cache && sudo docker compose up -d"
-
-# Schnelles Deployment (nutzt Cache, kann bei geänderten Dateien mit gleichem Namen Probleme machen)
-ssh docker "cd /home/docker/docker/hugo && sudo git pull && sudo docker compose up -d --build"
-
-# Oder Schritt für Schritt
-ssh docker
-cd /home/docker/docker/hugo
-sudo git pull
-sudo docker compose build --no-cache  # Kein Cache = alle Dateien werden neu kopiert
-sudo docker compose up -d
+ssh docker "cd /home/docker/docker/hugo && git pull && ./deploy-quadlet.sh"
 ```
 
-**Hinweis:** `--no-cache` ist wichtig, wenn Dateien mit gleichem Namen ersetzt wurden (z.B. Bilder).
-Docker prüft nur den Timestamp, nicht den Inhalt. Ohne `--no-cache` kann der alte Build-Cache verwendet werden.
+`deploy-quadlet.sh` baut mit Podman und gepinnten Basisimages, sichert das aktive Quadlet, setzt die exakte lokale Image-ID, lädt systemd neu und startet `hugo-onepager.service`. Docker Compose ist kein produktiver Deploymentpfad mehr.
 
 ## Server-Zugang
 
@@ -62,8 +50,8 @@ Docker prüft nur den Timestamp, nicht den Inhalt. Ohne `--no-cache` kann der al
 ## Server-Pfade
 
 - **Hugo-Repo**: `/home/docker/docker/hugo`
-- **Docker-Compose**: `/home/docker/docker/docker-compose.yml` (Haupt-Compose)
-- **Projekt-Compose**: `/home/docker/docker/hugo/docker-compose.yml`
+- **Quadlet**: `/etc/containers/systemd/hugo-onepager.container`
+- **Deployment**: `/home/docker/docker/hugo/deploy-quadlet.sh`
 
 ## Technologie-Stack
 

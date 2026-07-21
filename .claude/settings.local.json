@@ -1,7 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Bash(ssh docker \"cd /home/docker/docker/hugo && sudo git pull && sudo docker compose up -d --build\")",
+      "Bash(ssh docker \"cd /home/docker/docker/hugo && sudo git pull && ./deploy-quadlet.sh\")",
       "Bash(git add:*)",
       "Bash(git commit -m \"$(cat <<''EOF''\nShorten Hugo skill description to 65 chars max\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(git push)",

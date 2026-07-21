@@ -1,7 +1,7 @@
 # Multi-stage build für Hugo-Seite
 
 # Stage 1: Build der Hugo-Seite
-FROM hugomods/hugo:exts AS builder
+FROM docker.io/hugomods/hugo@sha256:dcbc5b53c4e53bb74a7c986caf58a3954395a1e9d8dc9bb492f2c610a7cf6eb0 AS builder
 
 # Arbeitsverzeichnis setzen
 WORKDIR /src
@@ -26,7 +26,7 @@ RUN rm -rf resources/_gen/ public/
 RUN hugo --minify --environment production --baseURL "/"
 
 # Stage 2: Nginx Server für statische Dateien
-FROM nginx:alpine
+FROM docker.io/library/nginx@sha256:4a73073bd557c65b759505da037898b61f1be6cbcc3c2c3aeac22d2a470c1752
 
 # Nginx Konfiguration für SPA/Hugo
 COPY --from=builder /src/public /usr/share/nginx/html
