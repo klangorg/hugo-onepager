@@ -31,46 +31,8 @@ FROM docker.io/library/nginx@sha256:4a73073bd557c65b759505da037898b61f1be6cbcc3c
 # Nginx Konfiguration für SPA/Hugo
 COPY --from=builder /src/public /usr/share/nginx/html
 
-# Custom Nginx Config with strict CSP for Mozilla Observatory A+ rating
-RUN cat <<'NGINX_CONF' > /etc/nginx/conf.d/default.conf
-server {
-    listen 80;
-    server_name _;
-    root /usr/share/nginx/html;
-    index index.html;
-
-    # Strict CSP for A+ Mozilla Observatory rating
-    # Using 'unsafe-hashes' with specific hashes for inline styles from Bootstrap/external scripts
-    # Hash for inline theme-switching script, 'unsafe-hashes' for CSS preload onload handler
-    add_header Content-Security-Policy "default-src 'none'; script-src 'self' 'sha256-ZOQDuM1Drke+vh8UIUnmlKCfOACcK475v9NHGjyGL00=' 'unsafe-hashes' 'sha256-uq+4nUqZONgARzmy2kR1w9EC+Qeig/Syd091LyT8vOk=' https://www.googletagmanager.com https://www.google-analytics.com https://rocket.xana.space; style-src 'self' 'unsafe-hashes' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-EntWS0hFrz2vH7susM+dPUxvHlL6sBswmM8K80E5oUk='; img-src 'self' data: blob: https://www.google-analytics.com https://rocket.xana.space https://www.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://rocket.xana.space wss://rocket.xana.space https://www.googletagmanager.com; frame-src https://www.googletagmanager.com https://rocket.xana.space; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'; upgrade-insecure-requests;" always;
-    
-    # Additional security headers
-    add_header Strict-Transport-Security "max-age=63072000; includeSubDomains; preload" always;
-    add_header X-Content-Type-Options "nosniff" always;
-    add_header X-Frame-Options "SAMEORIGIN" always;
-    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
-    add_header Permissions-Policy "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()" always;
-    add_header Cross-Origin-Opener-Policy "same-origin" always;
-    add_header Cross-Origin-Resource-Policy "same-origin" always;
-
-    location / {
-        try_files $uri $uri/ /index.html;
-    }
-
-    # Gzip Kompression
-    gzip on;
-    gzip_vary on;
-    gzip_min_length 1024;
-    gzip_types text/plain text/css text/xml text/javascript application/x-javascript application/xml+rss application/json application/javascript;
-
-    # Cache Headers für statische Assets
-    location ~* \.(jpg|jpeg|png|gif|ico|css|js|svg|woff|woff2|ttf|eot)$ {
-        expires 1y;
-        add_header Cache-Control "public, immutable";
-        add_header X-Content-Type-Options "nosniff" always;
-    }
-}
-NGINX_CONF
+# Single source of truth for Nginx and its security headers.
+COPY docker/nginx/default.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 
