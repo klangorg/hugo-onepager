@@ -8,8 +8,8 @@ draft: false
 
 **Address:**  
 Max Rößler  
-Radeberger Str. 24b  
-01328 Dresden  
+Friedrich-Engels-Str. 3  
+08344 Grünhain-Beierfeld  
 Germany
 
 **E-Mail:** [mail@max-it.tech](mailto:mail@max-it.tech)

@@ -94,7 +94,7 @@ contact:
   form_method: "POST"
   phone: '<a href="tel:+4917648995953">+49 176 489 959 53</a>'
   email: '<a href="mailto:mail@max-it.tech">mail@max-it.tech</a>'
-  location: '<a href="https://www.google.com/maps/search/?api=1&query=Radeberger+Straße+24b,+01328+Dresden,+Germany" target="_blank" style="text-decoration: underline;">Radeberger Straße 24b<br />01328 Dresden<br />Germany</a>'
+  location: '<a href="https://www.google.com/maps/search/?api=1&query=Friedrich-Engels-Str.+3,+08344+Grünhain-Beierfeld,+Germany" target="_blank" style="text-decoration: underline;">Friedrich-Engels-Str. 3<br />08344 Grünhain-Beierfeld<br />Germany</a>'
 
 # newsletter
 newsletter:

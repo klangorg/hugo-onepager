@@ -218,7 +218,7 @@
   translation: "Contact details"
 
 - id: "contact_address_address"
-  translation: "Radeberger Straße 24b<br />01328 Dresden<br />Germany"
+  translation: "Friedrich-Engels-Str. 3<br />08344 Grünhain-Beierfeld<br />Germany"
 
 - id: "contact_button"
   translation: "Send Message"
