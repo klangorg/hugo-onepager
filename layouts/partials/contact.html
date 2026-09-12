@@ -42,8 +42,8 @@
   {{ $phone_display = .Site.Data.homepage.contact.phone_display | default $phone }}
   {{ $email = .Site.Data.homepage.contact.email }}
   {{ $location = .Site.Data.homepage.contact.location }}
-  {{ if eq .Site.Language.Lang "de" }}
-    {{ $location = replace $location "<br />Germany" "<br />Deutschland" }}
+  {{ if ne .Site.Language.Lang "en" }}
+    {{ $location = replace $location "Germany" "Deutschland" }}
   {{ end }}
 {{ end }}
 
