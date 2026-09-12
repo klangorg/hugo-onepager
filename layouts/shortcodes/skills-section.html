@@ -17,7 +17,7 @@
   {{- range .skills -}}
     {{- $allSkills = $allSkills | append . -}}
     {{- if .featured -}}
-      {{- $featuredSkills = $featuredSkills | append (dict "name" .name "category" $categoryName "level" .level "years" .years "description" .description) -}}
+      {{- $featuredSkills = $featuredSkills | append (dict "name" .name "category" $categoryName "years" .years "description" .description) -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
@@ -37,14 +37,10 @@
         <div class="skill-card">
           <div class="skill-card__header">
             <div class="skill-card__title">{{ .name }}</div>
-            <div class="skill-card__level">{{ .level }}%</div>
           </div>
           <div class="skill-card__category">{{ .category }}</div>
-          <div class="skill-bar">
-            <div class="skill-bar-fill skill-level-{{ .level }}"></div>
-          </div>
           <div class="skill-card__meta">
-            <span class="skill-card__years">{{ .years }} years</span>
+            <span class="skill-card__years">{{ .years }} {{ if eq $.Page.Site.Language.Lang "de" }}Jahre{{ else }}years{{ end }}</span>
             <span class="skill-card__description">{{ .description }}</span>
           </div>
         </div>
