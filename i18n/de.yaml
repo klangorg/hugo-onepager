@@ -4,7 +4,7 @@
 - id: "meta_description"
   translation: "Remote DevOps Engineer mit über 15 Jahren IT-Erfahrung in Infrastrukturautomatisierung, Atlassian-Plattformen, Linux- und Windows-Administration, Monitoring, Container-Plattformen und Cloud-Migrationen."
 - id: "meta_keywords"
-  translation: "Max Rößler, DevOps Engineer, System Engineer, CI/CD, Infrastructure as Code, Docker, Kubernetes, Linux, Cloud Migration, Automatisierung, IT Berater, Dresden, Deutschland"
+  translation: "Max Rößler, DevOps Engineer, System Engineer, CI/CD, Infrastructure as Code, Docker, Kubernetes, Linux, Cloud Migration, Automatisierung, IT Berater, Grünhain-Beierfeld, Deutschland"
 - id: "meta_author"
   translation: "Max Rößler"
 - id: "meta_image"
@@ -222,7 +222,7 @@
   translation: "Kontaktdetails"
 
 - id: "contact_address_address"
-  translation: "Friedrich-Engels-Str. 3<br />08344 Grünhain-Beierfeld<br />Germany"
+  translation: "Friedrich-Engels-Str. 3<br />08344 Grünhain-Beierfeld<br />Deutschland"
 
 - id: "contact_button"
   translation: "Nachricht senden"
