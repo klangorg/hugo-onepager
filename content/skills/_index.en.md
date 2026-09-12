@@ -28,7 +28,7 @@ skill_categories:
         description: "Container development, Dockerfile, Compose, Registry management"
       - name: "OpenShift"
         years: "6+"
-        description: "Container development, Deployment configuration, Build strategies, Routes"
+        description: "Deployments, Builds, Routes, S2I"
         featured: true
       - name: "Kubernetes"
         years: "4+"
@@ -92,11 +92,11 @@ skill_categories:
         description: "Virtualization, hypervisor operations, server management"
       - name: "Microsoft Azure"
         years: "3+"
-        description: "VMs, Azure DevOps, Azure IoT Hub, Storage, Networking, Cloud migration"
+        description: "VMs, Azure DevOps, IoT Hub, Cloud migration"
         featured: true
       - name: "Amazon Web Services (AWS EC2)"
         years: "6+"
-        description: "Virtual machines, Load balancing, Auto-scaling, VPC, IAM, CloudWatch"
+        description: "EC2, Load balancing, VPC, IAM, CloudWatch"
 
   - name: "Scripting"
     skills:
@@ -114,7 +114,7 @@ skill_categories:
     skills:
       - name: "Ansible (Linux & Windows)"
         years: "8"
-        description: "Playbooks, Roles, Collections, Windows management, Linux management"
+        description: "Playbooks, Roles, Linux and Windows automation"
         featured: true
       - name: "Terraform"
         years: "3+"
@@ -196,7 +196,7 @@ skill_categories:
         description: "grep, awk, sed, journalctl, systemd, Debugging, Root cause analysis"
       - name: "Incident & Problem Management"
         years: "15+"
-        description: "Troubleshooting, Post-mortem, ITIL, Ticket system, SLA management"
+        description: "Troubleshooting, Post-mortems, ITIL, SLAs"
         featured: true
       - name: "Disaster Recovery"
         years: "9+"

@@ -176,8 +176,9 @@ html {
 
 .skill-card__meta {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
     margin-top: 8px;
 }
 
@@ -192,9 +193,8 @@ html {
 .skill-card__description {
     font-size: 0.85rem;
     color: #6c757d;
-    flex: 1;
-    margin-left: 10px;
-    text-align: right;
+    margin-left: 0;
+    text-align: left;
 }
 
 /* Shared styles for "View all" buttons in experience and skills sections */
