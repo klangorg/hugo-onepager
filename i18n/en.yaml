@@ -1,8 +1,8 @@
 ## Meta tags
 - id: "meta_title"
-  translation: "Max Rößler - DevOps and System Engineer | Dresden, Germany"
+  translation: "Max Rößler | Remote DevOps Engineer for Automation and Atlassian"
 - id: "meta_description"
-  translation: "Experienced DevOps and System engineer with 15+ years expertise in CI/CD pipelines, Infrastructure as Code, Docker, Kubernetes, Linux administration, automation, and cloud migrations. Based in Dresden, Germany."
+  translation: "Remote DevOps Engineer with more than 15 years of IT experience in infrastructure automation, Atlassian platforms, Linux and Windows administration, monitoring, container platforms and cloud migrations."
 - id: "meta_keywords"
   translation: "Max Rößler, DevOps Engineer, System Engineer, CI/CD, Infrastructure as Code, Docker, Kubernetes, Linux, Cloud Migration, Automation, IT Consultant, Dresden, Germany"
 - id: "meta_author"
@@ -49,20 +49,20 @@
 
 ## Homepage head title
 - id: "head_title"
-  translation: "Max Rößler - DevOps and System Engineer | Dresden"
+  translation: "Max Rößler | Remote DevOps Engineer for Automation and Atlassian"
 
 - id: "head_description"
-  translation: "Experienced DevOps and System engineer with 15+ years expertise in CI/CD, Infrastructure as Code, container technologies, Linux administration, automation, and cloud migrations."
+  translation: "Freelance DevOps Engineer with more than 15 years of IT experience in infrastructure automation, Atlassian platforms, Linux and Windows administration, monitoring, container platforms and cloud migrations."
 
 ## Homepage showcase
 - id: "showcase_title"
-  translation: "IT expertise for your digital success"
+  translation: "DevOps engineering for automated, maintainable infrastructure"
 
 - id: "showcase_subtitle"
-  translation: "Your Challenges. My Solutions."
+  translation: "Infrastructure automation, migrations and Atlassian"
 
 - id: "showcase_description"
-  translation: "Complex IT infrastructures, unstable deployments, or manual processes draining time and resources? With over 15 years of experience as a DevOps and System Engineer, I help you overcome these obstacles – hands-on and solution-oriented. From CI/CD optimization to container orchestration and cloud migration: I build infrastructures that work, scale, and free up your team."
+  translation: "I help IT teams when manual operations take up too much time, migrations stall or complex infrastructure issues hold projects back. I automate Linux and Windows environments, build repeatable deployment and migration workflows and troubleshoot issues across systems and applications. Documentation and knowledge transfer are part of my work, so internal teams can maintain the solutions independently."
 
 - id: "showcase_button"
   translation: "Contact"
@@ -76,7 +76,7 @@
   translation: "Who am I?"
 
 - id: "about_content"
-  translation: '<p class="lead">As an independent DevOps Engineer, I focus on developing automated and scalable infrastructures. I optimize deployment and operational stability using Infrastructure as Code, Kubernetes, and CI/CD pipelines, aiming for economically stable results. The outcome: Faster releases, higher system stability, predictable costs.</p><p class="lead">My foundation is integrity: I stand for transparent communication and consciously engage only in civilian development. This clear stance builds trust and enables sustainable focus on future-oriented technology.</p><p class="lead">Continuous hands-on projects ensure my clients always benefit from the latest industry best practices. I deepen practical knowledge in automation, container orchestration, and monitoring.</p>'
+  translation: '<p class="lead">As a freelance DevOps Engineer, I automate Linux and Windows environments, build repeatable deployment and migration workflows and troubleshoot issues across systems and applications.</p><p class="lead">Documentation and knowledge transfer are part of my work, so internal teams can maintain the solutions independently.</p><p class="lead">I value open and direct communication and deliberately do not work with military or arms industry clients.</p>'
 
 - id: "about_button"
   translation: "About Me"
@@ -90,7 +90,7 @@
   translation: "Experience"
 
 - id: "experience_description"
-  translation: "15 years of IT experience mean one thing: I've made the mistakes you don't have to make anymore. From manual deployments to automated CI/CD pipelines. From unstable servers to container-based infrastructure. From reactive troubleshooting to proactive monitoring. My expertise in Infrastructure as Code, Linux administration, and cloud migration isn't just theoretical—it's battle-tested."
+  translation: "More than 15 years of IT experience focused on infrastructure automation, Atlassian platforms, Linux and Windows administration, monitoring, container platforms and cloud migrations."
 
 - id: "experience_button"
   translation: "LinkedIn" 

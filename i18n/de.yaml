@@ -1,8 +1,8 @@
 ## Meta tags
 - id: "meta_title"
-  translation: "Max Rößler - DevOps- und System Engineer | Dresden, Deutschland"
+  translation: "Max Rößler | Remote DevOps Engineer für Automatisierung und Atlassian"
 - id: "meta_description"
-  translation: "Erfahrener DevOps- und System Engineer mit 15+ Jahren Expertise in CI/CD-Pipelines, Infrastructure as Code, Docker, Kubernetes, Linux-Administration, Automatisierung und Cloud-Migrationen. Ansässig in Dresden, Deutschland."
+  translation: "Remote DevOps Engineer mit über 15 Jahren IT-Erfahrung in Infrastrukturautomatisierung, Atlassian-Plattformen, Linux- und Windows-Administration, Monitoring, Container-Plattformen und Cloud-Migrationen."
 - id: "meta_keywords"
   translation: "Max Rößler, DevOps Engineer, System Engineer, CI/CD, Infrastructure as Code, Docker, Kubernetes, Linux, Cloud Migration, Automatisierung, IT Berater, Dresden, Deutschland"
 - id: "meta_author"
@@ -49,20 +49,20 @@
 
 ## Homepage head title
 - id: "head_title"
-  translation: "Max Rößler - DevOps- und System Engineer | Dresden"
+  translation: "Max Rößler | Remote DevOps Engineer für Automatisierung und Atlassian"
 
 - id: "head_description"
-  translation: "Erfahrener DevOps- und System Engineer mit 15+ Jahren Expertise in CI/CD, Infrastructure as Code, Container-Technologien, Linux-Administration, Automatisierung und Cloud-Migrationen."
+  translation: "Selbstständiger DevOps Engineer mit über 15 Jahren IT-Erfahrung in Infrastrukturautomatisierung, Atlassian-Plattformen, Linux- und Windows-Administration, Monitoring, Container-Plattformen und Cloud-Migrationen."
 
 ## Homepage showcase
 - id: "showcase_title"
-  translation: "IT-Kompetenz für Ihren digitalen Erfolg"
+  translation: "DevOps Engineering für automatisierte und wartbare Infrastruktur"
 
 - id: "showcase_subtitle"
-  translation: "Ihre Herausforderungen. Meine Lösungen."
+  translation: "Infrastrukturautomatisierung, Migrationen und Atlassian"
 
 - id: "showcase_description"
-  translation: "Komplexe IT-Infrastrukturen, instabile Deployments oder manuelle Prozesse, die Zeit und Ressourcen kosten? Mit über 15 Jahren Erfahrung als DevOps- und System Engineer unterstütze ich Sie dabei, diese Hürden zu überwinden – praxisnah und lösungsorientiert. Von CI/CD-Optimierung über Container-Orchestrierung bis zur Cloud-Migration: Ich schaffe Infrastrukturen, die funktionieren, skalieren und Ihr Team entlasten."
+  translation: "Ich unterstütze IT-Teams, wenn manuelle Betriebsaufgaben zu viel Zeit beanspruchen, Migrationen stocken oder komplexe Infrastrukturprobleme Projekte ausbremsen. Ich automatisiere Linux- und Windows-Umgebungen, entwickle reproduzierbare Deployment- und Migrationsabläufe und löse technische Probleme über Systemgrenzen hinweg. Dokumentation und Wissenstransfer gehören dazu, damit interne Teams die Lösungen selbstständig weiterbetreiben können."
 
 - id: "showcase_button"
   translation: "Kontakt"
@@ -76,7 +76,7 @@
   translation: "Wer bin ich?"
 
 - id: "about_content"
-  translation: '<p class="lead">Als unabhängiger DevOps Engineer liegt mein Fokus auf der Entwicklung automatisierter und skalierbarer Infrastrukturen. Ich optimiere Deployment und Betriebssicherheit mittels Infrastructure as Code, Kubernetes und CI/CD-Pipelines, um wirtschaftlich stabile Ergebnisse zu liefern. Das Ergebnis: Schnellere Releases, höhere Systemstabilität, planbare Kosten.</p><p class="lead">Meine Basis ist Integrität: Ich stehe für transparente Kommunikation und engagiere mich bewusst nur in der zivilen Entwicklung. Diese klare Haltung schafft Vertrauen und ermöglicht nachhaltigen Fokus auf zukunftsorientierte Technologie.</p><p class="lead">Kontinuierliche Praxisprojekte sichern, dass meine Kunden stets von den aktuellsten Industry Best Practices profitieren. Ich vertiefe praktisches Wissen in Automatisierung, Container-Orchestrierung und Monitoring.</p>'
+  translation: '<p class="lead">Als selbstständiger DevOps Engineer automatisiere ich Linux- und Windows-Umgebungen, entwickle reproduzierbare Deployment- und Migrationsabläufe und löse technische Probleme über System- und Anwendungsgrenzen hinweg.</p><p class="lead">Dokumentation und Wissenstransfer gehören zu meiner Arbeit, damit interne Teams die Lösungen selbstständig weiterbetreiben können.</p><p class="lead">Ich stehe für offene und direkte Kommunikation und arbeite bewusst nicht mit militärischen oder rüstungsindustriellen Kunden zusammen.</p>'
 
 - id: "about_button"
   translation: "Über mich"
@@ -94,7 +94,7 @@
   translation: "Erfahrung"
 
 - id: "experience_description"
-  translation: "15 Jahre IT-Erfahrung bedeuten eines: Ich habe die Fehler gemacht, die Sie nicht mehr machen müssen. Von manuellen Deployments zu automatisierten CI/CD-Pipelines. Von instabilen Servern zu containerbasierter Infrastruktur. Von reaktivem Troubleshooting zu proaktivem Monitoring. Meine Expertise in Infrastructure as Code, Linux-Administration und Cloud-Migration ist nicht nur theoretisch, sie ist kampferprobt."
+  translation: "Über 15 Jahre IT-Erfahrung mit Schwerpunkten in Infrastrukturautomatisierung, Atlassian-Plattformen, Linux- und Windows-Administration, Monitoring, Container-Plattformen und Cloud-Migrationen."
 
 - id: "experience_button"
   translation: "LinkedIn" 
