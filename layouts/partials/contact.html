@@ -37,6 +37,9 @@
   {{ $phone_display = .Get "contact_phone_number" | default (.Get "phone_display") | default .Site.Data.homepage.contact.phone_display | default $phone }}
   {{ $email = .Get "contact_email_email" | default (.Get "email") | default .Site.Data.homepage.contact.email }}
   {{ $location = .Get "contact_address_address" | default (.Get "location") | default .Site.Data.homepage.contact.location }}
+  {{ if eq .Site.LanguagePrefix "" }}
+    {{ $location = replace $location "Germany" "Deutschland" }}
+  {{ end }}
 {{ else }}
   {{ $phone = .Site.Data.homepage.contact.phone }}
   {{ $phone_display = .Site.Data.homepage.contact.phone_display | default $phone }}
