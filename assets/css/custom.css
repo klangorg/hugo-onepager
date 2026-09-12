@@ -157,7 +157,9 @@ html {
 
 .skill-card__title {
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 2.3vw, 1.1rem);
+    line-height: 1.25;
+    white-space: nowrap;
 }
 
 .skill-card__level {
