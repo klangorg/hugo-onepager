@@ -56,11 +56,12 @@
 }
 
 .skill-description {
-    flex: 1;
+    display: block;
+    width: 100%;
     font-size: 0.9rem;
     color: #6c757d;
     margin-top: 10px;
-    margin-left: 1rem;
+    margin-left: 0;
     text-align: left;
 }
 
