@@ -107,13 +107,13 @@ skill_categories:
         years: "14+"
         description: "Windows-Automatisierung, Active Directory, Exchange, WinRM"
       - name: "Python Skripting"
-        years: "8"
+        years: "8+"
         description: "Automatisierung, API-Integration, Requests, Tool-Entwicklung"
 
   - name: "Automation & IaC"
     skills:
       - name: "Ansible (Linux & Windows)"
-        years: "8"
+        years: "8+"
         description: "Playbooks, Rollen, Linux- und Windows-Automatisierung"
         featured: true
       - name: "Terraform"
