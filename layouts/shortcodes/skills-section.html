@@ -41,8 +41,8 @@
           <div class="skill-card__category">{{ .category }}</div>
           <div class="skill-card__meta">
             <span class="skill-card__years">{{ .years }} {{ if eq $.Page.Site.Language.Lang "de" }}Jahre{{ else }}years{{ end }}</span>
-            <span class="skill-card__description">{{ .description }}</span>
           </div>
+          <div class="skill-card__description">{{ .description }}</div>
         </div>
         {{- end -}}
       </div>

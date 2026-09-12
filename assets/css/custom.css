@@ -176,9 +176,7 @@ html {
 
 .skill-card__meta {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
     margin-top: 8px;
 }
 
@@ -191,9 +189,11 @@ html {
 }
 
 .skill-card__description {
+    display: block;
+    width: 100%;
     font-size: 0.85rem;
     color: #6c757d;
-    margin-left: 0;
+    margin: 8px 0 0;
     text-align: left;
 }
 
