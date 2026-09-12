@@ -17,7 +17,7 @@
   {{- range .skills -}}
     {{- $allSkills = $allSkills | append . -}}
     {{- if .featured -}}
-      {{- $featuredSkills = $featuredSkills | append (dict "name" .name "category" $categoryName "years" .years "description" .description) -}}
+      {{- $featuredSkills = $featuredSkills | append (dict "name" (.featured_name | default .name) "category" $categoryName "years" .years "description" (.featured_description | default .description)) -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}

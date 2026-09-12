@@ -102,7 +102,6 @@ skill_categories:
       - name: "Microsoft Azure"
         years: "3+"
         description: "VMs, Azure DevOps, IoT Hub, Cloud migration"
-        featured: true
       - name: "Amazon Web Services (AWS EC2)"
         years: "6+"
         description: "EC2, Load balancing, VPC, IAM, CloudWatch"
@@ -137,6 +136,9 @@ skill_categories:
       - name: "Jira Administration"
         years: "7+"
         description: "Workflows, Automation, ScriptRunner, REST API"
+        featured: true
+        featured_name: "Jira & Confluence"
+        featured_description: "Administration, Workflows, Automation, Spaces and Macros"
       - name: "Confluence Administration"
         years: "7+"
         description: "Space administration, Macros, User management"
