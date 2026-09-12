@@ -4,7 +4,7 @@ title: 'Richard Rösler'
 draft: false
 
 name: "Richard Rösler"
-position: "Anwendungsentwickler, Basler Versicherung AG"
+position: "Anwendungsentwickler, Baloise Lebensversicherung AG Deutschland"
 
 params:
   image:
