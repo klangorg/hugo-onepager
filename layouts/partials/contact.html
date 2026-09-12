@@ -41,7 +41,10 @@
   {{ $phone = .Site.Data.homepage.contact.phone }}
   {{ $phone_display = .Site.Data.homepage.contact.phone_display | default $phone }}
   {{ $email = .Site.Data.homepage.contact.email }}
-  {{ $location = printf `<a href="https://www.google.com/maps/search/?api=1&query=Friedrich-Engels-Str.+3,+08344+Grünhain-Beierfeld,+Germany" target="_blank" style="text-decoration: underline;">%s</a>` (i18n "contact_address_address") }}
+  {{ $location = .Site.Data.homepage.contact.location }}
+  {{ if eq .Site.Language.Lang "de" }}
+    {{ $location = replace $location "<br />Germany" "<br />Deutschland" }}
+  {{ end }}
 {{ end }}
 
 {{/*----------------------------------------------
