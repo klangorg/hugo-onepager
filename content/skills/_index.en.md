@@ -14,8 +14,11 @@ button2_icon: "icon-email"
 skill_categories:
   - name: "OS Administration"
     skills:
-      - name: "Linux (RHEL/Debian/Ubuntu)"
+      - name: "Debian / Ubuntu"
         years: "15+"
+        description: "System administration, Package management"
+      - name: "Red Hat Enterprise Linux (RHEL)"
+        years: "8+"
         description: "System administration, Package management, Security hardening"
       - name: "Windows Server (2012-2022)"
         years: "14+"
@@ -51,9 +54,12 @@ skill_categories:
 
   - name: "IT Security & Identity Management"
     skills:
-      - name: "Samba4 & Active Directory"
+      - name: "Samba4"
         years: "4+"
-        description: "Domain controller, LDAP integration, Group policies, Kerberos"
+        description: "Domain controller, LDAP integration, Kerberos"
+      - name: "Active Directory"
+        years: "14+"
+        description: "Domain controller, Group policies, Kerberos"
       - name: "Privileged Access Management (PAM)"
         years: "3+"
         description: "PAM solutions, Credential vaulting, Just-in-time access"
